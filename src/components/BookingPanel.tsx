@@ -9,13 +9,8 @@ interface Props {
   currentMinutes: number;
   startTime: string;
   endTime: string;
-  bookedBy: string;
   onStartTimeChange: (v: string) => void;
   onEndTimeChange: (v: string) => void;
-  onBookedByChange: (v: string) => void;
-  onBook: () => void;
-  lastResult: ValidationResult | null;
-  lastBookedLabel: string | null;
 }
 
 export function BookingPanel({
@@ -24,41 +19,40 @@ export function BookingPanel({
   currentMinutes,
   startTime,
   endTime,
-  bookedBy,
   onStartTimeChange,
   onEndTimeChange,
-  onBookedByChange,
-  onBook,
-  lastResult,
-  lastBookedLabel,
 }: Props) {
   const startMin = parseTime(startTime);
   const endMin = parseTime(endTime);
 
   const liveValidation: ValidationResult | null = useMemo(() => {
-    if (!room || startMin === null || endMin === null) return null;
+    if (!room) return null;
+    const messages: string[] = [];
+    if (startMin === null) messages.push('Enter a valid start time in HH:MM format (00:00–24:00).');
+    if (endMin === null) messages.push('Enter a valid end time in HH:MM format (00:00–24:00).');
+    if (startMin === null || endMin === null) return { valid: false, messages };
     return validateBooking(startMin, endMin, room, bookings, currentMinutes);
   }, [room, startMin, endMin, bookings, currentMinutes]);
 
   const liveAvailability = useMemo(() => {
-    if (!room || startMin === null || endMin === null) return null;
+    if (!room) return null;
+    if (startMin === null || endMin === null) return 'unavailable';
     return checkAvailability(startMin, endMin, room, bookings, currentMinutes);
   }, [room, startMin, endMin, bookings, currentMinutes]);
 
   const duration =
     startMin !== null && endMin !== null && endMin > startMin ? endMin - startMin : null;
 
-  const canSubmit = liveValidation?.valid === true && bookedBy.trim().length > 0;
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <h2 className="mb-4 flex items-center gap-2 text-lg font-bold text-slate-900">
         <CalendarPlus className="h-5 w-5 text-sky-600" />
-        Book a Room
+        Check Room Availability
       </h2>
 
       {!room ? (
-        <p className="text-sm text-slate-400">Select an available room to start booking.</p>
+        <p className="text-sm text-slate-400">Select a room to check availability.</p>
       ) : (
         <div className="space-y-4">
           <div className="rounded-lg bg-slate-50 px-3 py-2">
@@ -102,20 +96,10 @@ export function BookingPanel({
             </p>
           )}
 
-          <label className="block">
-            <span className="mb-1 block text-sm font-medium text-slate-600">Booked By</span>
-            <input
-              type="text"
-              placeholder="e.g. Prof. Smith"
-              value={bookedBy}
-              onChange={(e) => onBookedByChange(e.target.value)}
-              className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:outline-none"
-            />
-          </label>
-
           {/* Live availability badge (AC5) */}
           {liveAvailability && (
             <div
+              role="status"
               className={[
                 'flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold',
                 liveAvailability === 'available'
@@ -130,7 +114,9 @@ export function BookingPanel({
               ) : (
                 <AlertTriangle className="h-4 w-4" />
               )}
-              {liveAvailability === 'available'
+              {startMin === null || endMin === null
+                ? 'Unavailable — enter valid times'
+                : liveAvailability === 'available'
                 ? `Available for ${formatTime(startMin!)}–${formatTime(endMin!)}`
                 : liveAvailability === 'unavailable'
                   ? `Unavailable for ${formatTime(startMin!)}–${formatTime(endMin!)}`
@@ -150,26 +136,7 @@ export function BookingPanel({
             </ul>
           )}
 
-          {/* Success feedback */}
-          {lastResult?.valid && lastBookedLabel && (
-            <div className="flex items-start gap-2 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-700">
-              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>Booking confirmed: {lastBookedLabel}</span>
-            </div>
-          )}
-
-          <button
-            onClick={onBook}
-            disabled={!canSubmit}
-            className={[
-              'w-full rounded-xl px-4 py-2.5 text-sm font-semibold text-white transition-all duration-200',
-              canSubmit
-                ? 'bg-sky-600 hover:bg-sky-700 active:scale-[0.98]'
-                : 'cursor-not-allowed bg-slate-300',
-            ].join(' ')}
-          >
-            Confirm Booking
-          </button>
+          <p className="text-xs text-slate-500">Availability check only. No booking is saved or confirmed.</p>
         </div>
       )}
     </div>

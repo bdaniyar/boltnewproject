@@ -1,8 +1,8 @@
 import { useState, useMemo, useCallback } from 'react';
 import { Building2, Clock3 } from 'lucide-react';
-import type { Booking, Room, ValidationResult, AvailabilityStatus } from '@/types';
+import type { Booking, Room, AvailabilityStatus } from '@/types';
 import { SAMPLE_ROOMS, SAMPLE_BOOKINGS, DEFAULT_CURRENT_MINUTES } from '@/sampleData';
-import { formatTime, parseTime, validateBooking, checkAvailability } from '@/bookingLogic';
+import { parseTime, checkAvailability } from '@/bookingLogic';
 import { CurrentTimeControl } from '@/components/CurrentTimeControl';
 import { RoomCard } from '@/components/RoomCard';
 import { Timeline } from '@/components/Timeline';
@@ -10,14 +10,11 @@ import { BookingPanel } from '@/components/BookingPanel';
 
 function App() {
   const [rooms] = useState<Room[]>(SAMPLE_ROOMS);
-  const [bookings, setBookings] = useState<Booking[]>(SAMPLE_BOOKINGS);
+  const [bookings] = useState<Booking[]>(SAMPLE_BOOKINGS);
   const [currentMinutes, setCurrentMinutes] = useState(DEFAULT_CURRENT_MINUTES);
   const [selectedRoomName, setSelectedRoomName] = useState<string | null>(null);
   const [startTime, setStartTime] = useState('10:30');
   const [endTime, setEndTime] = useState('11:30');
-  const [bookedBy, setBookedBy] = useState('');
-  const [lastResult, setLastResult] = useState<ValidationResult | null>(null);
-  const [lastBookedLabel, setLastBookedLabel] = useState<string | null>(null);
 
   const selectedRoom = rooms.find((r) => r.name === selectedRoomName) ?? null;
 
@@ -37,33 +34,7 @@ function App() {
 
   const handleSelectRoom = useCallback((name: string) => {
     setSelectedRoomName(name);
-    setLastResult(null);
-    setLastBookedLabel(null);
   }, []);
-
-  const handleBook = useCallback(() => {
-    if (!selectedRoom || startMin === null || endMin === null) return;
-
-    const result = validateBooking(startMin, endMin, selectedRoom, bookings, currentMinutes);
-    setLastResult(result);
-
-    if (result.valid) {
-      const newBooking: Booking = {
-        id: `b${Date.now()}`,
-        roomName: selectedRoom.name,
-        start: startMin,
-        end: endMin,
-        bookedBy: bookedBy.trim() || 'Unknown',
-      };
-      setBookings((prev) => [...prev, newBooking]);
-      setLastBookedLabel(
-        `${selectedRoom.name} · ${formatTime(startMin)}–${formatTime(endMin)} · ${newBooking.bookedBy}`,
-      );
-      setBookedBy('');
-    } else {
-      setLastBookedLabel(null);
-    }
-  }, [selectedRoom, startMin, endMin, bookings, currentMinutes, bookedBy]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-sky-50">
@@ -78,7 +49,7 @@ function App() {
               <h1 className="text-lg font-bold leading-tight text-slate-900">
                 Smart Campus Room Checker
               </h1>
-              <p className="text-xs text-slate-500">Check availability & book study spaces</p>
+              <p className="text-xs text-slate-500">Check availability of study spaces</p>
             </div>
           </div>
           <CurrentTimeControl
@@ -91,7 +62,7 @@ function App() {
       <main className="mx-auto max-w-6xl px-4 py-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
           {/* Left column: rooms + timeline */}
-          <div className="space-y-6">
+          <div className="min-w-0 space-y-6">
             <section>
               <div className="mb-3 flex items-center gap-2">
                 <h2 className="text-base font-semibold text-slate-700">Rooms</h2>
@@ -124,13 +95,8 @@ function App() {
               currentMinutes={currentMinutes}
               startTime={startTime}
               endTime={endTime}
-              bookedBy={bookedBy}
               onStartTimeChange={setStartTime}
               onEndTimeChange={setEndTime}
-              onBookedByChange={setBookedBy}
-              onBook={handleBook}
-              lastResult={lastResult}
-              lastBookedLabel={lastBookedLabel}
             />
 
             {/* Legend */}
