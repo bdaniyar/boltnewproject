@@ -9,7 +9,7 @@ import { Timeline } from '@/components/Timeline';
 import { BookingPanel } from '@/components/BookingPanel';
 
 function App() {
-  const [rooms] = useState<Room[]>(SAMPLE_ROOMS);
+  const [rooms, setRooms] = useState<Room[]>(() => SAMPLE_ROOMS.map((room) => ({ ...room })));
   const [bookings] = useState<Booking[]>(SAMPLE_BOOKINGS);
   const [currentMinutes, setCurrentMinutes] = useState(DEFAULT_CURRENT_MINUTES);
   const [selectedRoomName, setSelectedRoomName] = useState<string | null>(null);
@@ -97,6 +97,11 @@ function App() {
               endTime={endTime}
               onStartTimeChange={setStartTime}
               onEndTimeChange={setEndTime}
+              onBlockedChange={(blocked) => {
+                setRooms((currentRooms) => currentRooms.map((room) => (
+                  room.name === selectedRoomName ? { ...room, blocked } : room
+                )));
+              }}
             />
 
             {/* Legend */}

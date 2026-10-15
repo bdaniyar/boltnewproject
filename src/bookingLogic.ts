@@ -7,6 +7,13 @@ import type { Booking, Room, ValidationResult, AvailabilityStatus } from './type
 function validateBasicRange(start: number, end: number, currentMinutes: number): ValidationResult {
   const messages: string[] = [];
 
+  if (![start, end, currentMinutes].every(Number.isFinite)) {
+    return {
+      valid: false,
+      messages: ['Start, end, and current time must be finite minute values.'],
+    };
+  }
+
   if (start < 0 || end < 0) {
     messages.push('Start and end times must not be before 00:00.');
   }
@@ -104,15 +111,10 @@ export function checkAvailability(
   existingBookings: Booking[],
   currentMinutes: number,
 ): AvailabilityStatus {
-  if (room.blocked) return 'blocked';
-
-  // Treat invalid ranges as unavailable rather than crashing.
-  if (start < 0 || end > 1440 || start >= end) return 'unavailable';
-  if (start <= currentMinutes) return 'unavailable';
-  if (end - start > 120) return 'unavailable';
-
-  const roomBookings = existingBookings.filter((b) => b.roomName === room.name);
-  return hasOverlap(start, end, roomBookings) ? 'unavailable' : 'available';
+  // Use the same validation for previews and form feedback so they cannot disagree.
+  const result = validateBooking(start, end, room, existingBookings, currentMinutes);
+  if (result.valid) return 'available';
+  return room.blocked ? 'blocked' : 'unavailable';
 }
 
 /** Format minutes-from-midnight as HH:MM. */

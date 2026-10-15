@@ -11,6 +11,7 @@ interface Props {
   endTime: string;
   onStartTimeChange: (v: string) => void;
   onEndTimeChange: (v: string) => void;
+  onBlockedChange: (blocked: boolean) => void;
 }
 
 export function BookingPanel({
@@ -21,6 +22,7 @@ export function BookingPanel({
   endTime,
   onStartTimeChange,
   onEndTimeChange,
+  onBlockedChange,
 }: Props) {
   const startMin = parseTime(startTime);
   const endMin = parseTime(endTime);
@@ -64,11 +66,23 @@ export function BookingPanel({
             </p>
           </div>
 
+          <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-600">
+            <input
+              type="checkbox"
+              checked={room.blocked}
+              onChange={(event) => onBlockedChange(event.target.checked)}
+              className="h-4 w-4 rounded border-slate-300 accent-sky-600"
+            />
+            Block selected room (demo)
+          </label>
+
           <div className="grid grid-cols-2 gap-3">
             <label className="block">
               <span className="mb-1 block text-sm font-medium text-slate-600">Start (HH:MM)</span>
               <input
                 type="text"
+                required
+                aria-invalid={startMin === null}
                 placeholder="10:00"
                 value={startTime}
                 onChange={(e) => onStartTimeChange(e.target.value)}
@@ -79,6 +93,8 @@ export function BookingPanel({
               <span className="mb-1 block text-sm font-medium text-slate-600">End (HH:MM)</span>
               <input
                 type="text"
+                required
+                aria-invalid={endMin === null}
                 placeholder="11:00"
                 value={endTime}
                 onChange={(e) => onEndTimeChange(e.target.value)}
@@ -120,7 +136,7 @@ export function BookingPanel({
                 ? `Available for ${formatTime(startMin!)}–${formatTime(endMin!)}`
                 : liveAvailability === 'unavailable'
                   ? `Unavailable for ${formatTime(startMin!)}–${formatTime(endMin!)}`
-                  : 'Room is blocked'}
+                  : 'Unavailable — room is blocked'}
             </div>
           )}
 

@@ -20,6 +20,7 @@ export function CurrentTimeControl({ currentMinutes, onCurrentMinutesChange }: P
         <div className="flex items-center gap-1.5">
           <input
             type="number"
+            aria-label="Current hour"
             min={0}
             max={23}
             value={hours}
@@ -32,6 +33,7 @@ export function CurrentTimeControl({ currentMinutes, onCurrentMinutesChange }: P
           <span className="text-white font-semibold">:</span>
           <input
             type="number"
+            aria-label="Current minute"
             min={0}
             max={59}
             value={minutes}
