@@ -1,0 +1,26 @@
+[
+  {
+    "source": "skill/zip-inspection.txt",
+    "screenshot": "skill/zip-structure.png",
+    "html": "skill/zip-structure.html",
+    "browser": "156.0.8078.48"
+  },
+  {
+    "source": "baseline/practice07-original.txt",
+    "screenshot": "baseline/practice07-original-browser-view.png",
+    "html": "baseline/practice07-original-browser-view.html",
+    "browser": "156.0.8078.48"
+  },
+  {
+    "source": "bug-a/red-targeted.txt",
+    "screenshot": "bug-a/red-targeted-browser-view.png",
+    "html": "bug-a/red-targeted-browser-view.html",
+    "browser": "156.0.8078.48"
+  },
+  {
+    "source": "bug-b/red-targeted.txt",
+    "screenshot": "bug-b/red-targeted-browser-view.png",
+    "html": "bug-b/red-targeted-browser-view.html",
+    "browser": "156.0.8078.48"
+  }
+]

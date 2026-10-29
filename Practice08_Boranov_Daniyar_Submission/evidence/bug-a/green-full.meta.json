@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/node_modules/vitest/vitest.mjs",
+    "run"
+  ],
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-a-xw_waxln",
+  "startedAtUTC": "2026-10-29T13:15:42.084787+00:00",
+  "completedAtUTC": "2026-10-29T13:15:42.619770+00:00",
+  "exitCode": 0
+}

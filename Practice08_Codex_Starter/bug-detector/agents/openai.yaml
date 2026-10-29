@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bug Detector"
+  short_description: "Diagnose booking failures from tests and acceptance criteria"
+  default_prompt: "Use $bug-detector to diagnose this Smart Campus booking failure, explain the root cause and propose a minimal fix without editing code."
+
+policy:
+  allow_implicit_invocation: false

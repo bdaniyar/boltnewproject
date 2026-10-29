@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/node_modules/vitest/vitest.mjs",
+    "run"
+  ],
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-b-ecxngsdk",
+  "startedAtUTC": "2026-10-29T13:16:26.396684+00:00",
+  "completedAtUTC": "2026-10-29T13:16:26.919807+00:00",
+  "exitCode": 0
+}

@@ -22,7 +22,7 @@ npm run lint
 npm run build
 ```
 
-The default Vitest command runs the improved 43-test suite. The preserved original suite has 17 tests and uses a separate config. Nine pre-existing Node tests remain available through `test:legacy`. All suites import or transpile the real `src/bookingLogic.ts`; no booking implementation is substituted. Availability and validation now share the same rules, including finite numeric inputs.
+The default Vitest command runs 66 tests: the preserved original 17, improved 43, and six Practice 08 regressions. The original suite can still run separately through `test:original`. Nine pre-existing Node tests remain available through `test:legacy`. All suites import or transpile the real `src/bookingLogic.ts`; no booking implementation is substituted. Availability and validation share the same rules, including finite numeric inputs.
 
 With the real development server at http://127.0.0.1:5173 and installed Google Chrome:
 
@@ -37,3 +37,9 @@ This runs 12 actual browser assertions, including desktop/mobile controls, requi
 The sibling `Practice07_Boranov_Daniyar/` directory contains the Practice 07 DOCX/PDF report, test copies, real screenshot/output evidence, review decisions, mutation log, an unsent email draft, and reproduction instructions. Its baseline archive plus final source patch reconstruct the exact tested project. Prior Practice 06 artifacts in the parent `evidence/` and `reports/` directories are preserved.
 
 The timeline scrolls horizontally within its own panel. The mobile page scrolls vertically. There is no database, authentication or persistent booking storage. Blocked cards remain disabled, while the currently selected room can be unblocked using its panel checkbox.
+
+## Practice 08
+
+See [practice08/README.md](practice08/README.md) for the saved baseline, separate controlled BUG-A/BUG-B reproductions, real RED/GREEN evidence, Skill comparison prompts, editable Word report, and submission package instructions. The production booking source remains identical to the correct baseline. The package marks external comparison and student manual actions as pending.
+
+For the current Practice 08 browser checks, run the app on port 5174 and use `npm run test:browser:practice08`. The script supports a different correct local origin through `PRACTICE08_URL`.

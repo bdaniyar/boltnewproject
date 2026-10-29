@@ -1,0 +1,54 @@
+npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Missing: vitest@2.1.9 from lock file
+npm error Missing: @vitest/expect@2.1.9 from lock file
+npm error Missing: @vitest/mocker@2.1.9 from lock file
+npm error Missing: @vitest/pretty-format@2.1.9 from lock file
+npm error Missing: @vitest/runner@2.1.9 from lock file
+npm error Missing: @vitest/snapshot@2.1.9 from lock file
+npm error Missing: @vitest/spy@2.1.9 from lock file
+npm error Missing: @vitest/utils@2.1.9 from lock file
+npm error Missing: chai@5.3.3 from lock file
+npm error Missing: expect-type@1.4.0 from lock file
+npm error Missing: magic-string@0.30.21 from lock file
+npm error Missing: pathe@1.1.2 from lock file
+npm error Missing: std-env@3.10.0 from lock file
+npm error Missing: tinybench@2.9.0 from lock file
+npm error Missing: tinyexec@0.3.2 from lock file
+npm error Missing: tinypool@1.1.1 from lock file
+npm error Missing: tinyrainbow@1.2.0 from lock file
+npm error Missing: vite-node@2.1.9 from lock file
+npm error Missing: why-is-node-running@2.3.0 from lock file
+npm error Missing: estree-walker@3.0.3 from lock file
+npm error Missing: tinyspy@3.0.2 from lock file
+npm error Missing: loupe@3.2.1 from lock file
+npm error Missing: assertion-error@2.0.1 from lock file
+npm error Missing: check-error@2.1.3 from lock file
+npm error Missing: deep-eql@5.0.2 from lock file
+npm error Missing: pathval@2.0.1 from lock file
+npm error Invalid: lock file's @jridgewell/sourcemap-codec@1.5.0 does not satisfy @jridgewell/sourcemap-codec@1.6.0
+npm error Missing: cac@6.7.14 from lock file
+npm error Missing: es-module-lexer@1.7.0 from lock file
+npm error Missing: siginfo@2.0.0 from lock file
+npm error Missing: stackback@0.0.2 from lock file
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+npm error [--no-bin-links] [--no-fund] [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error A complete log of this run can be found in: /Users/daniarboranov/.npm/_logs/2026-10-29T13_12_41_751Z-debug-0.log

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npx",
+    "vitest",
+    "run",
+    "tests/practice08.regression.test.ts"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-10-29T13:18:28.271834+00:00",
+  "completedAtUTC": "2026-10-29T13:18:29.703334+00:00",
+  "exitCode": 0
+}

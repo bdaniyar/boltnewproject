@@ -1,0 +1,18 @@
+{
+  "purpose": "Capture only; does not add checks or pass claims to the preserved 14-check UI run.",
+  "capturedAt": "2026-10-29T13:16:46.809Z",
+  "url": "http://127.0.0.1:5174/",
+  "browser": "156.0.8078.48",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "currentHour": "9",
+  "currentMinute": "0",
+  "selectedSchedule": "Today's Schedule — A-102",
+  "start": "11:00",
+  "end": "12:00",
+  "status": "Available for 11:00–12:00",
+  "scrollY": 962,
+  "screenshot": "mobile-feedback-viewport.png"
+}

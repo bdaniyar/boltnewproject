@@ -1,0 +1,10 @@
+--- bug-b/src/bookingLogic.ts
++++ repaired/src/bookingLogic.ts
+@@ -111,7 +111,6 @@
+   existingBookings: Booking[],
+   currentMinutes: number,
+ ): AvailabilityStatus {
+-  existingBookings.sort((a, b) => a.start - b.start);
+   // Use the same validation for previews and form feedback so they cannot disagree.
+   const result = validateBooking(start, end, room, existingBookings, currentMinutes);
+   if (result.valid) return 'available';

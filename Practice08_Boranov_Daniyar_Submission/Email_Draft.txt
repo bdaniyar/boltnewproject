@@ -1,0 +1,21 @@
+To: b.azimkhanov@kbtu.kz
+Subject: AI-Driven Software Engineering Practice #09, Boranov Daniyar, 24B031718
+
+Dear Instructor,
+
+Please find attached my work for Lesson #08, Practice Work #08, on the Smart Campus Room Availability application.
+
+Student: Boranov Daniyar (24B031718)
+Class: Thursday, 14:00–17:00
+AI tool: OpenAI Codex
+Exact model and application version: [INSERT VERIFIED MODEL AND VERSION]
+Published live demo: [INSERT CORRECT PUBLISHED DEMO URL]
+
+The prepared package contains the editable Word report, the original baseline, actual failing and passing test logs, separate BUG-A and BUG-B diffs, real desktop and mobile screenshots, bug-detector SKILL.md and ZIP, comparison prompts, and a clean source export. The two independent AI comparison responses, Skill activation or simulation evidence, student manual recreation of SKILL.md, and the published URL remain pending. I will complete these items and update the report and attachments before sending.
+
+Attachments: Practice08_Boranov_Daniyar_Report.docx; Practice08_Boranov_Daniyar_Submission.zip
+
+Best regards,
+Boranov Daniyar
+
+DRAFT ONLY — NOT SENT. Update the pending sentence after completing the listed student actions.

@@ -1,0 +1,10 @@
+
+ RUN  v2.1.9 /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject
+
+ ✓ tests/practice07.improved.test.ts (43 tests) 5ms
+
+ Test Files  1 passed (1)
+      Tests  43 passed (43)
+   Start at  18:13:31
+   Duration  687ms (transform 59ms, setup 0ms, collect 52ms, tests 5ms, environment 0ms, prepare 45ms)
+

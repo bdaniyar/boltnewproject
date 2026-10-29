@@ -1,0 +1,12 @@
+
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-export-verification-q1s96hr_/SmartCampus
+
+ ✓ tests/practice08.regression.test.ts (6 tests) 4ms
+ ✓ tests/practice07.original.test.ts (17 tests) 4ms
+ ✓ tests/practice07.improved.test.ts (43 tests) 6ms
+
+ Test Files  3 passed (3)
+      Tests  66 passed (66)
+   Start at  18:22:48
+   Duration  384ms (transform 63ms, setup 0ms, collect 89ms, tests 14ms, environment 0ms, prepare 133ms)
+

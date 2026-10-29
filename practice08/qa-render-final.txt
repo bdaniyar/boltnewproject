@@ -1,0 +1,8 @@
+[render_docx] $ /Users/daniarboranov/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice -env:UserInstallation=file:///private/tmp/soffice_profile_eykhfr8n --invisible --headless --norestore --convert-to pdf --outdir /private/tmp/soffice_convert_7s_5ggcm /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice08/reports/Practice08_Boranov_Daniyar_Report.docx
+convert /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice08/reports/Practice08_Boranov_Daniyar_Report.docx as a Writer document -> /private/tmp/soffice_convert_7s_5ggcm/Practice08_Boranov_Daniyar_Report.pdf using filter : writer_pdf_Export
+
+Fontconfig warning: no <cachedir> elements found. Check configuration.
+Fontconfig warning: adding <cachedir>/@.__________________________________________________OOO/var/cache/fontconfig</cachedir>
+Fontconfig warning: adding <cachedir prefix="xdg">fontconfig</cachedir>
+
+Pages rendered to /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice08/qa/final

@@ -1,0 +1,968 @@
+diff --git a/README.md b/README.md
+index 61124b8..ae3a755 100644
+--- a/README.md
++++ b/README.md
+@@ -22,7 +22,7 @@ npm run lint
+ npm run build
+ ```
+ 
+-The default Vitest command runs the improved 43-test suite. The preserved original suite has 17 tests and uses a separate config. Nine pre-existing Node tests remain available through `test:legacy`. All suites import or transpile the real `src/bookingLogic.ts`; no booking implementation is substituted. Availability and validation now share the same rules, including finite numeric inputs.
++The default Vitest command runs 66 tests: the preserved original 17, improved 43, and six Practice 08 regressions. The original suite can still run separately through `test:original`. Nine pre-existing Node tests remain available through `test:legacy`. All suites import or transpile the real `src/bookingLogic.ts`; no booking implementation is substituted. Availability and validation share the same rules, including finite numeric inputs.
+ 
+ With the real development server at http://127.0.0.1:5173 and installed Google Chrome:
+ 
+@@ -37,3 +37,9 @@ This runs 12 actual browser assertions, including desktop/mobile controls, requi
+ The sibling `Practice07_Boranov_Daniyar/` directory contains the Practice 07 DOCX/PDF report, test copies, real screenshot/output evidence, review decisions, mutation log, an unsent email draft, and reproduction instructions. Its baseline archive plus final source patch reconstruct the exact tested project. Prior Practice 06 artifacts in the parent `evidence/` and `reports/` directories are preserved.
+ 
+ The timeline scrolls horizontally within its own panel. The mobile page scrolls vertically. There is no database, authentication or persistent booking storage. Blocked cards remain disabled, while the currently selected room can be unblocked using its panel checkbox.
++
++## Practice 08
++
++See [practice08/README.md](practice08/README.md) for the saved baseline, separate controlled BUG-A/BUG-B reproductions, real RED/GREEN evidence, Skill comparison prompts, editable Word report, and submission package instructions. The production booking source remains identical to the correct baseline. The package marks external comparison and student manual actions as pending.
++
++For the current Practice 08 browser checks, run the app on port 5174 and use `npm run test:browser:practice08`. The script supports a different correct local origin through `PRACTICE08_URL`.
+diff --git a/package-lock.json b/package-lock.json
+index c9ff4c9..4ab651a 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -28,7 +28,8 @@
+         "tailwindcss": "^3.4.1",
+         "typescript": "^5.5.3",
+         "typescript-eslint": "^8.3.0",
+-        "vite": "^5.4.2"
++        "vite": "^5.4.2",
++        "vitest": "2.1.9"
+       }
+     },
+     "node_modules/@alloc/quick-lru": {
+@@ -937,10 +938,11 @@
+       }
+     },
+     "node_modules/@jridgewell/sourcemap-codec": {
+-      "version": "1.5.0",
+-      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz",
+-      "integrity": "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==",
+-      "dev": true
++      "version": "1.6.0",
++      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
++      "integrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
++      "dev": true,
++      "license": "MIT"
+     },
+     "node_modules/@jridgewell/trace-mapping": {
+       "version": "0.3.25",
+@@ -1636,6 +1638,119 @@
+         "vite": "^4.2.0 || ^5.0.0"
+       }
+     },
++    "node_modules/@vitest/expect": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/expect/-/expect-2.1.9.tgz",
++      "integrity": "sha512-UJCIkTBenHeKT1TTlKMJWy1laZewsRIzYighyYiJKZreqtdxSos/S1t+ktRMQWu2CKqaarrkeszJx1cgC5tGZw==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@vitest/spy": "2.1.9",
++        "@vitest/utils": "2.1.9",
++        "chai": "^5.1.2",
++        "tinyrainbow": "^1.2.0"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
++    "node_modules/@vitest/mocker": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/mocker/-/mocker-2.1.9.tgz",
++      "integrity": "sha512-tVL6uJgoUdi6icpxmdrn5YNo3g3Dxv+IHJBr0GXHaEdTcw3F+cPKnsXFhli6nO+f/6SDKPHEK1UN+k+TQv0Ehg==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@vitest/spy": "2.1.9",
++        "estree-walker": "^3.0.3",
++        "magic-string": "^0.30.12"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      },
++      "peerDependencies": {
++        "msw": "^2.4.9",
++        "vite": "^5.0.0"
++      },
++      "peerDependenciesMeta": {
++        "msw": {
++          "optional": true
++        },
++        "vite": {
++          "optional": true
++        }
++      }
++    },
++    "node_modules/@vitest/pretty-format": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/pretty-format/-/pretty-format-2.1.9.tgz",
++      "integrity": "sha512-KhRIdGV2U9HOUzxfiHmY8IFHTdqtOhIzCpd8WRdJiE7D/HUcZVD0EgQCVjm+Q9gkUXWgBvMmTtZgIG48wq7sOQ==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "tinyrainbow": "^1.2.0"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
++    "node_modules/@vitest/runner": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/runner/-/runner-2.1.9.tgz",
++      "integrity": "sha512-ZXSSqTFIrzduD63btIfEyOmNcBmQvgOVsPNPe0jYtESiXkhd8u2erDLnMxmGrDCwHCCHE7hxwRDCT3pt0esT4g==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@vitest/utils": "2.1.9",
++        "pathe": "^1.1.2"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
++    "node_modules/@vitest/snapshot": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/snapshot/-/snapshot-2.1.9.tgz",
++      "integrity": "sha512-oBO82rEjsxLNJincVhLhaxxZdEtV0EFHMK5Kmx5sJ6H9L183dHECjiefOAdnqpIgT5eZwT04PoggUnW88vOBNQ==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@vitest/pretty-format": "2.1.9",
++        "magic-string": "^0.30.12",
++        "pathe": "^1.1.2"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
++    "node_modules/@vitest/spy": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/spy/-/spy-2.1.9.tgz",
++      "integrity": "sha512-E1B35FwzXXTs9FHNK6bDszs7mtydNi5MIfUWpceJ8Xbfb1gBMscAnwLbEu+B44ed6W3XjL9/ehLPHR1fkf1KLQ==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "tinyspy": "^3.0.2"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
++    "node_modules/@vitest/utils": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/@vitest/utils/-/utils-2.1.9.tgz",
++      "integrity": "sha512-v0psaMSkNJ3A2NMrUEHFRzJtDPFn+/VWZ5WxImB21T9fjucJRmS7xCS3ppEnARb9y11OAzaD+P2Ps+b+BGX5iQ==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@vitest/pretty-format": "2.1.9",
++        "loupe": "^3.1.2",
++        "tinyrainbow": "^1.2.0"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
+     "node_modules/acorn": {
+       "version": "8.12.1",
+       "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.12.1.tgz",
+@@ -1728,6 +1843,16 @@
+       "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==",
+       "dev": true
+     },
++    "node_modules/assertion-error": {
++      "version": "2.0.1",
++      "resolved": "https://registry.npmjs.org/assertion-error/-/assertion-error-2.0.1.tgz",
++      "integrity": "sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">=12"
++      }
++    },
+     "node_modules/autoprefixer": {
+       "version": "10.4.20",
+       "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.20.tgz",
+@@ -1837,6 +1962,16 @@
+         "node": "^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7"
+       }
+     },
++    "node_modules/cac": {
++      "version": "6.7.14",
++      "resolved": "https://registry.npmjs.org/cac/-/cac-6.7.14.tgz",
++      "integrity": "sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">=8"
++      }
++    },
+     "node_modules/callsites": {
+       "version": "3.1.0",
+       "resolved": "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz",
+@@ -1875,6 +2010,23 @@
+         }
+       ]
+     },
++    "node_modules/chai": {
++      "version": "5.3.3",
++      "resolved": "https://registry.npmjs.org/chai/-/chai-5.3.3.tgz",
++      "integrity": "sha512-4zNhdJD/iOjSH0A05ea+Ke6MU5mmpQcbQsSOkgdaUMJ9zTlDTD/GYlwohmIE2u0gaxHYiVHEn1Fw9mZ/ktJWgw==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "assertion-error": "^2.0.1",
++        "check-error": "^2.1.1",
++        "deep-eql": "^5.0.1",
++        "loupe": "^3.1.0",
++        "pathval": "^2.0.0"
++      },
++      "engines": {
++        "node": ">=18"
++      }
++    },
+     "node_modules/chalk": {
+       "version": "2.4.2",
+       "resolved": "https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz",
+@@ -1889,6 +2041,16 @@
+         "node": ">=4"
+       }
+     },
++    "node_modules/check-error": {
++      "version": "2.1.3",
++      "resolved": "https://registry.npmjs.org/check-error/-/check-error-2.1.3.tgz",
++      "integrity": "sha512-PAJdDJusoxnwm1VwW07VWwUN1sl7smmC3OKggvndJFadxxDRyFJBX/ggnu/KE4kQAB7a3Dp8f/YXC1FlUprWmA==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">= 16"
++      }
++    },
+     "node_modules/chokidar": {
+       "version": "3.6.0",
+       "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz",
+@@ -2010,6 +2172,16 @@
+         }
+       }
+     },
++    "node_modules/deep-eql": {
++      "version": "5.0.2",
++      "resolved": "https://registry.npmjs.org/deep-eql/-/deep-eql-5.0.2.tgz",
++      "integrity": "sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">=6"
++      }
++    },
+     "node_modules/deep-is": {
+       "version": "0.1.4",
+       "resolved": "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz",
+@@ -2046,6 +2218,13 @@
+       "integrity": "sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==",
+       "dev": true
+     },
++    "node_modules/es-module-lexer": {
++      "version": "1.7.0",
++      "resolved": "https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-1.7.0.tgz",
++      "integrity": "sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==",
++      "dev": true,
++      "license": "MIT"
++    },
+     "node_modules/esbuild": {
+       "version": "0.21.5",
+       "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz",
+@@ -2343,6 +2522,16 @@
+         "node": ">=4.0"
+       }
+     },
++    "node_modules/estree-walker": {
++      "version": "3.0.3",
++      "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz",
++      "integrity": "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@types/estree": "^1.0.0"
++      }
++    },
+     "node_modules/esutils": {
+       "version": "2.0.3",
+       "resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz",
+@@ -2352,6 +2541,16 @@
+         "node": ">=0.10.0"
+       }
+     },
++    "node_modules/expect-type": {
++      "version": "1.4.0",
++      "resolved": "https://registry.npmjs.org/expect-type/-/expect-type-1.4.0.tgz",
++      "integrity": "sha512-KfYbmpRm0VbLjEvVa9yGwCi9GI34xvi7A/HXYWQO65CSD2u3MczUJSuwXKFIxlGsgBQizV9q5J9NHj4VG0n+pA==",
++      "dev": true,
++      "license": "Apache-2.0",
++      "engines": {
++        "node": ">=12.0.0"
++      }
++    },
+     "node_modules/fast-deep-equal": {
+       "version": "3.1.3",
+       "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+@@ -2883,6 +3082,13 @@
+         "loose-envify": "cli.js"
+       }
+     },
++    "node_modules/loupe": {
++      "version": "3.2.1",
++      "resolved": "https://registry.npmjs.org/loupe/-/loupe-3.2.1.tgz",
++      "integrity": "sha512-CdzqowRJCeLU72bHvWqwRBBlLcMEtIvGrlvef74kMnV2AolS9Y8xUv1I0U/MNAWMhBlKIoyuEgoJ0t/bbwHbLQ==",
++      "dev": true,
++      "license": "MIT"
++    },
+     "node_modules/lru-cache": {
+       "version": "5.1.1",
+       "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz",
+@@ -2901,6 +3107,16 @@
+         "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc"
+       }
+     },
++    "node_modules/magic-string": {
++      "version": "0.30.21",
++      "resolved": "https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz",
++      "integrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@jridgewell/sourcemap-codec": "^1.5.5"
++      }
++    },
+     "node_modules/merge2": {
+       "version": "1.4.1",
+       "resolved": "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz",
+@@ -3138,6 +3354,23 @@
+       "integrity": "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==",
+       "dev": true
+     },
++    "node_modules/pathe": {
++      "version": "1.1.2",
++      "resolved": "https://registry.npmjs.org/pathe/-/pathe-1.1.2.tgz",
++      "integrity": "sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==",
++      "dev": true,
++      "license": "MIT"
++    },
++    "node_modules/pathval": {
++      "version": "2.0.1",
++      "resolved": "https://registry.npmjs.org/pathval/-/pathval-2.0.1.tgz",
++      "integrity": "sha512-//nshmD55c46FuFw26xV/xFAaB5HF9Xdap7HJBBnrKdAd6/GxDBaNA1870O79+9ueg61cZLSVc+OaFlfmObYVQ==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">= 14.16"
++      }
++    },
+     "node_modules/picocolors": {
+       "version": "1.1.1",
+       "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+@@ -3569,6 +3802,13 @@
+         "node": ">=8"
+       }
+     },
++    "node_modules/siginfo": {
++      "version": "2.0.0",
++      "resolved": "https://registry.npmjs.org/siginfo/-/siginfo-2.0.0.tgz",
++      "integrity": "sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==",
++      "dev": true,
++      "license": "ISC"
++    },
+     "node_modules/signal-exit": {
+       "version": "4.1.0",
+       "resolved": "https://registry.npmjs.org/signal-exit/-/signal-exit-4.1.0.tgz",
+@@ -3590,6 +3830,20 @@
+         "node": ">=0.10.0"
+       }
+     },
++    "node_modules/stackback": {
++      "version": "0.0.2",
++      "resolved": "https://registry.npmjs.org/stackback/-/stackback-0.0.2.tgz",
++      "integrity": "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==",
++      "dev": true,
++      "license": "MIT"
++    },
++    "node_modules/std-env": {
++      "version": "3.10.0",
++      "resolved": "https://registry.npmjs.org/std-env/-/std-env-3.10.0.tgz",
++      "integrity": "sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==",
++      "dev": true,
++      "license": "MIT"
++    },
+     "node_modules/string-width": {
+       "version": "5.1.2",
+       "resolved": "https://registry.npmjs.org/string-width/-/string-width-5.1.2.tgz",
+@@ -3808,6 +4062,50 @@
+         "node": ">=0.8"
+       }
+     },
++    "node_modules/tinybench": {
++      "version": "2.9.0",
++      "resolved": "https://registry.npmjs.org/tinybench/-/tinybench-2.9.0.tgz",
++      "integrity": "sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==",
++      "dev": true,
++      "license": "MIT"
++    },
++    "node_modules/tinyexec": {
++      "version": "0.3.2",
++      "resolved": "https://registry.npmjs.org/tinyexec/-/tinyexec-0.3.2.tgz",
++      "integrity": "sha512-KQQR9yN7R5+OSwaK0XQoj22pwHoTlgYqmUscPYoknOoWCWfj/5/ABTMRi69FrKU5ffPVh5QcFikpWJI/P1ocHA==",
++      "dev": true,
++      "license": "MIT"
++    },
++    "node_modules/tinypool": {
++      "version": "1.1.1",
++      "resolved": "https://registry.npmjs.org/tinypool/-/tinypool-1.1.1.tgz",
++      "integrity": "sha512-Zba82s87IFq9A9XmjiX5uZA/ARWDrB03OHlq+Vw1fSdt0I+4/Kutwy8BP4Y/y/aORMo61FQ0vIb5j44vSo5Pkg==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": "^18.0.0 || >=20.0.0"
++      }
++    },
++    "node_modules/tinyrainbow": {
++      "version": "1.2.0",
++      "resolved": "https://registry.npmjs.org/tinyrainbow/-/tinyrainbow-1.2.0.tgz",
++      "integrity": "sha512-weEDEq7Z5eTHPDh4xjX789+fHfF+P8boiFB+0vbWzpbnbsEr/GRaohi/uMKxg8RZMXnl1ItAi/IUHWMsjDV7kQ==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">=14.0.0"
++      }
++    },
++    "node_modules/tinyspy": {
++      "version": "3.0.2",
++      "resolved": "https://registry.npmjs.org/tinyspy/-/tinyspy-3.0.2.tgz",
++      "integrity": "sha512-n1cw8k1k0x4pgA2+9XrOkFydTerNcJ1zWCO5Nn9scWHTD+5tp8dghT2x1uduQePZTZgd3Tupf+x9BxJjeJi77Q==",
++      "dev": true,
++      "license": "MIT",
++      "engines": {
++        "node": ">=14.0.0"
++      }
++    },
+     "node_modules/to-fast-properties": {
+       "version": "2.0.0",
+       "resolved": "https://registry.npmjs.org/to-fast-properties/-/to-fast-properties-2.0.0.tgz",
+@@ -4009,6 +4307,95 @@
+         }
+       }
+     },
++    "node_modules/vite-node": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/vite-node/-/vite-node-2.1.9.tgz",
++      "integrity": "sha512-AM9aQ/IPrW/6ENLQg3AGY4K1N2TGZdR5e4gu/MmmR2xR3Ll1+dib+nook92g4TV3PXVyeyxdWwtaCAiUL0hMxA==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "cac": "^6.7.14",
++        "debug": "^4.3.7",
++        "es-module-lexer": "^1.5.4",
++        "pathe": "^1.1.2",
++        "vite": "^5.0.0"
++      },
++      "bin": {
++        "vite-node": "vite-node.mjs"
++      },
++      "engines": {
++        "node": "^18.0.0 || >=20.0.0"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      }
++    },
++    "node_modules/vitest": {
++      "version": "2.1.9",
++      "resolved": "https://registry.npmjs.org/vitest/-/vitest-2.1.9.tgz",
++      "integrity": "sha512-MSmPM9REYqDGBI8439mA4mWhV5sKmDlBKWIYbA3lRb2PTHACE0mgKwA8yQ2xq9vxDTuk4iPrECBAEW2aoFXY0Q==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "@vitest/expect": "2.1.9",
++        "@vitest/mocker": "2.1.9",
++        "@vitest/pretty-format": "^2.1.9",
++        "@vitest/runner": "2.1.9",
++        "@vitest/snapshot": "2.1.9",
++        "@vitest/spy": "2.1.9",
++        "@vitest/utils": "2.1.9",
++        "chai": "^5.1.2",
++        "debug": "^4.3.7",
++        "expect-type": "^1.1.0",
++        "magic-string": "^0.30.12",
++        "pathe": "^1.1.2",
++        "std-env": "^3.8.0",
++        "tinybench": "^2.9.0",
++        "tinyexec": "^0.3.1",
++        "tinypool": "^1.0.1",
++        "tinyrainbow": "^1.2.0",
++        "vite": "^5.0.0",
++        "vite-node": "2.1.9",
++        "why-is-node-running": "^2.3.0"
++      },
++      "bin": {
++        "vitest": "vitest.mjs"
++      },
++      "engines": {
++        "node": "^18.0.0 || >=20.0.0"
++      },
++      "funding": {
++        "url": "https://opencollective.com/vitest"
++      },
++      "peerDependencies": {
++        "@edge-runtime/vm": "*",
++        "@types/node": "^18.0.0 || >=20.0.0",
++        "@vitest/browser": "2.1.9",
++        "@vitest/ui": "2.1.9",
++        "happy-dom": "*",
++        "jsdom": "*"
++      },
++      "peerDependenciesMeta": {
++        "@edge-runtime/vm": {
++          "optional": true
++        },
++        "@types/node": {
++          "optional": true
++        },
++        "@vitest/browser": {
++          "optional": true
++        },
++        "@vitest/ui": {
++          "optional": true
++        },
++        "happy-dom": {
++          "optional": true
++        },
++        "jsdom": {
++          "optional": true
++        }
++      }
++    },
+     "node_modules/webidl-conversions": {
+       "version": "3.0.1",
+       "resolved": "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
+@@ -4038,6 +4425,23 @@
+         "node": ">= 8"
+       }
+     },
++    "node_modules/why-is-node-running": {
++      "version": "2.3.0",
++      "resolved": "https://registry.npmjs.org/why-is-node-running/-/why-is-node-running-2.3.0.tgz",
++      "integrity": "sha512-hUrmaWBdVDcxvYqnyh09zunKzROWjbZTiNy8dBEjkS7ehEDQibXJ7XvlmtbwuTclUiIyN+CyXQD4Vmko8fNm8w==",
++      "dev": true,
++      "license": "MIT",
++      "dependencies": {
++        "siginfo": "^2.0.0",
++        "stackback": "0.0.2"
++      },
++      "bin": {
++        "why-is-node-running": "cli.js"
++      },
++      "engines": {
++        "node": ">=8"
++      }
++    },
+     "node_modules/word-wrap": {
+       "version": "1.2.5",
+       "resolved": "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.5.tgz",
+diff --git a/package.json b/package.json
+index e0a0414..6f409b3 100644
+--- a/package.json
++++ b/package.json
+@@ -13,7 +13,8 @@
+     "test:browser": "node tests/browser.mjs final",
+     "test:legacy": "node --test tests/booking.test.mjs",
+     "test:original": "vitest run --config vitest.original.config.ts",
+-    "test:improved": "vitest run"
++    "test:improved": "vitest run",
++    "test:browser:practice08": "node tests/practice08-browser.mjs"
+   },
+   "dependencies": {
+     "@supabase/supabase-js": "^2.57.4",
+diff --git a/vitest.config.ts b/vitest.config.ts
+index 19e3b67..935ae0c 100644
+--- a/vitest.config.ts
++++ b/vitest.config.ts
+@@ -4,6 +4,10 @@ import viteConfig from './vite.config';
+ export default mergeConfig(viteConfig, defineConfig({
+   test: {
+     environment: 'node',
+-    include: ['tests/practice07.improved.test.ts'],
++    include: [
++      'tests/practice07.original.test.ts',
++      'tests/practice07.improved.test.ts',
++      'tests/practice08.regression.test.ts',
++    ],
+   },
+ }));
+diff --git a/tests/practice08.regression.test.ts b/tests/practice08.regression.test.ts
+new file mode 100644
+index 0000000..6e4f01d
+--- /dev/null
++++ b/tests/practice08.regression.test.ts
+@@ -0,0 +1,61 @@
++import { describe, expect, test } from 'vitest';
++import { checkAvailability, validateBooking } from '../src/bookingLogic';
++import type { Booking, Room } from '../src/types';
++
++const NOW = 540;
++const roomFixture = (): Room => ({ name: 'A-102', building: 'Main', capacity: 30, blocked: false });
++const bookingFixture = (): Booking => ({ id: 'existing-1', roomName: 'A-102', start: 600, end: 660, bookedBy: 'Fictional student' });
++const unsortedFixture = (): Booking[] => [
++  { id: 'later-2', roomName: 'A-102', start: 780, end: 810, bookedBy: 'Fictional tutor' },
++  bookingFixture(),
++];
++
++describe('Practice08 controlled defect regressions', () => {
++  test('P08-A01 endpoint after 10:00-11:00 remains available', () => {
++    expect(checkAvailability(660, 720, roomFixture(), [bookingFixture()], NOW)).toBe('available');
++  });
++
++  test('P08-A02 endpoint before 10:00-11:00 remains available', () => {
++    expect(checkAvailability(570, 600, roomFixture(), [bookingFixture()], NOW)).toBe('available');
++  });
++
++  test('P08-A03 true overlap still returns unavailable with conflict feedback', () => {
++    const bookings = [bookingFixture()];
++    expect(checkAvailability(630, 690, roomFixture(), bookings, NOW)).toBe('unavailable');
++    expect(validateBooking(630, 690, roomFixture(), bookings, NOW).messages.join(' ')).toMatch(/Overlaps existing booking/);
++  });
++
++  test('P08-B01 availability preserves the original unsorted bookings', () => {
++    const bookings = unsortedFixture();
++    const before = bookings.map((booking) => ({ ...booking }));
++    expect(checkAvailability(660, 720, roomFixture(), bookings, NOW)).toBe('available');
++    expect(bookings).toEqual(before);
++  });
++
++  test('P08-B02 repeated success and rejection preserve length values and object references', () => {
++    const bookings = unsortedFixture();
++    const references = [...bookings];
++    const before = bookings.map((booking) => ({ ...booking }));
++    for (let repetition = 0; repetition < 3; repetition += 1) {
++      expect(checkAvailability(660, 720, roomFixture(), bookings, NOW)).toBe('available');
++      expect(checkAvailability(630, 690, roomFixture(), bookings, NOW)).toBe('unavailable');
++      expect(checkAvailability(790, 820, roomFixture(), bookings, NOW)).toBe('unavailable');
++    }
++    expect(bookings).toHaveLength(2);
++    expect(bookings).toEqual(before);
++    expect(bookings[0]).toBe(references[0]);
++    expect(bookings[1]).toBe(references[1]);
++  });
++
++  test('P08-B03 frozen bookings remain readable across available unavailable blocked and invalid inputs', () => {
++    const bookings = unsortedFixture();
++    const before = bookings.map((booking) => ({ ...booking }));
++    bookings.forEach(Object.freeze);
++    Object.freeze(bookings);
++    expect(checkAvailability(660, 720, roomFixture(), bookings, NOW)).toBe('available');
++    expect(checkAvailability(630, 690, roomFixture(), bookings, NOW)).toBe('unavailable');
++    expect(checkAvailability(660, 720, { ...roomFixture(), blocked: true }, bookings, NOW)).toBe('blocked');
++    expect(checkAvailability(720, 720, roomFixture(), bookings, NOW)).toBe('unavailable');
++    expect(bookings).toEqual(before);
++  });
++});
+diff --git a/tests/practice08-browser.mjs b/tests/practice08-browser.mjs
+new file mode 100644
+index 0000000..a449045
+--- /dev/null
++++ b/tests/practice08-browser.mjs
+@@ -0,0 +1,291 @@
++import { chromium, expect } from '@playwright/test';
++import assert from 'node:assert/strict';
++import { mkdirSync, writeFileSync } from 'node:fs';
++import { fileURLToPath } from 'node:url';
++import path from 'node:path';
++
++// Run the real Vite app first: npm run dev -- --host 127.0.0.1 --port 5174 --strictPort
++// Then: node tests/practice08-browser.mjs
++// No requests are mocked, no state is injected, and all input uses public controls.
++const project = fileURLToPath(new URL('..', import.meta.url));
++const submission = path.resolve(project, 'practice08/evidence/ui');
++const shots = submission;
++const results = submission;
++mkdirSync(shots, { recursive: true });
++mkdirSync(results, { recursive: true });
++const report = {
++  startedAt: new Date().toISOString(),
++  command: 'node tests/practice08-browser.mjs',
++  url: process.env.PRACTICE08_URL || 'http://127.0.0.1:5174',
++  framework: 'Playwright with installed Google Chrome',
++  checks: [],
++  screenshots: [],
++  consoleErrors: [],
++  limitations: [
++    'Automated Chrome checks; no separate human usability session or physical mobile device.',
++    'Timeline preservation compares all five rendered booking records, including owner and interval. Object-level immutability is checked separately by the unit suite.',
++    'B-201 is initially blocked and has no bookings; its disabled card is checked, while the four selectable room timelines expose all five existing records.',
++  ],
++};
++let browser;
++let page;
++let activeCheck = '';
++const log = [];
++function passed(id, description, observations = {}) {
++  report.checks.push({ id, description, status: 'passed', ...observations });
++  log.push(`PASS ${id}: ${description}`);
++  console.log(log.at(-1));
++}
++async function screenshot(name) {
++  await page.evaluate(() => window.scrollTo(0, 0));
++  await page.screenshot({ path: path.join(shots, name), fullPage: true });
++  report.screenshots.push(name);
++}
++async function setTimes(start, end) {
++  await page.getByLabel('Start (HH:MM)', { exact: true }).fill(start);
++  await page.getByLabel('End (HH:MM)', { exact: true }).fill(end);
++}
++async function selectRoom(name) {
++  await page.getByRole('button', { name: new RegExp(`^${name} `) }).click();
++  await expect(page.getByRole('heading', { name: `Today's Schedule — ${name}`, exact: true })).toBeVisible();
++}
++async function timelineSnapshot() {
++  const snapshot = {};
++  for (const room of ['A-101', 'A-102', 'B-202', 'C-301']) {
++    await selectRoom(room);
++    const timeline = page.getByRole('heading', { name: `Today's Schedule — ${room}`, exact: true }).locator('..').locator('..');
++    snapshot[room] = await timeline.locator('[title]').evaluateAll((bars) => bars.map((bar) => ({
++      title: bar.getAttribute('title'),
++      text: bar.textContent,
++      left: bar.style.left,
++      width: bar.style.width,
++    })));
++  }
++  await expect(page.getByRole('button', { name: /^B-201 / })).toBeDisabled();
++  snapshot['B-201'] = [];
++  return snapshot;
++}
++async function storageSnapshot() {
++  return page.evaluate(() => ({
++    localStorage: { ...localStorage },
++    sessionStorage: { ...sessionStorage },
++  }));
++}
++async function helperResult(start, end, blocked = false) {
++  // Import the same source module Vite serves to App/BookingPanel. This reads
++  // the helper independently; it never overwrites the application's logic/state.
++  return page.evaluate(async ({ start, end, blocked }) => {
++    const { checkAvailability, validateBooking } = await import('/src/bookingLogic.ts');
++    const { SAMPLE_ROOMS, SAMPLE_BOOKINGS } = await import('/src/sampleData.ts');
++    const room = { ...SAMPLE_ROOMS.find((entry) => entry.name === 'A-102'), blocked };
++    return {
++      availability: checkAvailability(start, end, room, SAMPLE_BOOKINGS, 540),
++      valid: validateBooking(start, end, room, SAMPLE_BOOKINGS, 540).valid,
++    };
++  }, { start, end, blocked });
++}
++async function checkLayout(width, height) {
++  await page.setViewportSize({ width, height });
++  await selectRoom('A-102');
++  await setTimes('11:00', '12:00');
++  const controls = [
++    page.getByLabel('Current hour', { exact: true }),
++    page.getByLabel('Current minute', { exact: true }),
++    page.getByLabel('Start (HH:MM)', { exact: true }),
++    page.getByLabel('End (HH:MM)', { exact: true }),
++    page.getByLabel('Block selected room (demo)', { exact: true }),
++    page.getByRole('status'),
++  ];
++  for (const control of controls) {
++    await control.scrollIntoViewIfNeeded();
++    await expect(control).toBeVisible();
++    const box = await control.boundingBox();
++    assert.ok(box && box.x >= 0 && box.x + box.width <= width + 1, `Control outside ${width}px viewport`);
++  }
++  // Verify usable inputs/results after scrolling on each actual viewport.
++  await page.getByLabel('End (HH:MM)', { exact: true }).fill('12:01');
++  await expect(page.getByRole('status')).toHaveText('Available for 11:00–12:01');
++  await page.getByLabel('End (HH:MM)', { exact: true }).fill('12:00');
++  await expect(page.getByRole('status')).toHaveText('Available for 11:00–12:00');
++  await page.getByLabel('Block selected room (demo)', { exact: true }).check();
++  await expect(page.getByRole('status')).toHaveText('Unavailable — room is blocked');
++  await page.getByLabel('Block selected room (demo)', { exact: true }).uncheck();
++  await expect(page.getByRole('status')).toHaveText('Available for 11:00–12:00');
++  const timeline = page.getByRole('heading', { name: "Today's Schedule — A-102", exact: true }).locator('..').locator('..');
++  const scroller = timeline.locator('.overflow-x-auto');
++  await scroller.scrollIntoViewIfNeeded();
++  const timelineScroll = await scroller.evaluate((element) => {
++    element.scrollLeft = 504;
++    return { scrollLeft: element.scrollLeft, scrollWidth: element.scrollWidth, clientWidth: element.clientWidth };
++  });
++  assert.ok(timelineScroll.scrollLeft > 0, 'The timeline must scroll internally');
++  const bookingBar = timeline.locator('[title="Lab Team 3 · 10:00–11:00"]');
++  const barBox = await bookingBar.boundingBox();
++  const scrollBox = await scroller.boundingBox();
++  assert.ok(barBox && scrollBox && barBox.x >= scrollBox.x && barBox.x + barBox.width <= scrollBox.x + scrollBox.width,
++    'The existing 10:00–11:00 booking must be fully visible after internal timeline scroll');
++  const dimensions = await page.evaluate(() => ({
++    viewport: { width: innerWidth, height: innerHeight },
++    documentScrollWidth: document.documentElement.scrollWidth,
++    documentClientWidth: document.documentElement.clientWidth,
++  }));
++  assert.ok(dimensions.documentScrollWidth <= width, JSON.stringify(dimensions));
++  return { ...dimensions, timelineScroll };
++}
++
++try {
++  browser = await chromium.launch({ channel: 'chrome', headless: true });
++  report.browserVersion = browser.version();
++  page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
++  page.on('pageerror', (error) => report.consoleErrors.push(error.message));
++  await page.goto(report.url, { waitUntil: 'networkidle' });
++
++  activeCheck = 'SETUP';
++  await page.getByLabel('Current hour', { exact: true }).fill('9');
++  await page.getByLabel('Current minute', { exact: true }).fill('0');
++  await expect(page.getByLabel('Current hour', { exact: true })).toHaveValue('9');
++  await expect(page.getByLabel('Current minute', { exact: true })).toHaveValue('0');
++  await selectRoom('A-102');
++  const expectedRecords = {
++    'A-101': ['Prof. Chen · 09:00–10:00', 'Study Group A · 12:00–13:00'],
++    'A-102': ['Lab Team 3 · 10:00–11:00'],
++    'B-202': ['Prof. Diaz · 08:00–09:00'],
++    'C-301': ['Open Lecture · 15:00–16:00'],
++    'B-201': [],
++  };
++  const before = await timelineSnapshot();
++  for (const [room, titles] of Object.entries(expectedRecords)) {
++    assert.deepEqual(before[room].map((entry) => entry.title), titles, `${room} original fictional fixtures`);
++  }
++  report.dataBefore = before;
++  const storageBefore = await storageSnapshot();
++  passed('SETUP', 'Real controls set current time to 09:00; all five existing timeline records match the source fixtures.');
++  await selectRoom('A-102');
++  await screenshot('01-desktop.png');
++
++  activeCheck = 'UI01';
++  await setTimes('11:00', '12:00');
++  await expect(page.getByRole('status')).toHaveText('Available for 11:00–12:00');
++  assert.deepEqual(await helperResult(660, 720), { availability: 'available', valid: true });
++  passed('UI01', 'A-102 displays Available for 11:00–12:00 at 09:00; same real helper accepts it.');
++  await screenshot('02-available.png');
++
++  activeCheck = 'UI02';
++  await page.getByLabel('Block selected room (demo)', { exact: true }).check();
++  await expect(page.getByRole('status')).toHaveText('Unavailable — room is blocked');
++  await expect(page.getByText('Room A-102 is currently blocked and cannot be booked.', { exact: true })).toBeVisible();
++  await expect(page.getByRole('button', { name: /^A-102 / })).toBeDisabled();
++  assert.deepEqual(await helperResult(660, 720, true), { availability: 'blocked', valid: false });
++  passed('UI02', 'The same selected A-102 is blocked through real React room state and displays Unavailable.');
++  await screenshot('03-unavailable.png');
++  await page.getByLabel('Block selected room (demo)', { exact: true }).uncheck();
++  await expect(page.getByRole('status')).toHaveText('Available for 11:00–12:00');
++
++  activeCheck = 'UI03';
++  await page.getByLabel('Start (HH:MM)', { exact: true }).fill('');
++  await expect(page.getByRole('status')).toHaveText('Unavailable — enter valid times');
++  await expect(page.getByText('Enter a valid start time in HH:MM format (00:00–24:00).', { exact: true })).toBeVisible();
++  await expect(page.getByLabel('Start (HH:MM)', { exact: true })).toHaveAttribute('aria-invalid', 'true');
++  passed('UI03', 'Clearing required start input displays clear HH:MM validation feedback.');
++  await screenshot('04-validation.png');
++
++  activeCheck = 'AC1-PAST';
++  await setTimes('08:00', '08:30');
++  await expect(page.getByRole('status')).toHaveText('Unavailable for 08:00–08:30');
++  await expect(page.getByText('Start time must be after the current time (09:00).', { exact: true })).toBeVisible();
++  passed('AC1-PAST', 'A past request is rejected with current-time feedback.');
++
++  activeCheck = 'AC1-ORDER';
++  await setTimes('12:00', '12:00');
++  await expect(page.getByRole('status')).toHaveText('Unavailable for 12:00–12:00');
++  await expect(page.getByText('Start time must be earlier than end time.', { exact: true })).toBeVisible();
++  await setTimes('12:30', '12:00');
++  await expect(page.getByRole('status')).toHaveText('Unavailable for 12:30–12:00');
++  await expect(page.getByText('Start time must be earlier than end time.', { exact: true })).toBeVisible();
++  passed('AC1-ORDER', 'Zero-duration and reversed requests are rejected with order feedback.');
++
++  activeCheck = 'INT01';
++  await setTimes('12:00', '14:00');
++  await expect(page.getByRole('status')).toHaveText('Available for 12:00–14:00');
++  assert.deepEqual(await helperResult(720, 840), { availability: 'available', valid: true });
++  passed('INT01', 'UI and imported real helper allow exactly 120 minutes.');
++
++  activeCheck = 'INT02';
++  await setTimes('12:00', '14:01');
++  await expect(page.getByRole('status')).toHaveText('Unavailable for 12:00–14:01');
++  await expect(page.getByText('Booking duration is 121 minutes — the maximum allowed is 120 minutes.', { exact: true })).toBeVisible();
++  assert.deepEqual(await helperResult(720, 841), { availability: 'unavailable', valid: false });
++  passed('INT02', 'UI and imported real helper reject 121 minutes with an exact duration message.');
++
++  activeCheck = 'INT03';
++  await setTimes('09:30', '10:00');
++  await expect(page.getByRole('status')).toHaveText('Available for 09:30–10:00');
++  assert.deepEqual(await helperResult(570, 600), { availability: 'available', valid: true });
++  passed('INT03', 'UI and real helper allow touching the start of the existing 10:00–11:00 booking.');
++
++  activeCheck = 'INT04';
++  await setTimes('10:30', '11:30');
++  await expect(page.getByRole('status')).toHaveText('Unavailable for 10:30–11:30');
++  await expect(page.getByText('Overlaps existing booking by Lab Team 3 (10:00–11:00).', { exact: true })).toBeVisible();
++  assert.deepEqual(await helperResult(630, 690), { availability: 'unavailable', valid: false });
++  passed('INT04', 'UI and real helper reject partial overlap with the actual existing A-102 booking.');
++  await screenshot('07-overlap.png');
++
++  activeCheck = 'UI04-DESKTOP';
++  const desktop = await checkLayout(1440, 900);
++  passed('UI04-DESKTOP', 'All important controls operate at 1440×900 with no document horizontal overflow.', desktop);
++
++  activeCheck = 'UI04-MOBILE';
++  const mobile = await checkLayout(375, 812);
++  passed('UI04-MOBILE', 'All important controls operate at 375×812 with vertical scrolling and no document horizontal overflow.', mobile);
++  await screenshot('05-mobile.png');
++
++  activeCheck = 'UI05';
++  await page.setViewportSize({ width: 1440, height: 900 });
++  for (let repetition = 0; repetition < 3; repetition += 1) {
++    await setTimes('11:00', '12:00');
++    await expect(page.getByRole('status')).toHaveText('Available for 11:00–12:00');
++    await setTimes('10:30', '11:30');
++    await expect(page.getByRole('status')).toHaveText('Unavailable for 10:30–11:30');
++  }
++  const after = await timelineSnapshot();
++  report.dataAfter = after;
++  assert.deepEqual(after, before, 'Every existing timeline record must be preserved across every room');
++  assert.deepEqual(await storageSnapshot(), storageBefore, 'Availability checks must not persist bookings');
++  assert.equal(await page.getByRole('button', { name: /Confirm Booking/i }).count(), 0);
++  assert.equal(await page.getByLabel('Booked By', { exact: true }).count(), 0);
++  await selectRoom('A-102');
++  await setTimes('11:00', '12:00');
++  passed('UI05', 'Repeated available/unavailable checks preserve all five timeline records and browser storage; no booking submission controls exist.', {
++    recordsBefore: Object.values(before).flat().length,
++    recordsAfter: Object.values(after).flat().length,
++    storageBefore,
++    storageAfter: await storageSnapshot(),
++  });
++  await screenshot('06-data-preservation.png');
++  activeCheck = 'RUNTIME';
++  assert.deepEqual(report.consoleErrors, []);
++  passed('RUNTIME', 'No uncaught browser page errors occurred.');
++  report.status = 'passed';
++} catch (error) {
++  report.status = 'failed';
++  report.checks.push({ id: activeCheck || 'LAUNCH', status: 'failed', error: error.stack || String(error) });
++  log.push(`FAIL ${activeCheck || 'LAUNCH'}: ${error.stack || error}`);
++  console.error(log.at(-1));
++  process.exitCode = 1;
++} finally {
++  report.completedAt = new Date().toISOString();
++  report.total = report.checks.length;
++  report.passed = report.checks.filter((check) => check.status === 'passed').length;
++  report.failed = report.checks.filter((check) => check.status === 'failed').length;
++  writeFileSync(path.join(results, 'playwright-ui-results.json'), `${JSON.stringify(report, null, 2)}\n`);
++  writeFileSync(path.join(results, 'playwright-ui-output.txt'), [
++    report.command,
++    `URL: ${report.url}`,
++    `Chrome: ${report.browserVersion || 'not launched'}`,
++    ...log,
++    `TOTAL ${report.total}; PASSED ${report.passed}; FAILED ${report.failed}`,
++  ].join('\n') + '\n');
++  console.log(`TOTAL ${report.total}; PASSED ${report.passed}; FAILED ${report.failed}`);
++  await browser?.close();
++}

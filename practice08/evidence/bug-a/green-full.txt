@@ -1,0 +1,12 @@
+
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-a-xw_waxln
+
+ ✓ tests/practice08.regression.test.ts (6 tests) 3ms
+ ✓ tests/practice07.original.test.ts (17 tests) 3ms
+ ✓ tests/practice07.improved.test.ts (43 tests) 5ms
+
+ Test Files  3 passed (3)
+      Tests  66 passed (66)
+   Start at  18:15:42
+   Duration  335ms (transform 60ms, setup 0ms, collect 82ms, tests 10ms, environment 0ms, prepare 142ms)
+

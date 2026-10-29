@@ -1,0 +1,30 @@
+
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-a-xw_waxln
+
+ ❯ tests/practice08.regression.test.ts (6 tests | 1 failed | 5 skipped) 4ms
+   × Practice08 controlled defect regressions > P08-A01 endpoint after 10:00-11:00 remains available 3ms
+     → expected 'unavailable' to be 'available' // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/practice08.regression.test.ts > Practice08 controlled defect regressions > P08-A01 endpoint after 10:00-11:00 remains available
+AssertionError: expected 'unavailable' to be 'available' // Object.is equality
+
+Expected: "available"
+Received: "unavailable"
+
+ ❯ tests/practice08.regression.test.ts:15:81
+     13| describe('Practice08 controlled defect regressions', () => {
+     14|   test('P08-A01 endpoint after 10:00-11:00 remains available', () => {
+     15|     expect(checkAvailability(660, 720, roomFixture(), [bookingFixture(…
+       |                                                                                 ^
+     16|   });
+     17| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 skipped (6)
+   Start at  18:15:13
+   Duration  387ms (transform 26ms, setup 0ms, collect 24ms, tests 4ms, environment 0ms, prepare 42ms)
+

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:legacy"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-10-29T13:18:28.271834+00:00",
+  "completedAtUTC": "2026-10-29T13:18:28.852847+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,13 @@
+{
+  "report": "practice08/reports/Practice08_Boranov_Daniyar_Report.docx",
+  "editableParagraphs": 501,
+  "tables": 5,
+  "embeddedRealImages": 7,
+  "renderedPages": 19,
+  "allPagesVisuallyInspected": true,
+  "review": "PASS: no clipping overlap missing glyphs or damaged tables; editable pending placeholders retained",
+  "frozenInputSHA256": "1ed6c62bf7b0bcc145d8f5d2124cce0c92049d0e1dc0fefbc7a533110159a479",
+  "externalComparison": "PENDING STUDENT MANUAL STEP",
+  "publishedURL": "[INSERT CORRECT PUBLISHED DEMO URL]",
+  "createdAtUTC": "2026-10-29T13:25:37.973998+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "src/bookingLogic.ts": {
+    "unchanged": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  "src/App.tsx": {
+    "unchanged": true,
+    "sha256": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091"
+  },
+  "src/sampleData.ts": {
+    "unchanged": true,
+    "sha256": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629"
+  },
+  "tests/practice07.original.test.ts": {
+    "unchanged": true,
+    "sha256": "8ac8244a65e8aedbcb5beeec8c536e8bbc579c938c4737ebe808f55a4c562216"
+  },
+  "tests/practice07.improved.test.ts": {
+    "unchanged": true,
+    "sha256": "f21e425bce156f27dbe461839656020fbb62eb973b031249cd3bb049154151e4"
+  },
+  "baselineGitSHA": "afcff636e723e7549f039ef688bf58b6ed9a7656",
+  "sourcePreservation": "PASS"
+}

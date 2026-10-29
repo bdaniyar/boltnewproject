@@ -1,0 +1,21 @@
+{
+  "skillFrontmatter": {
+    "name": "bug-detector",
+    "description": "Diagnose bugs in existing code using acceptance criteria and failing tests. Use when reviewing the Smart Campus booking application."
+  },
+  "uiMetadata": {
+    "interface": {
+      "display_name": "Bug Detector",
+      "short_description": "Diagnose booking failures from tests and acceptance criteria",
+      "default_prompt": "Use $bug-detector to diagnose this Smart Campus booking failure, explain the root cause and propose a minimal fix without editing code."
+    },
+    "policy": {
+      "allow_implicit_invocation": false
+    }
+  },
+  "validation": "PASS: exact starter bytes, UTF-8, parsed YAML, name, explicit invocation policy",
+  "studentHandwrittenCreation": "PENDING STUDENT MANUAL STEP",
+  "externalInstallation": "NOT PERFORMED",
+  "externalComparison": "PENDING STUDENT MANUAL STEP",
+  "localUse": "Instructions read and used as diagnostic workflow; no installed Skill activation claimed"
+}

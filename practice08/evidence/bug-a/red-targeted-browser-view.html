@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><title>BUG A actual failing test output</title><style>body{font:18px Arial,sans-serif;color:#111;background:#fff;margin:35px}h1{font-size:28px;margin:0 0 12px}p{margin:8px 0}pre{font:15px/1.5 Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;padding:22px;border:1px solid #aaa;background:#f6f7f8}small{font-size:15px}</style></head><body><h1>BUG A actual failing test output</h1><p>Browser evidence viewer of actual saved output. This is not a terminal screenshot.</p><p><strong>Source:</strong> practice08/evidence/bug-a/red-targeted.txt</p><p><strong>Run:</strong> See associated metadata for exact command</p><pre>
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-a-xw_waxln
+
+ ❯ tests/practice08.regression.test.ts (6 tests | 1 failed | 5 skipped) 4ms
+   × Practice08 controlled defect regressions &gt; P08-A01 endpoint after 10:00-11:00 remains available 3ms
+     → expected 'unavailable' to be 'available' // Object.is equality
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/practice08.regression.test.ts &gt; Practice08 controlled defect regressions &gt; P08-A01 endpoint after 10:00-11:00 remains available
+AssertionError: expected 'unavailable' to be 'available' // Object.is equality
+
+Expected: "available"
+Received: "unavailable"
+
+ ❯ tests/practice08.regression.test.ts:15:81
+     13| describe('Practice08 controlled defect regressions', () =&gt; {
+     14|   test('P08-A01 endpoint after 10:00-11:00 remains available', () =&gt; {
+     15|     expect(checkAvailability(660, 720, roomFixture(), [bookingFixture(…
+       |                                                                                 ^
+     16|   });
+     17| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 skipped (6)
+   Start at  18:15:13
+   Duration  387ms (transform 26ms, setup 0ms, collect 24ms, tests 4ms, environment 0ms, prepare 42ms)
+
+</pre></body></html>

@@ -1,0 +1,12 @@
+{
+  "bug": "bug-b",
+  "baselineGitSHA": "afcff636e723e7549f039ef688bf58b6ed9a7656",
+  "isolatedCopy": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-b-ecxngsdk",
+  "baselineArchiveSHA256": "cd4083f03630cb2e29a3c54f113e1f71684b22c73d1934d4d8630f138d0d388c",
+  "testID": "P08-B01",
+  "stage": "GREEN targeted and full after documented diagnosis",
+  "recordedAtUTC": "2026-10-29T13:15:47.635751+00:00",
+  "isolation": "Fresh extraction of clean baseline; only one source defect; dependencies symlinked; tests and full-suite config copied in.",
+  "repairedAtUTC": "2026-10-29T13:16:26.919974+00:00",
+  "repairedSourceSHA256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+}

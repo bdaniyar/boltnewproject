@@ -1,0 +1,4 @@
+Initial Vite launch on port 5173 failed because it was already in use.
+Listener PID 53512 cwd: /Users/daniarboranov/Documents/code_materials/mobile_app/StudyHub/web
+Initial browser attempt was interrupted before assertions/evidence were saved.
+Practice08 uses its own strictPort 5174 to avoid unrelated app.

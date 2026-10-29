@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/node_modules/vitest/vitest.mjs",
+    "run",
+    "tests/practice08.regression.test.ts",
+    "-t",
+    "P08-B01"
+  ],
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-b-ecxngsdk",
+  "startedAtUTC": "2026-10-29T13:15:46.230415+00:00",
+  "completedAtUTC": "2026-10-29T13:15:46.823469+00:00",
+  "exitCode": 0
+}

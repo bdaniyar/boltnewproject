@@ -1,0 +1,10 @@
+
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-b-ecxngsdk
+
+ ✓ tests/practice08.regression.test.ts (6 tests | 5 skipped) 1ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 5 skipped (6)
+   Start at  18:16:25
+   Duration  408ms (transform 20ms, setup 0ms, collect 18ms, tests 1ms, environment 0ms, prepare 38ms)
+

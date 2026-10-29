@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npx",
+    "vitest",
+    "run"
+  ],
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-export-verification-q1s96hr_/SmartCampus",
+  "startedAtUTC": "2026-10-29T13:22:47.229067+00:00",
+  "exitCode": 0,
+  "sourceArchive": "SmartCampus_Source_Export.zip"
+}

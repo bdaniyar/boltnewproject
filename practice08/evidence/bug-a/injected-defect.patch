@@ -1,0 +1,11 @@
+--- baseline/src/bookingLogic.ts
++++ bug-a/src/bookingLogic.ts
+@@ -51,7 +51,7 @@
+  */
+ function hasOverlap(start: number, end: number, bookings: Booking[]): Booking | null {
+   for (const b of bookings) {
+-    if (start < b.end && b.start < end) {
++    if (start <= b.end && b.start <= end) {
+       return b;
+     }
+   }

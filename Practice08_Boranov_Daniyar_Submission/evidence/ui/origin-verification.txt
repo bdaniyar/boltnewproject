@@ -1,0 +1,60 @@
+Actual listener cwd and served booking module excerpt
+COMMAND   PID          USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+node    31025 daniarboranov  cwd    DIR   1,18      800 58196455 /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject
+function validateBasicRange(start, end, currentMinutes) {
+  const messages = [];
+  if (![start, end, currentMinutes].every(Number.isFinite)) {
+    return {
+      valid: false,
+      messages: ["Start, end, and current time must be finite minute values."]
+    };
+  }
+  if (start < 0 || end < 0) {
+    messages.push("Start and end times must not be before 00:00.");
+  }
+  if (start > 1440 || end > 1440) {
+    messages.push("Start and end times must not exceed 24:00 (1440 minutes).");
+  }
+  if (!(start < end)) {
+    messages.push("Start time must be earlier than end time.");
+  }
+  if (start <= currentMinutes) {
+    messages.push(`Start time must be after the current time (${formatTime(currentMinutes)}).`);
+  }
+  return { valid: messages.length === 0, messages };
+}
+function validateDuration(start, end) {
+  const duration = end - start;
+  if (duration > 120) {
+    return {
+      valid: false,
+      messages: [`Booking duration is ${duration} minutes — the maximum allowed is 120 minutes.`]
+    };
+  }
+  return { valid: true, messages: [] };
+}
+function hasOverlap(start, end, bookings) {
+  for (const b of bookings) {
+    if (start < b.end && b.start < end) {
+      return b;
+    }
+  }
+  return null;
+}
+export function validateBooking(start, end, room, existingBookings, currentMinutes) {
+  const messages = [];
+  const rangeResult = validateBasicRange(start, end, currentMinutes);
+  messages.push(...rangeResult.messages);
+  if (start < end && start >= 0 && end <= 1440) {
+    const durationResult = validateDuration(start, end);
+    messages.push(...durationResult.messages);
+  }
+  if (room.blocked) {
+    messages.push(`Room ${room.name} is currently blocked and cannot be booked.`);
+  }
+  if (start < end && start >= 0 && end <= 1440) {
+    const roomBookings = existingBookings.filter((b) => b.roomName === room.name);
+    const overlap = hasOverlap(start, end, roomBookings);
+    if (overlap) {
+      messages.push(
+        `Overlaps existing booking by ${overlap.bookedBy} (${formatTime(o

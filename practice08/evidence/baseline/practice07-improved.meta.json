@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npx",
+    "vitest",
+    "run"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-10-29T13:13:30.870903+00:00",
+  "completedAtUTC": "2026-10-29T13:13:32.211735+00:00",
+  "exitCode": 0
+}

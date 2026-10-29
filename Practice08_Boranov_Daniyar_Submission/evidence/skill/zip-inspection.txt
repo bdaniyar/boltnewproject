@@ -1,0 +1,5 @@
+Actual ZIP inspection using Python zipfile
+bug-detector/SKILL.md
+bug-detector/agents/openai.yaml
+bug-detector/SKILL.md: 572 bytes; SHA256 ced9223a79b80e69a464dddf9f62c015b8463f9838d1bfc11763a2942f639b24
+bug-detector/agents/openai.yaml: 326 bytes; SHA256 23b341065eac913e7717cb047740173cf96cf8e3dd02d571862709d1e15b101f

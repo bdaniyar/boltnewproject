@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8"><title>BUG B actual failing test output</title><style>body{font:18px Arial,sans-serif;color:#111;background:#fff;margin:35px}h1{font-size:28px;margin:0 0 12px}p{margin:8px 0}pre{font:15px/1.5 Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;padding:22px;border:1px solid #aaa;background:#f6f7f8}small{font-size:15px}</style></head><body><h1>BUG B actual failing test output</h1><p>Browser evidence viewer of actual saved output. This is not a terminal screenshot.</p><p><strong>Source:</strong> practice08/evidence/bug-b/red-targeted.txt</p><p><strong>Run:</strong> See associated metadata for exact command</p><pre>
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice08-bug-b-ecxngsdk
+
+ ❯ tests/practice08.regression.test.ts (6 tests | 1 failed | 5 skipped) 6ms
+   × Practice08 controlled defect regressions &gt; P08-B01 availability preserves the original unsorted bookings 5ms
+     → expected [ { id: 'existing-1', …(4) }, …(1) ] to deeply equal [ { id: 'later-2', …(4) }, …(1) ]
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/practice08.regression.test.ts &gt; Practice08 controlled defect regressions &gt; P08-B01 availability preserves the original unsorted bookings
+AssertionError: expected [ { id: 'existing-1', …(4) }, …(1) ] to deeply equal [ { id: 'later-2', …(4) }, …(1) ]
+
+- Expected
++ Received
+
+  Array [
+    Object {
+-     "bookedBy": "Fictional tutor",
+-     "end": 810,
+-     "id": "later-2",
+-     "roomName": "A-102",
+-     "start": 780,
+-   },
+-   Object {
+      "bookedBy": "Fictional student",
+      "end": 660,
+      "id": "existing-1",
+      "roomName": "A-102",
+      "start": 600,
++   },
++   Object {
++     "bookedBy": "Fictional tutor",
++     "end": 810,
++     "id": "later-2",
++     "roomName": "A-102",
++     "start": 780,
+    },
+  ]
+
+ ❯ tests/practice08.regression.test.ts:32:22
+     30|     const before = bookings.map((booking) =&gt; ({ ...booking }));
+     31|     expect(checkAvailability(660, 720, roomFixture(), bookings, NOW)).…
+     32|     expect(bookings).toEqual(before);
+       |                      ^
+     33|   });
+     34| 
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 skipped (6)
+   Start at  18:15:47
+   Duration  557ms (transform 34ms, setup 0ms, collect 29ms, tests 6ms, environment 0ms, prepare 47ms)
+
+</pre></body></html>

@@ -13,7 +13,8 @@
     "test:browser": "node tests/browser.mjs final",
     "test:legacy": "node --test tests/booking.test.mjs",
     "test:original": "vitest run --config vitest.original.config.ts",
-    "test:improved": "vitest run"
+    "test:improved": "vitest run",
+    "test:browser:practice08": "node tests/practice08-browser.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",

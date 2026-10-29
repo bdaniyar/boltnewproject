@@ -1,0 +1,27 @@
+# Lesson #08 / Practice #08 — evidence checklist
+
+- [ ] Original project preserved (Git SHA or saved clean copy)
+- [ ] Original Practice #07 test suite run, real baseline output stored
+- [ ] BUG-A fails before patch: actual test file, terminal log, isolated code diff
+- [ ] BUG-B fails before patch: actual test file, terminal log, isolated code diff
+- [ ] Defect log: test ID, input, expected, actual, suspected cause
+- [ ] `SKILL.md` valid, file and UTF-8 checked; student manually recreates final file per instructor requirement
+- [ ] ZIP inspected (`bug-detector/SKILL.md`, optional official `agents/openai.yaml`)
+- [ ] Real ZIP structure screenshot
+- [ ] Genuine skill install/activation screenshot OR explicitly documented prompt-only simulation
+- [ ] AI response without skill captured verbatim
+- [ ] AI response with skill captured verbatim
+- [ ] Both chats use identical frozen input and question
+- [ ] Five-criterion comparison checked against actual tests/code
+- [ ] Minimal code patch documented (real diff)
+- [ ] Targeted previously failing tests rerun (real terminal output)
+- [ ] Full tests rerun (real terminal output)
+- [ ] AC1–AC6 verification, including non-mutation and touching endpoints
+- [ ] UI feedback desktop/mobile preserved and genuinely checked, or marked unverified
+- [ ] One limitation of AI-assisted debugging explained
+- [ ] Editable .docx report, all required parts/screenshots or honest placeholders
+- [ ] Publish/live-demo link placeholder for student to replace
+- [ ] Clean project source export, not node_modules or secrets
+- [ ] Student full name / ID / class day and time / actual AI tool and model
+- [ ] 3–5 sentence conclusion: did skill help? what did tests prove?
+- [ ] Email submission package and correct subject prepared (but not sent)
