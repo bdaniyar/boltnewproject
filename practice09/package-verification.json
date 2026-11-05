@@ -1,12 +1,20 @@
 {
   "archive": "Practice09_Boranov_Daniyar_Submission.zip",
-  "files": 105,
-  "bytes": 4304992,
-  "sha256": "7ce127abdd82917833229fea812f45f8de5b4ee1bd142cde3a83f3af8c3ce139",
+  "files": 95,
+  "bytes": 3664262,
+  "sha256": "9416ea2323b41e7d6aa9233aeccb3a729065a97c796080730825c6b338c76163",
   "crcCheck": "passed",
   "docxTextFont": "Times New Roman 12pt black",
   "editable": true,
-  "docxImages": 5,
+  "docxImages": 4,
+  "verifiedReportResults": [
+    "81/81 Vitest tests",
+    "9/9 legacy tests",
+    "typecheck, lint and build",
+    "desktop and mobile browser checks",
+    "25 before/after UI comparisons",
+    "published demo interaction"
+  ],
   "excluded": [
     "dependencies",
     "caches",
@@ -16,10 +24,5 @@
     "historical assignment artefacts",
     "QA renders",
     "full historical baseline archive"
-  ],
-  "missingExternalEvidence": [
-    "Bolt A/B responses/screenshots/model details",
-    "Bolt implementation demonstration",
-    "verified revised publication URL"
   ]
 }

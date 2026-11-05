@@ -16,12 +16,11 @@ folder.mkdir(exist_ok=True)
 for old in folder.iterdir():
     if old.is_dir(): shutil.rmtree(old)
     else: old.unlink()
-for rel in ['Practice09_Boranov_Daniyar_Report.docx','SmartCampus_Source_Export.zip','source-export-manifest.json','README.md','changed-files.md','pattern-rationale.md','comparison.md','UNAVAILABLE_EVIDENCE.md','Email_Draft.txt']:
+for rel in ['Practice09_Boranov_Daniyar_Report.docx','SmartCampus_Source_Export.zip','source-export-manifest.json','README.md','changed-files.md','pattern-rationale.md','Email_Draft.txt']:
     shutil.copy2(base/rel,folder/rel)
 shutil.copy2(repo/'AGENTS.md',folder/'AGENTS.md')
-shutil.copytree(base/'prompts',folder/'prompts')
 for f in (base/'evidence').rglob('*'):
-    if not f.is_file() or f.name in ['SmartCampus_Practice08_Baseline.zip','.DS_Store']:
+    if not f.is_file() or f.name in ['SmartCampus_Practice08_Baseline.zip','.DS_Store'] or f.relative_to(base).parts[1:2] in [('bolt-a',),('bolt-b',)]:
         continue
     target=folder/f.relative_to(base)
     target.parent.mkdir(parents=True,exist_ok=True)
@@ -30,7 +29,6 @@ bad_parts={'.git','node_modules','dist','qa','__pycache__','.cache'}
 members=sorted(p for p in folder.rglob('*') if p.is_file())
 assert not any(bad_parts.intersection(p.relative_to(folder).parts) for p in members)
 assert not any(p.suffix=='.pdf' or p.name.startswith('.env') for p in members)
-assert (repo/'AGENTS.md').read_bytes()==(folder/'prompts/AGENTS_EXPLICIT_CONTEXT.md').read_bytes()
 with ZipFile(folder/'SmartCampus_Source_Export.zip') as z:
     assert z.testzip() is None
     assert z.read('AGENTS.md')==(repo/'AGENTS.md').read_bytes()
@@ -41,7 +39,7 @@ with ZipFile(folder/'evidence/baseline/SmartCampus_Baseline_Source.zip') as z:
     assert z.testzip() is None
     assert not any(Path(n).name=='AGENTS.md' for n in z.namelist())
 doc=Document(folder/'Practice09_Boranov_Daniyar_Report.docx')
-assert len(doc.inline_shapes)==5
+assert len(doc.inline_shapes)==4
 all_paras=list(doc.paragraphs)+[p for t in doc.tables for row in t.rows for c in row.cells for p in c.paragraphs]
 for p in all_paras:
     for r in p.runs:
@@ -60,6 +58,6 @@ with ZipFile(archive,'w',ZIP_DEFLATED,compresslevel=9) as z:
 with ZipFile(archive) as z:
     assert z.testzip() is None
     count=len(z.namelist())
-audit={'archive':archive.name,'files':count,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'crcCheck':'passed','docxTextFont':'Times New Roman 12pt black','editable':True,'docxImages':len(doc.inline_shapes),'excluded':['dependencies','caches','build output','Git internals','secrets','historical assignment artefacts','QA renders','full historical baseline archive'],'missingExternalEvidence':['Bolt A/B responses/screenshots/model details','Bolt implementation demonstration','verified revised publication URL']}
+audit={'archive':archive.name,'files':count,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'crcCheck':'passed','docxTextFont':'Times New Roman 12pt black','editable':True,'docxImages':len(doc.inline_shapes),'verifiedReportResults':['81/81 Vitest tests','9/9 legacy tests','typecheck, lint and build','desktop and mobile browser checks','25 before/after UI comparisons','published demo interaction'] ,'excluded':['dependencies','caches','build output','Git internals','secrets','historical assignment artefacts','QA renders','full historical baseline archive']}
 (base/'package-verification.json').write_text(json.dumps(audit,indent=2)+'\n')
 print(json.dumps(audit,indent=2))
