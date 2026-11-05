@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npx",
+    "vitest",
+    "run",
+    "tests/practice09.refactoring.test.tsx"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-11-05T09:36:51.231313+00:00",
+  "completedAtUTC": "2026-11-05T09:36:54.063351+00:00",
+  "exitCode": 0
+}

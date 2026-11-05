@@ -1,0 +1,3 @@
+Actual Vite listener cwd for http://127.0.0.1:5176
+COMMAND   PID          USER   FD   TYPE DEVICE SIZE/OFF     NODE NAME
+node    90338 daniarboranov  cwd    DIR   1,18      960 58196455 /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject

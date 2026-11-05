@@ -1,0 +1,20 @@
+To: b.azimkhanov@kbtu.kz
+Subject: AI-Driven Software Engineering Practice #10, Boranov Daniyar, 24B031718
+
+Dear Instructor,
+
+Please find attached my Lesson 09 Practice Work #09 submission for Smart Campus Room Availability.
+
+Student: Boranov Daniyar
+Student ID: 24B031718
+Class: Thursday, 14:00–17:00
+
+AI tool: OpenAI Codex, GPT-6 model family. The exact model build and app version were not exposed. Local implementation and verification are documented with real evidence. Bolt experiment responses and the Bolt implementation demonstration could not be collected through the available browser controls; their exact prompts and the missing evidence are clearly marked in the report.
+
+Published project URL: [INSERT VERIFIED PUBLISHED BOLT DEMO URL]
+Attachment: Practice09_Boranov_Daniyar_Submission.zip
+
+Kind regards,
+Boranov Daniyar
+
+This is an unsent draft. The assignment is Practice Work #09; its submission slide specifies Practice #10 in the email subject.

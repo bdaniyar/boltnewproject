@@ -1,0 +1,476 @@
+{
+  "startedAt": "2026-11-05T09:24:23.819Z",
+  "command": "node tests/practice09-browser.mjs before",
+  "phase": "before",
+  "gitHead": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+  "sourceHashes": {
+    "src/components/BookingPanel.tsx": "e0e794fa76abc8deec19b84f8bae2fee629347b62dcb2ba1fbc711d0859ff427",
+    "src/bookingLogic.ts": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30",
+    "src/App.tsx": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091"
+  },
+  "observableStates": {
+    "endpoint-after": {
+      "start": "11:00",
+      "end": "12:00",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Available for 11:00–12:00",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-emerald-200 bg-emerald-50 text-emerald-700",
+      "statusStyle": {
+        "color": "rgb(4, 120, 87)",
+        "backgroundColor": "rgb(236, 253, 245)",
+        "borderColor": "rgb(167, 243, 208)"
+      },
+      "messages": []
+    },
+    "blocked-valid": {
+      "start": "11:00",
+      "end": "12:00",
+      "blocked": true,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable — room is blocked",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-amber-200 bg-amber-50 text-amber-700",
+      "statusStyle": {
+        "color": "rgb(180, 83, 9)",
+        "backgroundColor": "rgb(255, 251, 235)",
+        "borderColor": "rgb(253, 230, 138)"
+      },
+      "messages": [
+        "Room A-102 is currently blocked and cannot be booked."
+      ]
+    },
+    "blocked-malformed-start": {
+      "start": "bad",
+      "end": "12:00",
+      "blocked": true,
+      "startInvalid": "true",
+      "endInvalid": "false",
+      "status": "Unavailable — enter valid times",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Enter a valid start time in HH:MM format (00:00–24:00)."
+      ]
+    },
+    "blocked-malformed-end": {
+      "start": "11:00",
+      "end": "bad",
+      "blocked": true,
+      "startInvalid": "false",
+      "endInvalid": "true",
+      "status": "Unavailable — enter valid times",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Enter a valid end time in HH:MM format (00:00–24:00)."
+      ]
+    },
+    "blocked-reversed": {
+      "start": "12:30",
+      "end": "12:00",
+      "blocked": true,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable — room is blocked",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-amber-200 bg-amber-50 text-amber-700",
+      "statusStyle": {
+        "color": "rgb(180, 83, 9)",
+        "backgroundColor": "rgb(255, 251, 235)",
+        "borderColor": "rgb(253, 230, 138)"
+      },
+      "messages": [
+        "Start time must be earlier than end time.",
+        "Room A-102 is currently blocked and cannot be booked."
+      ]
+    },
+    "missing-start": {
+      "start": "",
+      "end": "12:00",
+      "blocked": false,
+      "startInvalid": "true",
+      "endInvalid": "false",
+      "status": "Unavailable — enter valid times",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Enter a valid start time in HH:MM format (00:00–24:00)."
+      ]
+    },
+    "malformed-end": {
+      "start": "11:00",
+      "end": "bad",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "true",
+      "status": "Unavailable — enter valid times",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Enter a valid end time in HH:MM format (00:00–24:00)."
+      ]
+    },
+    "past": {
+      "start": "08:00",
+      "end": "08:30",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable for 08:00–08:30",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Start time must be after the current time (09:00)."
+      ]
+    },
+    "zero-duration": {
+      "start": "12:00",
+      "end": "12:00",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable for 12:00–12:00",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Start time must be earlier than end time."
+      ]
+    },
+    "reversed": {
+      "start": "12:30",
+      "end": "12:00",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable for 12:30–12:00",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Start time must be earlier than end time."
+      ]
+    },
+    "duration-120": {
+      "start": "12:00",
+      "end": "14:00",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Available for 12:00–14:00",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-emerald-200 bg-emerald-50 text-emerald-700",
+      "statusStyle": {
+        "color": "rgb(4, 120, 87)",
+        "backgroundColor": "rgb(236, 253, 245)",
+        "borderColor": "rgb(167, 243, 208)"
+      },
+      "messages": []
+    },
+    "duration-121": {
+      "start": "12:00",
+      "end": "14:01",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable for 12:00–14:01",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Booking duration is 121 minutes — the maximum allowed is 120 minutes."
+      ]
+    },
+    "endpoint-before": {
+      "start": "09:30",
+      "end": "10:00",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Available for 09:30–10:00",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-emerald-200 bg-emerald-50 text-emerald-700",
+      "statusStyle": {
+        "color": "rgb(4, 120, 87)",
+        "backgroundColor": "rgb(236, 253, 245)",
+        "borderColor": "rgb(167, 243, 208)"
+      },
+      "messages": []
+    },
+    "overlap": {
+      "start": "10:30",
+      "end": "11:30",
+      "blocked": false,
+      "startInvalid": "false",
+      "endInvalid": "false",
+      "status": "Unavailable for 10:30–11:30",
+      "statusClass": "flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-semibold border-rose-200 bg-rose-50 text-rose-700",
+      "statusStyle": {
+        "color": "rgb(190, 18, 60)",
+        "backgroundColor": "rgb(255, 241, 242)",
+        "borderColor": "rgb(254, 205, 211)"
+      },
+      "messages": [
+        "Overlaps existing booking by Lab Team 3 (10:00–11:00)."
+      ]
+    }
+  },
+  "url": "http://127.0.0.1:5176",
+  "framework": "Playwright with installed Google Chrome",
+  "checks": [
+    {
+      "id": "SETUP",
+      "description": "Real controls set current time to 09:00; all five existing timeline records match the source fixtures.",
+      "status": "passed"
+    },
+    {
+      "id": "UI01",
+      "description": "A-102 displays Available for 11:00–12:00 at 09:00; same real helper accepts it.",
+      "status": "passed"
+    },
+    {
+      "id": "UI02",
+      "description": "The same selected A-102 is blocked through real React room state and displays Unavailable.",
+      "status": "passed"
+    },
+    {
+      "id": "BLOCKED-MALFORMED-START",
+      "description": "Blocked room with malformed start preserves rose invalid-input feedback.",
+      "status": "passed"
+    },
+    {
+      "id": "BLOCKED-MALFORMED-END",
+      "description": "Blocked room with malformed end preserves rose invalid-input feedback.",
+      "status": "passed"
+    },
+    {
+      "id": "BLOCKED-REVERSED",
+      "description": "Blocked room with numeric reversed interval preserves amber blocked status and both validation messages.",
+      "status": "passed"
+    },
+    {
+      "id": "UI03",
+      "description": "Clearing required start input displays clear HH:MM validation feedback.",
+      "status": "passed"
+    },
+    {
+      "id": "MALFORMED-END",
+      "description": "Unblocked room with malformed end preserves its format feedback and invalid state.",
+      "status": "passed"
+    },
+    {
+      "id": "AC1-PAST",
+      "description": "A past request is rejected with current-time feedback.",
+      "status": "passed"
+    },
+    {
+      "id": "AC1-ORDER",
+      "description": "Zero-duration and reversed requests are rejected with order feedback.",
+      "status": "passed"
+    },
+    {
+      "id": "INT01",
+      "description": "UI and imported real helper allow exactly 120 minutes.",
+      "status": "passed"
+    },
+    {
+      "id": "INT02",
+      "description": "UI and imported real helper reject 121 minutes with an exact duration message.",
+      "status": "passed"
+    },
+    {
+      "id": "INT03",
+      "description": "UI and real helper allow touching the start of the existing 10:00–11:00 booking.",
+      "status": "passed"
+    },
+    {
+      "id": "INT04",
+      "description": "UI and real helper reject partial overlap with the actual existing A-102 booking.",
+      "status": "passed"
+    },
+    {
+      "id": "UI04-DESKTOP",
+      "description": "All important controls operate at 1440×900 with no document horizontal overflow.",
+      "status": "passed",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "documentScrollWidth": 1440,
+      "documentClientWidth": 1440,
+      "timelineScroll": {
+        "scrollLeft": 504,
+        "scrollWidth": 1344,
+        "clientWidth": 702
+      }
+    },
+    {
+      "id": "UI04-MOBILE",
+      "description": "All important controls operate at 375×812 with vertical scrolling and no document horizontal overflow.",
+      "status": "passed",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "documentScrollWidth": 375,
+      "documentClientWidth": 375,
+      "timelineScroll": {
+        "scrollLeft": 504,
+        "scrollWidth": 1344,
+        "clientWidth": 309
+      }
+    },
+    {
+      "id": "UI05",
+      "description": "Repeated available/unavailable checks preserve all five timeline records and browser storage; no booking submission controls exist.",
+      "status": "passed",
+      "recordsBefore": 5,
+      "recordsAfter": 5,
+      "storageBefore": {
+        "localStorage": {},
+        "sessionStorage": {}
+      },
+      "storageAfter": {
+        "localStorage": {},
+        "sessionStorage": {}
+      }
+    },
+    {
+      "id": "RUNTIME",
+      "description": "No uncaught browser page errors occurred.",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "01-desktop.png",
+    "02-available.png",
+    "03-unavailable.png",
+    "04-validation.png",
+    "07-overlap.png",
+    "05-mobile.png",
+    "mobile-feedback-viewport.png",
+    "06-data-preservation.png"
+  ],
+  "consoleErrors": [],
+  "limitations": [
+    "Automated Chrome checks; no separate human usability session or physical mobile device.",
+    "Timeline preservation compares all five rendered booking records, including owner and interval. Object-level immutability is checked separately by the unit suite.",
+    "B-201 is initially blocked and has no bookings; its disabled card is checked, while the four selectable room timelines expose all five existing records."
+  ],
+  "browserVersion": "156.0.8078.80",
+  "dataBefore": {
+    "A-101": [
+      {
+        "title": "Prof. Chen · 09:00–10:00",
+        "text": "09:00–10:00",
+        "left": "504px",
+        "width": "54px"
+      },
+      {
+        "title": "Study Group A · 12:00–13:00",
+        "text": "12:00–13:00",
+        "left": "672px",
+        "width": "54px"
+      }
+    ],
+    "A-102": [
+      {
+        "title": "Lab Team 3 · 10:00–11:00",
+        "text": "10:00–11:00",
+        "left": "560px",
+        "width": "54px"
+      }
+    ],
+    "B-202": [
+      {
+        "title": "Prof. Diaz · 08:00–09:00",
+        "text": "08:00–09:00",
+        "left": "448px",
+        "width": "54px"
+      }
+    ],
+    "C-301": [
+      {
+        "title": "Open Lecture · 15:00–16:00",
+        "text": "15:00–16:00",
+        "left": "840px",
+        "width": "54px"
+      }
+    ],
+    "B-201": []
+  },
+  "dataAfter": {
+    "A-101": [
+      {
+        "title": "Prof. Chen · 09:00–10:00",
+        "text": "09:00–10:00",
+        "left": "504px",
+        "width": "54px"
+      },
+      {
+        "title": "Study Group A · 12:00–13:00",
+        "text": "12:00–13:00",
+        "left": "672px",
+        "width": "54px"
+      }
+    ],
+    "A-102": [
+      {
+        "title": "Lab Team 3 · 10:00–11:00",
+        "text": "10:00–11:00",
+        "left": "560px",
+        "width": "54px"
+      }
+    ],
+    "B-202": [
+      {
+        "title": "Prof. Diaz · 08:00–09:00",
+        "text": "08:00–09:00",
+        "left": "448px",
+        "width": "54px"
+      }
+    ],
+    "C-301": [
+      {
+        "title": "Open Lecture · 15:00–16:00",
+        "text": "15:00–16:00",
+        "left": "840px",
+        "width": "54px"
+      }
+    ],
+    "B-201": []
+  },
+  "status": "passed",
+  "completedAt": "2026-11-05T09:24:35.863Z",
+  "total": 18,
+  "passed": 18,
+  "failed": 0
+}

@@ -1,0 +1,37 @@
+{
+  "recordedAtUTC": "2026-11-05T09:46:25.885028+00:00",
+  "baselineGitSHA": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+  "archive": "SmartCampus_Baseline_Source.zip",
+  "oldArchiveSHA256": "0287f5e78f62239f363ae06f35a5ce1df32b42b9878b3bad08adf49429f76139",
+  "newArchiveSHA256": "03b221e89d8631b3285f53f636b2b74c45c041005e869138d65d5ec009098c33",
+  "newFileCount": 32,
+  "removedArchiveMembers": [
+    ".bolt/config.json",
+    ".bolt/prompt",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/bookingLogic.after-fix.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/bookingLogic.baseline.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/bookingLogic.before-fix.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/practice08.regression.test.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/bookingLogic.after-fix.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/bookingLogic.baseline.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/bookingLogic.before-fix.ts",
+    "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/practice08.regression.test.ts",
+    "practice08/evidence/bug-a/bookingLogic.after-fix.ts",
+    "practice08/evidence/bug-a/bookingLogic.baseline.ts",
+    "practice08/evidence/bug-a/bookingLogic.before-fix.ts",
+    "practice08/evidence/bug-a/practice08.regression.test.ts",
+    "practice08/evidence/bug-b/bookingLogic.after-fix.ts",
+    "practice08/evidence/bug-b/bookingLogic.baseline.ts",
+    "practice08/evidence/bug-b/bookingLogic.before-fix.ts",
+    "practice08/evidence/bug-b/practice08.regression.test.ts"
+  ],
+  "addedOriginalFiles": [
+    "README.md",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.node.json"
+  ],
+  "retainedFileHashesUnchanged": true,
+  "source": "Every new member is an exact git show of the saved baseline SHA. Only the export scope changed.",
+  "earlierRunEvidence": "Earlier baseline, browser and 15-test characterization logs are preserved unchanged. They predate export cleanup, and the application source and previous test hashes are unchanged. This cleanup adds original README and tsconfigs and omits unrelated historical snippets and .bolt metadata; it does not rewrite experiment results."
+}

@@ -1,0 +1,33 @@
+{"command": ["npm", "ci"], "commandDisplay": "npm ci", "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-export-c16_lrdq", "startedAt": "2026-11-05T09:37:55.456758+00:00", "completedAt": "2026-11-05T09:38:13.984523+00:00", "elapsedSeconds": 18.528, "exitCode": 0, "output": "practice09/evidence/regression/clean-export-npm-ci.txt"}
+
+added 322 packages, and audited 323 packages in 18s
+
+74 packages are looking for funding
+  run `npm fund` for details
+
+25 vulnerabilities (2 low, 7 moderate, 14 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+{"command": ["npx", "vitest", "run"], "commandDisplay": "npx vitest run", "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-export-c16_lrdq", "startedAt": "2026-11-05T09:38:13.985284+00:00", "completedAt": "2026-11-05T09:38:16.288244+00:00", "elapsedSeconds": 2.303, "exitCode": 0, "output": "practice09/evidence/regression/clean-export-vitest.txt"}
+
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-export-c16_lrdq
+
+ ✓ tests/practice08.regression.test.ts (6 tests) 3ms
+ ✓ tests/practice07.original.test.ts (17 tests) 3ms
+ ✓ tests/practice07.improved.test.ts (43 tests) 5ms
+ ✓ tests/practice09.refactoring.test.tsx (15 tests) 24ms
+
+ Test Files  4 passed (4)
+      Tests  81 passed (81)
+   Start at  14:38:15
+   Duration  544ms (transform 113ms, setup 0ms, collect 226ms, tests 35ms, environment 0ms, prepare 177ms)
+
+
+SOURCE_EXPORT_COMPLETE /Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice09/SmartCampus_Source_Export.zip

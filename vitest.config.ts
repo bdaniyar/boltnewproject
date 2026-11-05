@@ -8,6 +8,7 @@ export default mergeConfig(viteConfig, defineConfig({
       'tests/practice07.original.test.ts',
       'tests/practice07.improved.test.ts',
       'tests/practice08.regression.test.ts',
+      'tests/practice09.refactoring.test.tsx',
     ],
   },
 }));

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "node",
+    "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/node_modules/vitest/vitest.mjs",
+    "run",
+    "tests/practice09.refactoring.test.tsx"
+  ],
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-characterization-mxnuh23l",
+  "startedAtUTC": "2026-11-05T09:32:07.159382+00:00",
+  "completedAtUTC": "2026-11-05T09:32:08.253927+00:00",
+  "exitCode": 0,
+  "baselineGitSHA": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+  "baselineSourceVerified": [
+    "src/components/BookingPanel.tsx",
+    "src/bookingLogic.ts",
+    "src/sampleData.ts"
+  ],
+  "testSHA256": "88557a9f0787e0f7ce8ec9a6c57dd271f0dc637317a68a66864890baaec4a05b",
+  "scope": "New characterization tests executed against exact preserved baseline app source in separate copy"
+}

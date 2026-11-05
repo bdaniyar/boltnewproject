@@ -1,0 +1,37 @@
+{
+  "source": "/Users/daniarboranov/Downloads/Lesson 09 - Software Engineering - Practice 5.pdf",
+  "sha256": "fa46d3d144929b3a14cc25473c4a87708316c5cc4983e846a284f20aee90975e",
+  "bytes": 611578,
+  "pages": 34,
+  "extraction": "pypdf",
+  "runtime": {
+    "artifactToolVersion": "2.8.119",
+    "bundleFormatVersion": 2,
+    "bundleVersion": "26.1030.10813",
+    "bundledPlugins": [
+      "plugins/openai-primary-runtime"
+    ],
+    "bundledSkills": [],
+    "libreOfficeVersion": "25.2-headless-codex.1",
+    "nativeDependencies": [
+      "libheif",
+      "jxrlib",
+      "libreoffice-headless",
+      "poppler",
+      "git"
+    ],
+    "nodeVersion": "24.22.1-cua.1",
+    "pnpmVersion": "11.25.0",
+    "pythonVersion": "3.12.14",
+    "skillsToRemove": [
+      "codex-primary-runtime/spreadsheets",
+      "codex-primary-runtime/slides",
+      "doc",
+      "docs",
+      "spreadsheet",
+      "slides"
+    ],
+    "targetArch": "arm64",
+    "targetPlatform": "darwin"
+  }
+}

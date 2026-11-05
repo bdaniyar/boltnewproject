@@ -1,0 +1,10 @@
+
+ RUN  v2.1.9 /private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-characterization-mxnuh23l
+
+ ✓ tests/practice09.refactoring.test.tsx (15 tests) 21ms
+
+ Test Files  1 passed (1)
+      Tests  15 passed (15)
+   Start at  14:32:07
+   Duration  809ms (transform 44ms, setup 0ms, collect 109ms, tests 21ms, environment 0ms, prepare 46ms)
+

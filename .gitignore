@@ -21,3 +21,8 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Practice09 keeps renderer output and a full local history snapshot outside Git.
+/practice09/qa/
+/practice09/evidence/baseline/SmartCampus_Practice08_Baseline.zip
+/practice09/Practice09_Boranov_Daniyar_Submission/

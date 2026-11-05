@@ -1,0 +1,25 @@
+{
+  "archive": "Practice09_Boranov_Daniyar_Submission.zip",
+  "files": 105,
+  "bytes": 4304992,
+  "sha256": "7ce127abdd82917833229fea812f45f8de5b4ee1bd142cde3a83f3af8c3ce139",
+  "crcCheck": "passed",
+  "docxTextFont": "Times New Roman 12pt black",
+  "editable": true,
+  "docxImages": 5,
+  "excluded": [
+    "dependencies",
+    "caches",
+    "build output",
+    "Git internals",
+    "secrets",
+    "historical assignment artefacts",
+    "QA renders",
+    "full historical baseline archive"
+  ],
+  "missingExternalEvidence": [
+    "Bolt A/B responses/screenshots/model details",
+    "Bolt implementation demonstration",
+    "verified revised publication URL"
+  ]
+}

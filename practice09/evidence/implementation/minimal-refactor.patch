@@ -1,0 +1,33 @@
+diff --git a/src/components/BookingPanel.tsx b/src/components/BookingPanel.tsx
+index c8dc52d..2aecc45 100644
+--- a/src/components/BookingPanel.tsx
++++ b/src/components/BookingPanel.tsx
+@@ -1,7 +1,7 @@
+ import { useMemo } from 'react';
+ import { CalendarPlus, CheckCircle2, AlertTriangle } from 'lucide-react';
+-import type { Booking, Room, ValidationResult } from '@/types';
+-import { formatTime, parseTime, validateBooking, checkAvailability } from '@/bookingLogic';
++import type { AvailabilityStatus, Booking, Room, ValidationResult } from '@/types';
++import { formatTime, parseTime, validateBooking } from '@/bookingLogic';
+ 
+ interface Props {
+   room: Room | null;
+@@ -36,11 +36,13 @@ export function BookingPanel({
+     return validateBooking(startMin, endMin, room, bookings, currentMinutes);
+   }, [room, startMin, endMin, bookings, currentMinutes]);
+ 
+-  const liveAvailability = useMemo(() => {
+-    if (!room) return null;
+-    if (startMin === null || endMin === null) return 'unavailable';
+-    return checkAvailability(startMin, endMin, room, bookings, currentMinutes);
+-  }, [room, startMin, endMin, bookings, currentMinutes]);
++  const liveAvailability: AvailabilityStatus | null = !room
++    ? null
++    : startMin === null || endMin === null
++      ? 'unavailable'
++      : liveValidation?.valid
++        ? 'available'
++        : room.blocked ? 'blocked' : 'unavailable';
+ 
+   const duration =
+     startMin !== null && endMin !== null && endMin > startMin ? endMin - startMin : null;

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "src/bookingLogic.ts",
+    "baselineSHA256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30",
+    "currentSHA256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30",
+    "unchanged": true
+  },
+  {
+    "file": "src/App.tsx",
+    "baselineSHA256": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091",
+    "currentSHA256": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091",
+    "unchanged": true
+  },
+  {
+    "file": "src/types.ts",
+    "baselineSHA256": "156643c3915e5b5880a1d09adccc6035caa48a87b1f9cc323846c080169e6653",
+    "currentSHA256": "156643c3915e5b5880a1d09adccc6035caa48a87b1f9cc323846c080169e6653",
+    "unchanged": true
+  },
+  {
+    "file": "src/sampleData.ts",
+    "baselineSHA256": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629",
+    "currentSHA256": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629",
+    "unchanged": true
+  },
+  {
+    "file": "tests/practice07.original.test.ts",
+    "baselineSHA256": "8ac8244a65e8aedbcb5beeec8c536e8bbc579c938c4737ebe808f55a4c562216",
+    "currentSHA256": "8ac8244a65e8aedbcb5beeec8c536e8bbc579c938c4737ebe808f55a4c562216",
+    "unchanged": true
+  },
+  {
+    "file": "tests/practice07.improved.test.ts",
+    "baselineSHA256": "f21e425bce156f27dbe461839656020fbb62eb973b031249cd3bb049154151e4",
+    "currentSHA256": "f21e425bce156f27dbe461839656020fbb62eb973b031249cd3bb049154151e4",
+    "unchanged": true
+  },
+  {
+    "file": "tests/practice08.regression.test.ts",
+    "baselineSHA256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4",
+    "currentSHA256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4",
+    "unchanged": true
+  },
+  {
+    "file": "tests/booking.test.mjs",
+    "baselineSHA256": "dbf58fa723b33dd4e570021553a56eb906fc4cfda709f127fe56b8350cbd62ec",
+    "currentSHA256": "dbf58fa723b33dd4e570021553a56eb906fc4cfda709f127fe56b8350cbd62ec",
+    "unchanged": true
+  },
+  {
+    "file": "package.json",
+    "baselineSHA256": "2b2a749b284072e8af2bcb3cd0d5582a0f1f934fc934b343d2175ead86a23f87",
+    "currentSHA256": "2b2a749b284072e8af2bcb3cd0d5582a0f1f934fc934b343d2175ead86a23f87",
+    "unchanged": true
+  },
+  {
+    "file": "package-lock.json",
+    "baselineSHA256": "333d4db7df7382cd4367cf351f4c383b633888feda8d70425cc72bd14ee0e43b",
+    "currentSHA256": "333d4db7df7382cd4367cf351f4c383b633888feda8d70425cc72bd14ee0e43b",
+    "unchanged": true
+  }
+]

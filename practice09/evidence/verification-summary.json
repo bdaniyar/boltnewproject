@@ -1,0 +1,150 @@
+{
+  "baselineGit": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+  "baseline": {
+    "vitest": 66,
+    "originalSubset": 17,
+    "practice08Subset": 6,
+    "legacy": 9,
+    "newCharacterizationOnBaseline": 15,
+    "browser": 18
+  },
+  "after": {
+    "vitest": 81,
+    "originalSubset": 17,
+    "practice08Subset": 6,
+    "practice09Subset": 15,
+    "legacy": 9,
+    "browser": 18,
+    "behaviourComparisons": 25,
+    "feedbackStates": 14
+  },
+  "checks": [
+    {
+      "evidence": "evidence/regression/original.meta.json",
+      "command": [
+        "npm",
+        "run",
+        "test:original"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.230876+00:00",
+      "completedAtUTC": "2026-11-05T09:36:53.835969+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/practice08-regressions.meta.json",
+      "command": [
+        "npx",
+        "vitest",
+        "run",
+        "tests/practice08.regression.test.ts"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.230462+00:00",
+      "completedAtUTC": "2026-11-05T09:36:53.797957+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/refactoring.meta.json",
+      "command": [
+        "npx",
+        "vitest",
+        "run",
+        "tests/practice09.refactoring.test.tsx"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.231313+00:00",
+      "completedAtUTC": "2026-11-05T09:36:54.063351+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/full-vitest.meta.json",
+      "command": [
+        "npx",
+        "vitest",
+        "run"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.230819+00:00",
+      "completedAtUTC": "2026-11-05T09:36:54.048459+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/legacy.meta.json",
+      "command": [
+        "npm",
+        "run",
+        "test:legacy"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.230801+00:00",
+      "completedAtUTC": "2026-11-05T09:36:52.523127+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/typecheck.meta.json",
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.230470+00:00",
+      "completedAtUTC": "2026-11-05T09:36:54.459838+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/lint.meta.json",
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.231160+00:00",
+      "completedAtUTC": "2026-11-05T09:36:54.391034+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/build.meta.json",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+      "startedAtUTC": "2026-11-05T09:36:51.230469+00:00",
+      "completedAtUTC": "2026-11-05T09:36:54.840298+00:00",
+      "exitCode": 0
+    },
+    {
+      "evidence": "evidence/regression/clean-export-npm-ci.meta.json",
+      "command": [
+        "npm",
+        "ci"
+      ],
+      "commandDisplay": "npm ci",
+      "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-export-c16_lrdq",
+      "startedAt": "2026-11-05T09:37:55.456758+00:00",
+      "completedAt": "2026-11-05T09:38:13.984523+00:00",
+      "elapsedSeconds": 18.528,
+      "exitCode": 0,
+      "output": "practice09/evidence/regression/clean-export-npm-ci.txt"
+    },
+    {
+      "evidence": "evidence/regression/clean-export-vitest.meta.json",
+      "command": [
+        "npx",
+        "vitest",
+        "run"
+      ],
+      "commandDisplay": "npx vitest run",
+      "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-export-c16_lrdq",
+      "startedAt": "2026-11-05T09:38:13.985284+00:00",
+      "completedAt": "2026-11-05T09:38:16.288244+00:00",
+      "elapsedSeconds": 2.303,
+      "exitCode": 0,
+      "output": "practice09/evidence/regression/clean-export-vitest.txt"
+    }
+  ]
+}

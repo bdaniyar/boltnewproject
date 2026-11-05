@@ -1,0 +1,11 @@
+{
+  "gitSHA": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+  "baselineArchive": "evidence/baseline/SmartCampus_Baseline_Source.zip",
+  "baselineSHA256": "03b221e89d8631b3285f53f636b2b74c45c041005e869138d65d5ec009098c33",
+  "conditionA": "no AGENTS.md provided",
+  "conditionB": "explicit same root AGENTS.md content; baseline source unchanged",
+  "A_prompt": "Inspect this Smart Campus room availability project. Do not change files yet. Identify the booking-rule function, UI, fixture data and tests. List at most three maintainability problems with file references. Recommend ZERO, ONE or TWO patterns only if justified. Preserve AC1\u2013AC6 and the existing UI.",
+  "A_promptSHA256": "7d9cd5f67f8239bbc016d158166389c658fc859c1d0e5f1e4068f7b2876a1b04",
+  "baselineFileCount": 32,
+  "baselineExportScope": "Explicit original app src/public/configs/package/README/tests allowlist from gitSHA; no AGENTS, Practice09 files, .bolt or historical assignment material."
+}

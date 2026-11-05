@@ -22,7 +22,7 @@ npm run lint
 npm run build
 ```
 
-The default Vitest command runs 66 tests: the preserved original 17, improved 43, and six Practice 08 regressions. The original suite can still run separately through `test:original`. Nine pre-existing Node tests remain available through `test:legacy`. All suites import or transpile the real `src/bookingLogic.ts`; no booking implementation is substituted. Availability and validation share the same rules, including finite numeric inputs.
+The default Vitest command runs 81 tests: the preserved original 17, improved 43, six Practice 08 regressions, and 15 Practice 09 component regressions. The original suite can still run separately through `test:original`. Nine pre-existing Node tests remain available through `test:legacy`. Booking suites import or transpile the real `src/bookingLogic.ts`; the new component suite renders the real `BookingPanel`. Availability and validation share the same rules, including finite numeric inputs.
 
 With the real development server at http://127.0.0.1:5173 and installed Google Chrome:
 
@@ -43,3 +43,11 @@ The timeline scrolls horizontally within its own panel. The mobile page scrolls 
 See [practice08/README.md](practice08/README.md) for the saved baseline, separate controlled BUG-A/BUG-B reproductions, real RED/GREEN evidence, Skill comparison prompts, editable Word report, and submission package instructions. The production booking source remains identical to the correct baseline. The package marks external comparison and student manual actions as pending.
 
 For the current Practice 08 browser checks, run the app on port 5174 and use `npm run test:browser:practice08`. The script supports a different correct local origin through `PRACTICE08_URL`.
+
+## Practice 09
+
+The root [AGENTS.md](AGENTS.md) describes the actual architecture, AC1–AC6, scope and verification commands. Practice 09 reuses the panel's existing validation result for its status. No new design pattern, policy, persistence or UI change is introduced.
+
+Run the new component regressions with `npx vitest run tests/practice09.refactoring.test.tsx`. For browser evidence, start the app on port 5176 and run `node tests/practice09-browser.mjs after`. The script preserves existing evidence and refuses to overwrite it. It supports `PRACTICE09_URL` and requires installed Google Chrome. Compare fresh before/after captures with `node practice09/tools/compare-ui.mjs`.
+
+The `practice09/` folder contains the editable report, submission package, frozen baseline, actual test/UI evidence, rationale, and explicit Bolt experiment prompts. Real Bolt comparison responses and the remote implementation demonstration were unavailable; no response or verified publication is claimed. See `practice09/UNAVAILABLE_EVIDENCE.md` for the exact remaining external evidence.

@@ -1,0 +1,186 @@
+{
+  "comparedAt": "2026-11-05T09:32:11.352Z",
+  "command": "node practice09/tools/compare-ui.mjs",
+  "before": {
+    "startedAt": "2026-11-05T09:24:23.819Z",
+    "gitHead": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+    "sourceHashes": {
+      "src/components/BookingPanel.tsx": "e0e794fa76abc8deec19b84f8bae2fee629347b62dcb2ba1fbc711d0859ff427",
+      "src/bookingLogic.ts": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30",
+      "src/App.tsx": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091"
+    },
+    "total": 18,
+    "passed": 18,
+    "failed": 0
+  },
+  "after": {
+    "startedAt": "2026-11-05T09:32:04.313Z",
+    "gitHead": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+    "sourceHashes": {
+      "src/components/BookingPanel.tsx": "be1d5280c4f148d20f5496df7616b86ff1b6c94cc1cdb74ce955fd6b804adb33",
+      "src/bookingLogic.ts": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30",
+      "src/App.tsx": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091"
+    },
+    "total": 18,
+    "passed": 18,
+    "failed": 0
+  },
+  "observableStateCount": 14,
+  "comparisons": [
+    {
+      "id": "same-application-url",
+      "equal": true
+    },
+    {
+      "id": "same-browser-version",
+      "equal": true
+    },
+    {
+      "id": "same-test-ids",
+      "equal": true
+    },
+    {
+      "id": "same-check-results",
+      "equal": true
+    },
+    {
+      "id": "feedback-endpoint-after",
+      "equal": true
+    },
+    {
+      "id": "feedback-blocked-valid",
+      "equal": true
+    },
+    {
+      "id": "feedback-blocked-malformed-start",
+      "equal": true
+    },
+    {
+      "id": "feedback-blocked-malformed-end",
+      "equal": true
+    },
+    {
+      "id": "feedback-blocked-reversed",
+      "equal": true
+    },
+    {
+      "id": "feedback-missing-start",
+      "equal": true
+    },
+    {
+      "id": "feedback-malformed-end",
+      "equal": true
+    },
+    {
+      "id": "feedback-past",
+      "equal": true
+    },
+    {
+      "id": "feedback-zero-duration",
+      "equal": true
+    },
+    {
+      "id": "feedback-reversed",
+      "equal": true
+    },
+    {
+      "id": "feedback-duration-120",
+      "equal": true
+    },
+    {
+      "id": "feedback-duration-121",
+      "equal": true
+    },
+    {
+      "id": "feedback-endpoint-before",
+      "equal": true
+    },
+    {
+      "id": "feedback-overlap",
+      "equal": true
+    },
+    {
+      "id": "same-observable-state-ids",
+      "equal": true
+    },
+    {
+      "id": "same-initial-booking-records",
+      "equal": true
+    },
+    {
+      "id": "same-final-booking-records",
+      "equal": true
+    },
+    {
+      "id": "same-UI04-DESKTOP-observations",
+      "equal": true
+    },
+    {
+      "id": "same-UI04-MOBILE-observations",
+      "equal": true
+    },
+    {
+      "id": "same-UI05-observations",
+      "equal": true
+    },
+    {
+      "id": "same-no-page-errors",
+      "equal": true
+    }
+  ],
+  "screenshotComparisons": [
+    {
+      "screenshot": "01-desktop.png",
+      "beforeSha256": "a1af983d16b73c9940c62e861512c716630972a1d999abfdb4ad9af4a5fa4127",
+      "afterSha256": "a1af983d16b73c9940c62e861512c716630972a1d999abfdb4ad9af4a5fa4127",
+      "bytesIdentical": true
+    },
+    {
+      "screenshot": "02-available.png",
+      "beforeSha256": "11eb690320a5d0eec99efe7ce5d8df68551f3af3933a34c85e502c82a6ea34c9",
+      "afterSha256": "a6b5b9eb1911df62bc955604d3776b865910b1858a72a4991fe644ca55440e52",
+      "bytesIdentical": false
+    },
+    {
+      "screenshot": "03-unavailable.png",
+      "beforeSha256": "38387bccf5dfb0f22f7c569eff4e0db7283341b4b558acb768a02d5ae70bd6d1",
+      "afterSha256": "38387bccf5dfb0f22f7c569eff4e0db7283341b4b558acb768a02d5ae70bd6d1",
+      "bytesIdentical": true
+    },
+    {
+      "screenshot": "04-validation.png",
+      "beforeSha256": "e250d066ad927b99282a1c4c1f7350997489b433ef9042a56a5dab27a7ae5681",
+      "afterSha256": "092d2971e5c180fbac5fa3372326528dfbcba20bfb95bfbb5c98225935270196",
+      "bytesIdentical": false
+    },
+    {
+      "screenshot": "07-overlap.png",
+      "beforeSha256": "844cfc800c2a328675cfbf065b1708576a5ffd55fe670291a49c6a0b9dd384f0",
+      "afterSha256": "56e9f92fa426091629dcc891fe02e6cd0140e3ab9154d203ca45aecc91677d17",
+      "bytesIdentical": false
+    },
+    {
+      "screenshot": "05-mobile.png",
+      "beforeSha256": "ccde497a0bf3b8e29e61ddac50b574bf11394d1f4ef4bcb32389023894afcd1f",
+      "afterSha256": "e2a90b151cbc083a0f1f6c2716d40636a9d2db9aec1c68ebcad8d61c5bc9f128",
+      "bytesIdentical": false
+    },
+    {
+      "screenshot": "mobile-feedback-viewport.png",
+      "beforeSha256": "356be6249505e7fed6b42742aa1737104a000640c59fc160c1dc6becd1c3f1ed",
+      "afterSha256": "356be6249505e7fed6b42742aa1737104a000640c59fc160c1dc6becd1c3f1ed",
+      "bytesIdentical": true
+    },
+    {
+      "screenshot": "06-data-preservation.png",
+      "beforeSha256": "49876c60966922f389435377716ca13e36de9a1617c1dbcf2c83ac1144dac3bb",
+      "afterSha256": "ade6b20439915e4ec5688c4fea14013da10ff644c5843808ad4c504dd4b32561",
+      "bytesIdentical": false
+    }
+  ],
+  "allBehaviourComparisonsEqual": true,
+  "limitations": [
+    "Recorded browser states cover the deterministic scenarios in tests/practice09-browser.mjs, not every possible user input.",
+    "Screenshot hashes compare exact PNG bytes; a difference alone would not establish a behaviour regression."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "command": "node practice09/tools/compare-ui-pixels.mjs",
+  "method": "Read original PNGs in Chrome canvas and compare every decoded RGBA pixel. Original screenshots are unchanged.",
+  "results": [
+    {
+      "screenshot": "01-desktop.png",
+      "sameDimensions": true,
+      "imageSize": [
+        1440,
+        900
+      ],
+      "differentPixels": 0,
+      "differenceBoundingBox": null
+    },
+    {
+      "screenshot": "02-available.png",
+      "sameDimensions": true,
+      "imageSize": [
+        1440,
+        900
+      ],
+      "differentPixels": 14,
+      "differenceBoundingBox": [
+        415,
+        145,
+        641,
+        285
+      ]
+    },
+    {
+      "screenshot": "03-unavailable.png",
+      "sameDimensions": true,
+      "imageSize": [
+        1440,
+        900
+      ],
+      "differentPixels": 0,
+      "differenceBoundingBox": null
+    },
+    {
+      "screenshot": "04-validation.png",
+      "sameDimensions": true,
+      "imageSize": [
+        1440,
+        900
+      ],
+      "differentPixels": 33923,
+      "differenceBoundingBox": [
+        408,
+        146,
+        648,
+        306
+      ]
+    },
+    {
+      "screenshot": "07-overlap.png",
+      "sameDimensions": true,
+      "imageSize": [
+        1440,
+        900
+      ],
+      "differentPixels": 3514,
+      "differenceBoundingBox": [
+        150,
+        145,
+        651,
+        516
+      ]
+    },
+    {
+      "screenshot": "05-mobile.png",
+      "sameDimensions": true,
+      "imageSize": [
+        375,
+        1774
+      ],
+      "differentPixels": 1900,
+      "differenceBoundingBox": [
+        16,
+        199,
+        359,
+        329
+      ]
+    },
+    {
+      "screenshot": "mobile-feedback-viewport.png",
+      "sameDimensions": true,
+      "imageSize": [
+        375,
+        812
+      ],
+      "differentPixels": 0,
+      "differenceBoundingBox": null
+    },
+    {
+      "screenshot": "06-data-preservation.png",
+      "sameDimensions": true,
+      "imageSize": [
+        1440,
+        900
+      ],
+      "differentPixels": 251,
+      "differenceBoundingBox": [
+        160,
+        147,
+        650,
+        418
+      ]
+    }
+  ]
+}

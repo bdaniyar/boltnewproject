@@ -1,0 +1,6 @@
+Before and after screenshots visually reviewed.
+The initial desktop, blocked-state desktop, and readable mobile feedback viewport PNGs are byte-identical.
+Five other PNGs differ. Exact decoded RGBA comparison places all differing pixel bounds outside the booking panel: desktop x <= 651 (panel starts around x920), and full mobile y199-329 (room cards, above booking panel).
+The unchanged RoomCard component uses transition-all duration-200, so transition timing is a plausible explanation; the evidence does not prove every PNG pixel identical.
+All 14 recorded feedback states match exactly in status text, validation messages, input states, CSS class, and computed foreground/background/border colors.
+All 25 recorded behavior comparisons match, including desktop/mobile geometry and booking/storage preservation.

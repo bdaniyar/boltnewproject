@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npx",
+    "vitest",
+    "run"
+  ],
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-baseline-6w9ymir8",
+  "startedAtUTC": "2026-11-05T09:46:25.890756+00:00",
+  "completedAtUTC": "2026-11-05T09:46:26.995812+00:00",
+  "exitCode": 0,
+  "baselineGitSHA": "a2dff221bb65eeee5d1b20211292ed5d020905bc",
+  "archiveSHA256": "03b221e89d8631b3285f53f636b2b74c45c041005e869138d65d5ec009098c33",
+  "environment": "Fresh extraction of compact baseline ZIP; installed node_modules symlinked; no source files altered."
+}

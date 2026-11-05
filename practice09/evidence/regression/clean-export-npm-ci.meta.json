@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm",
+    "ci"
+  ],
+  "commandDisplay": "npm ci",
+  "cwd": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/practice09-clean-export-c16_lrdq",
+  "startedAt": "2026-11-05T09:37:55.456758+00:00",
+  "completedAt": "2026-11-05T09:38:13.984523+00:00",
+  "elapsedSeconds": 18.528,
+  "exitCode": 0,
+  "output": "practice09/evidence/regression/clean-export-npm-ci.txt"
+}
