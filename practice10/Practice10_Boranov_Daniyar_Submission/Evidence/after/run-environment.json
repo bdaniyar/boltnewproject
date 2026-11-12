@@ -1,0 +1,9 @@
+{
+  "PRACTICE09_URL": "http://127.0.0.1:5180",
+  "PRACTICE09_EVIDENCE_DIR": "practice10/evidence/after/ui",
+  "PRACTICE08_URL": "http://127.0.0.1:5180",
+  "serverCommand": "npm run dev -- --host 127.0.0.1 --port 5180 --strictPort",
+  "serverStoppedAfterChecks": true,
+  "node": "22.22.0",
+  "npm": "10.9.4"
+}

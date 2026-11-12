@@ -1,0 +1,158 @@
+{
+  "baselineCommit": "2857ed197bbc05296c6731fb458fa20a550913e8",
+  "state": "Baseline plus the two approved patches; no remote revision created",
+  "files": [
+    {
+      "path": ".bolt/config.json",
+      "sha256": "da87f3867aa1c920ea2dc6b29775a1be2bcf844ee6caa7b947341fae1a7b1b91"
+    },
+    {
+      "path": ".bolt/prompt",
+      "sha256": "42def6ea7c0d74a7a1fd64b4a10a309872466bf38de50210f6764ed95c4bc1e6"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "c009a728e6700b3a14edf2c92dcb73a2a1382db90130cd784275167d131ccd52"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "7662a2dd7b435d06292d31c32e43b50f31a1be2fb12fde4107072e60fab7997a"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "cc52d4670f15002305f2c89289be756ffae2be6f43b9607df271f2d5f45d95a2"
+    },
+    {
+      "path": "README.md",
+      "sha256": "018b3b0a80329a69863a5bf339f8e43b8f971da2cb6d962053bb4672dc6e7128"
+    },
+    {
+      "path": "eslint.config.js",
+      "sha256": "fa3cc12579fb0ef678a3153b31ec396d81ef2fec284a1a5ecb779c0ff336cfe0"
+    },
+    {
+      "path": "index.html",
+      "sha256": "003ae8f02be23e301d2a2c8d1638864ecc3c55045af300ab8aa6a1d7cc2e794c"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "333d4db7df7382cd4367cf351f4c383b633888feda8d70425cc72bd14ee0e43b"
+    },
+    {
+      "path": "package.json",
+      "sha256": "2b2a749b284072e8af2bcb3cd0d5582a0f1f934fc934b343d2175ead86a23f87"
+    },
+    {
+      "path": "postcss.config.js",
+      "sha256": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc"
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091"
+    },
+    {
+      "path": "src/bookingLogic.ts",
+      "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+    },
+    {
+      "path": "src/components/BookingPanel.tsx",
+      "sha256": "be1d5280c4f148d20f5496df7616b86ff1b6c94cc1cdb74ce955fd6b804adb33"
+    },
+    {
+      "path": "src/components/CurrentTimeControl.tsx",
+      "sha256": "c811241c52206f743af845fe4cfbfa37b9820e8e7a2e136201d6fb7ea2f7fae1"
+    },
+    {
+      "path": "src/components/RoomCard.tsx",
+      "sha256": "48e27e05b37542d98c6db43b62c939ab99256d1b9da792aab5953a05f8dbef52"
+    },
+    {
+      "path": "src/components/Timeline.tsx",
+      "sha256": "0420983cd1e671014b36a58d1288cf4187306dd6f1b70fdfaf02ffabd1682d4f"
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "cc1a7ad0d019ddb1d32d0ecb588ba0ac26ce41d8625dd6c366348b25f83a28ec"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "832842269af94b055b2cd42fd27a0f212773b36d20083b631b863cbb5f0fd09e"
+    },
+    {
+      "path": "src/sampleData.ts",
+      "sha256": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629"
+    },
+    {
+      "path": "src/types.ts",
+      "sha256": "156643c3915e5b5880a1d09adccc6035caa48a87b1f9cc323846c080169e6653"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "tailwind.config.js",
+      "sha256": "316c86f90ec708a4e953dbba5f6064ddae1feb701754f872b599c4bc2a0aceb5"
+    },
+    {
+      "path": "tests/booking.test.mjs",
+      "sha256": "dbf58fa723b33dd4e570021553a56eb906fc4cfda709f127fe56b8350cbd62ec"
+    },
+    {
+      "path": "tests/browser.mjs",
+      "sha256": "7773ef26f556f76391b2bca09c80835a41b2b6e37bb4ea3d3d27cd5bfe1a8a07"
+    },
+    {
+      "path": "tests/practice07-browser.mjs",
+      "sha256": "f39a67dbf79c6e660a18e119762e1a7e466955d406c4abee04e43acecf54c77f"
+    },
+    {
+      "path": "tests/practice07.improved.test.ts",
+      "sha256": "f21e425bce156f27dbe461839656020fbb62eb973b031249cd3bb049154151e4"
+    },
+    {
+      "path": "tests/practice07.original.test.ts",
+      "sha256": "8ac8244a65e8aedbcb5beeec8c536e8bbc579c938c4737ebe808f55a4c562216"
+    },
+    {
+      "path": "tests/practice08-browser.mjs",
+      "sha256": "9bcba2f2c68bef11fac3a01ffc2de87e53a28f1faa8cebafea85c46abe74ab2b"
+    },
+    {
+      "path": "tests/practice08.regression.test.ts",
+      "sha256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4"
+    },
+    {
+      "path": "tests/practice09-browser.mjs",
+      "sha256": "bb268a26c33aeb4b528ca7285b34d6e740baaeda9e8b78d30b9d1a4ee5c1c170"
+    },
+    {
+      "path": "tests/practice09.refactoring.test.tsx",
+      "sha256": "88557a9f0787e0f7ce8ec9a6c57dd271f0dc637317a68a66864890baaec4a05b"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "9750ea1ad666ba467781ab8e047a2337b7692b774de0865a98dbd189ca3fd87e"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "a96b9ba5e40d95b92adf56431fdf9cbe25b5c2557621f0666615bff6889dfc50"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "05ae7de06a27b96af0ac0b8ff23daa94b3b22a40a5c3fbf88a5e1d1f78d384e3"
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "d00a5e13039888c99349bd47ec4b9827c5d265740b8cd3626aba92137fc033df"
+    },
+    {
+      "path": "vitest.original.config.ts",
+      "sha256": "2f610f95b60957d7602562904c902816edbdc219f55ef5ada9539194927d6083"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "fullVitest": {
+    "passed": 81,
+    "failed": 0
+  },
+  "legacy": {
+    "passed": 9,
+    "failed": 0
+  },
+  "mitigationChecks": {
+    "passed": 7,
+    "failed": 0
+  },
+  "browser06": "final script assertions passed; no numeric suite count defined",
+  "browser07": {
+    "passed": 12,
+    "failed": 0
+  },
+  "browser08": {
+    "passed": 14,
+    "failed": 0
+  },
+  "browser09": {
+    "passed": 18,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "lint": "passed",
+  "build": "passed",
+  "uiComparisonsMatched": 25,
+  "uiComparisonsTotal": 25,
+  "feedbackStates": 14,
+  "pngPairsIdentical": 2,
+  "pngPairsTotal": 8,
+  "dependencyAudit": {
+    "info": 0,
+    "low": 2,
+    "moderate": 7,
+    "high": 14,
+    "critical": 2,
+    "total": 25
+  },
+  "sourceUnchanged": true,
+  "hostedCI": "Not executed; no authorized remote push",
+  "deployment": "Not performed"
+}

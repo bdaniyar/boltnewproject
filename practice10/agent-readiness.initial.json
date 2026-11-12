@@ -1,0 +1,90 @@
+{
+  "level": 2,
+  "stage": "before approval",
+  "checks": [
+    {
+      "level": "Level 1",
+      "check": "Formatting",
+      "state": "Partial",
+      "evidence": "Consistent TypeScript/React conventions; no tracked formatter or EditorConfig.",
+      "improvement": "Agree a formatting convention before wider team edits."
+    },
+    {
+      "level": "Level 1",
+      "check": "Lint / types",
+      "state": "Satisfied",
+      "evidence": "Fresh npm run lint and npm run typecheck exited 0. Typecheck covers src.",
+      "improvement": "Retain these checks."
+    },
+    {
+      "level": "Level 1",
+      "check": "Unit and component tests",
+      "state": "Satisfied",
+      "evidence": "Fresh full run: 81 tests in four files passed. Original17, improved43, Practice08six, Practice09fifteen.",
+      "improvement": "Confirm inclusion of new tests."
+    },
+    {
+      "level": "Level 1",
+      "check": "Build and dependency resolution",
+      "state": "Satisfied with security gap",
+      "evidence": "npm ci from tracked lockfile and npm run build passed. Declared ranges resolve exact versions via lockfile; existing advisories remain.",
+      "improvement": "Review compatible dependency upgrades."
+    },
+    {
+      "level": "Level 2",
+      "check": "README and setup",
+      "state": "Partial",
+      "evidence": "Documented setup works; browser rerun conflicts with saved evidence; historical paths/status stale.",
+      "improvement": "Proposal 01 adds an accurate fresh-run command."
+    },
+    {
+      "level": "Level 2",
+      "check": "Architecture and fixtures",
+      "state": "Satisfied",
+      "evidence": "Pure src/bookingLogic.ts, React components, types and five fictional fixtures clearly separated.",
+      "improvement": "Keep A-102 exercise and existing UI."
+    },
+    {
+      "level": "Level 2",
+      "check": "AGENTS.md",
+      "state": "Partial",
+      "evidence": "Architecture, AC1\u2013AC6, commands and forbidden product features present. Secret/isolation/merge controls incomplete.",
+      "improvement": "Proposal 02 adds missing operational rules."
+    },
+    {
+      "level": "Level 2",
+      "check": "Environment example",
+      "state": "Not applicable",
+      "evidence": "Client-only fictional demo needs no application credentials or environment configuration.",
+      "improvement": "Do not add a .env solely for rubric compliance."
+    },
+    {
+      "level": "Level 3",
+      "check": "CI and hooks",
+      "state": "Gap",
+      "evidence": "No tracked .github workflow or hooks. No external enforcement inspected.",
+      "improvement": "Proposal 01 adds CI; hooks are optional with documented CI/human review."
+    },
+    {
+      "level": "Level 3",
+      "check": "Integration and evidence",
+      "state": "Partial",
+      "evidence": "18/18 real browser checks, genuine desktop/mobile screenshots and logs exist; a new output path was required.",
+      "improvement": "Make fresh output reproducible via Proposal 01."
+    },
+    {
+      "level": "Level 3",
+      "check": "Security verification",
+      "state": "Partial",
+      "evidence": "Actual npm audit, advisory/source checks and limited secret-pattern scan; known development dependencies affected.",
+      "improvement": "Keep explicit owner and residual security controls."
+    },
+    {
+      "level": "Level 3",
+      "check": "Isolation and human approval",
+      "state": "Gap in instructions",
+      "evidence": "This audit used an isolated worktree, but the original agent playbook does not require it.",
+      "improvement": "Proposal 02 requires worktree/port/credential boundaries and review before merge."
+    }
+  ]
+}

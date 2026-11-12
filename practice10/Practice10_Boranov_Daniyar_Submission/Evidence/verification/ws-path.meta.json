@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm",
+    "ls",
+    "ws",
+    "@supabase/supabase-js",
+    "--json"
+  ],
+  "cwd": "/private/tmp/smartcampus-practice10-baseline-20261112",
+  "startedAtUTC": "2026-11-12T09:17:23.454447+00:00",
+  "completedAtUTC": "2026-11-12T09:17:23.896524+00:00",
+  "exitCode": 0
+}

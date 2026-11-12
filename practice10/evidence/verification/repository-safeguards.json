@@ -1,0 +1,9 @@
+{
+  "scope": "Tracked text files only; credential-pattern sample, not a complete secret audit. Matching values are never printed.",
+  "filesScanned": 304,
+  "matches": [],
+  "trackedEnvironmentFiles": [],
+  "sourceHtmlInjectionFiles": [],
+  "trackedCI": [],
+  "hookAndFormattingConfig": []
+}

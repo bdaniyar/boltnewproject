@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tests/practice09-browser.mjs",
+    "after"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-11-12T09:26:27.507733+00:00",
+  "completedAtUTC": "2026-11-12T09:26:36.716261+00:00",
+  "exitCode": 0
+}

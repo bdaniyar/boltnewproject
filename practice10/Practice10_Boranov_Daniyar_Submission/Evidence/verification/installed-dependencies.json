@@ -1,0 +1,63 @@
+{
+  "version": "0.0.0",
+  "name": "vite-react-typescript-starter",
+  "dependencies": {
+    "@supabase/supabase-js": {
+      "version": "2.57.4",
+      "resolved": "https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.57.4.tgz",
+      "overridden": false
+    },
+    "@vitejs/plugin-react": {
+      "version": "4.3.2",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-4.3.2.tgz",
+      "overridden": false,
+      "dependencies": {
+        "vite": {
+          "version": "5.4.8"
+        }
+      }
+    },
+    "vite": {
+      "version": "5.4.8",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-5.4.8.tgz",
+      "overridden": false,
+      "dependencies": {
+        "esbuild": {
+          "version": "0.21.5",
+          "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz",
+          "overridden": false
+        }
+      }
+    },
+    "vitest": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/vitest/-/vitest-2.1.9.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@vitest/mocker": {
+          "version": "2.1.9",
+          "resolved": "https://registry.npmjs.org/@vitest/mocker/-/mocker-2.1.9.tgz",
+          "overridden": false,
+          "dependencies": {
+            "vite": {
+              "version": "5.4.8"
+            }
+          }
+        },
+        "vite-node": {
+          "version": "2.1.9",
+          "resolved": "https://registry.npmjs.org/vite-node/-/vite-node-2.1.9.tgz",
+          "overridden": false,
+          "dependencies": {
+            "vite": {
+              "version": "5.4.8"
+            }
+          }
+        },
+        "vite": {
+          "version": "5.4.8"
+        }
+      }
+    }
+  }
+}

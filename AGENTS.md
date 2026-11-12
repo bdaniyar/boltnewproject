@@ -65,3 +65,16 @@ Never weaken/delete existing tests. Add focused regressions for past, reversed,1
 ## Explicit use in Bolt
 
 This file communicates project instructions. Do not claim Bolt automatically reads it. In the guided condition, explicitly attach or paste its complete content, ask Bolt to summarize constraints, required behaviour, exact test commands and forbidden changes, and only then request a focused implementation. Keep independent experiment A free from these instructions.
+
+## Agent isolation and human review
+
+- Use A-102 for the one-room exercise and preserve the existing five-room UI and fictional fixtures.
+- Start asynchronous work only when requested, in a separate branch and worktree. Allocate a unique loopback port with `--strictPort`; never reuse another task's process or port.
+- A worktree isolates files and Git changes; it is not a security sandbox. Run untrusted code only in a disposable environment without host credentials or production access.
+- Read and modify only project files needed for the approved task. Do not read credential stores, private keys or secret environment files. Do not add real student records or secrets to source, logs or screenshots.
+- Use documented install, test, typecheck, lint and build commands. Do not start Vitest UI/API servers or expose development servers to a network. Keep the browser used for vulnerable development tooling limited to trusted project pages pending dependency remediation.
+- Preserve earlier evidence. For fresh browser checks set `PRACTICE09_EVIDENCE_DIR` to a new task-specific directory and verify `PRACTICE09_URL` points to the task's server.
+- New tests must be included by `vitest.config.ts`; confirm that the test runner actually collects them.
+- Provide the exact diff, changed-file list, command outputs and exit codes, build result, updated risk register and a review note with limitations.
+- Before acceptance, rerun the required checks and have a human review the diff, evidence and residual risks. Test success alone does not authorize acceptance.
+- Do not merge, push, publish, deploy, change access permissions or send email without separate explicit user authorization. Do not rewrite history, reset user changes or modify another agent's branch.

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm",
+    "ci"
+  ],
+  "cwd": "/private/tmp/smartcampus-practice10-baseline-20261112",
+  "startedAtUTC": "2026-11-12T09:09:09.927979+00:00",
+  "completedAtUTC": "2026-11-12T09:09:21.581623+00:00",
+  "exitCode": 0
+}

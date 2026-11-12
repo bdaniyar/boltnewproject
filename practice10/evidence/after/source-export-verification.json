@@ -1,0 +1,12 @@
+{
+  "sourceFolder": "Practice10_Boranov_Daniyar_Submission/Source",
+  "testDirectory": "/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/smartcampus-practice10-source-dta6c5z_",
+  "sourceManifestSha256": "dcef7a2d23ad9f499d112ef89703db4383fa024a85100dcef48a404bde1c1acf",
+  "stage": "verified",
+  "install": "passed",
+  "vitest": {
+    "passed": 81,
+    "failed": 0
+  },
+  "build": "passed"
+}

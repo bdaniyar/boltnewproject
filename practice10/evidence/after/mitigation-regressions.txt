@@ -1,0 +1,8 @@
+PASS T10-01 exact approved patch contents
+PASS T10-02 preserve application source, fixtures and previous unit suites
+PASS T10-03 runner assertions preserved; only output-directory option changed
+PASS T10-04 new output directory contains the successful real browser run
+PASS T10-05 rerun refuses to overwrite new evidence
+PASS T10-06 default historical evidence remains protected
+PASS T10-07 workflow structure, safe permissions and shell syntax
+TOTAL 7; PASSED 7; FAILED 0

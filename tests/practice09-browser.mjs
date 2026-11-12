@@ -12,7 +12,8 @@ import path from 'node:path';
 const project = fileURLToPath(new URL('..', import.meta.url));
 const phase = process.argv[2];
 if (!['before', 'after'].includes(phase)) throw new Error('Usage: node tests/practice09-browser.mjs before|after');
-const submission = path.resolve(project, `practice09/evidence/ui-${phase}`);
+const submission = path.resolve(project,
+  process.env.PRACTICE09_EVIDENCE_DIR || `practice09/evidence/ui-${phase}`);
 if (existsSync(path.join(submission, 'playwright-ui-results.json'))) throw new Error(`Evidence already exists at ${submission}; preserve it before a new run.`);
 const shots = submission;
 const results = submission;

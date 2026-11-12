@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "lint"
+  ],
+  "cwd": "/private/tmp/smartcampus-practice10-baseline-20261112",
+  "startedAtUTC": "2026-11-12T09:09:47.960856+00:00",
+  "completedAtUTC": "2026-11-12T09:09:51.123285+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm",
+    "audit",
+    "--omit=dev",
+    "--json"
+  ],
+  "cwd": "/private/tmp/smartcampus-practice10-baseline-20261112",
+  "startedAtUTC": "2026-11-12T09:16:27.180106+00:00",
+  "completedAtUTC": "2026-11-12T09:16:29.904381+00:00",
+  "exitCode": 1
+}

@@ -1,0 +1,33 @@
+{
+  "url": "https://smart-campus-room-ch-50zs.bolt.host/",
+  "checkedAt": "2026-11-12T09:12:46.383Z",
+  "checks": [
+    "Smart Campus heading visible",
+    "A-102 overlap rejected",
+    "A-102 touching endpoint accepted"
+  ],
+  "deployedRevision": "Not established; no new deployment requested",
+  "httpStatus": 200,
+  "title": "Smart Campus Room Availability Checker",
+  "scripts": [
+    {
+      "url": "https://smart-campus-room-ch-50zs.bolt.host/assets/index-Du6ROB-e.js",
+      "status": 200,
+      "bytes": 161628,
+      "sha256": "1b7e864eb276be8475fe1a00dc4481c20bd1eb8ce152dbd6929d72a57a5121d9"
+    },
+    {
+      "url": "https://bolt.new/badge.js?s=46d29408-4484-43f2-a402-edbb01493e8b",
+      "status": 200,
+      "bytes": 34428,
+      "sha256": "39b3b4d90012f4600d95dcaacb9b71df2f9477281c53c376640b84238c5ff9a0"
+    },
+    {
+      "url": "https://bolt.new/deployed-preview-script.js?origin=https%3A%2F%2Fbolt.new",
+      "status": 200,
+      "bytes": 48788,
+      "sha256": "8c49ee0b8ccfe34be7b74c20edeb2e6a1d87caadbb2b0535d931861754749432"
+    }
+  ],
+  "status": "passed"
+}

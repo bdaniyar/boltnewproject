@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "practice10/tools/compare-ui.mjs"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-11-12T09:28:12.428205+00:00",
+  "completedAtUTC": "2026-11-12T09:28:12.507206+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,10 @@
+{
+  "original": "tests/practice09-browser.mjs",
+  "originalSHA256": "6fdc9f1058c02eb3882efbd236e2d001ebbc460e9dba9722eb62b913b719d2d7",
+  "onlyChange": {
+    "before": "const submission = path.resolve(project, `practice09/evidence/ui-${phase}`);",
+    "after": "const submission = '/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice10/evidence/baseline/ui';"
+  },
+  "adaptedSHA256": "a24cea180946f96038c43da7663565316a54222e01c50d4d51756482f6febacf",
+  "reason": "Preserve Practice09 evidence while executing unchanged existing checks against the isolated Practice09 baseline."
+}

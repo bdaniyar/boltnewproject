@@ -1,0 +1,25 @@
+{
+  "version": "0.0.0",
+  "name": "vite-react-typescript-starter",
+  "dependencies": {
+    "@supabase/supabase-js": {
+      "version": "2.57.4",
+      "resolved": "https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.57.4.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@supabase/realtime-js": {
+          "version": "2.15.5",
+          "resolved": "https://registry.npmjs.org/@supabase/realtime-js/-/realtime-js-2.15.5.tgz",
+          "overridden": false,
+          "dependencies": {
+            "ws": {
+              "version": "8.18.3",
+              "resolved": "https://registry.npmjs.org/ws/-/ws-8.18.3.tgz",
+              "overridden": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

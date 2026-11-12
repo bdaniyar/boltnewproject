@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npx",
+    "vitest",
+    "run",
+    "tests/practice10.discovery-probe.test.ts"
+  ],
+  "cwd": "/private/tmp/smartcampus-practice10-baseline-20261112",
+  "startedAtUTC": "2026-11-12T09:11:36.251933+00:00",
+  "completedAtUTC": "2026-11-12T09:11:36.993372+00:00",
+  "exitCode": 1
+}

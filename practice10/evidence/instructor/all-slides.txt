@@ -1,0 +1,280 @@
+
+--- PAGE 1 ---
+Software Engineering
+Lesson #10 - Practice
+--- PAGE 2 ---
+Lesson #10 - Practice
+--- PAGE 3 ---
+Agenda: Lesson #10 - Software Engineering - Practice
+1 Review AI-assisted software for risks
+2 Practice work #10
+3 Q & A
+--- PAGE 4 ---
+Agenda: Lesson #10 - Software Engineering - Practice
+1 Review AI-assisted software for risks
+2 Practice work #10
+3 Q & A
+--- PAGE 5 ---
+● Risk review of the Smart Campus checker
+● Lecture #10: agent-ready repositories and background agents
+● Practice #10: evidence-based audit, mitigation and release 
+decision
+● Q&A
+Review AI-assisted software for risks
+Agenda
+--- PAGE 6 ---
+● Identify concrete risks in AI-assisted software and agent 
+workflows.
+● Audit a repository for agent readiness using Lecture #10 criteria.
+● Verify AI findings with tests, documentation and code evidence.
+● Apply safeguards and explain a defensible release decision.
+Review AI-assisted software for risks
+Learning outcomes
+--- PAGE 7 ---
+● Agent-ready codebases: structured context, rules, tooling and 
+verification.
+● Agent failures: missing tests, outdated docs, unreliable builds and 
+poor observability.
+● Background agents: asynchronous changes in isolated 
+environments.
+● Human review remains necessary before accepting agent-
+produced changes. 
+Review AI-assisted software for risks
+Connection to Lecture #10
+--- PAGE 8 ---
+● AI-generated code may look plausible but violate acceptance 
+criteria.
+● A messy repository makes it harder for agents to find correct 
+context.
+● Missing reproducible checks can hide defects and security 
+weaknesses.
+● A risk claim requires evidence; an AI suggestion is not proof.
+Review AI-assisted software for risks
+Why risk review matters
+--- PAGE 9 ---
+● Correctness: invalid availability decisions or missing boundary 
+cases.
+● Security / privacy: secrets, unsafe dependencies, untrusted input 
+or data exposure.
+● Reliability: flaky tests, inconsistent builds or time-dependent 
+behavior.
+● Agent operations: excessive permissions, unreviewed edits and 
+shared resources.
+Review AI-assisted software for risks
+Risk categories
+--- PAGE 10 ---
+● Risk: a plausible event with a potential adverse consequence.
+● Finding: observed evidence such as failing tests or missing 
+safeguards.
+● Mitigation: a focused change that reduces likelihood or impact.
+● Residual risk: what remains after the mitigation is verified.
+Review AI-assisted software for risks
+Risk vs. finding vs. mitigation
+--- PAGE 11 ---
+● Likelihood: 1 unlikely, 2 possible, 3 likely.
+● Impact: 1 minor, 2 moderate, 3 serious.
+● Risk score = likelihood × impact (range 1–9).
+● Prioritize high-scoring risks, but justify each score with evidence.
+Review AI-assisted software for risks
+Risk scoring
+--- PAGE 12 ---
+● Continue the Lesson #09 Room Availability Checker in Bolt.new.
+● One room, fictional bookings, no login and no database.
+● Retain the existing acceptance contract and repository 
+instructions.
+● Do not introduce real personal information, secrets or external 
+production services.
+Review AI-assisted software for risks
+Smart Campus: project scope
+--- PAGE 13 ---
+● Reject invalid or past times; enforce the allowed duration.
+● Reject overlap with an existing booking and blocked-room 
+requests.
+● Keep stored fictional booking data unchanged during checks.
+● Show clear availability feedback and usable desktop/mobile 
+behavior.
+Review AI-assisted software for risks
+Acceptance contract to preserve
+--- PAGE 14 ---
+● No tests -> changes cannot be verified.
+● No documentation or standards -> inconsistent implementation.
+● Unreliable build -> uncertain change quality.
+● No observability, reproducibility or security checks -> hidden 
+risks.
+Review AI-assisted software for risks
+Lecture #10: what breaks agents
+--- PAGE 15 ---
+● Sufficient tests and repeatable build / verification commands.
+● Current README and consistent modular design patterns.
+● Agent playbook (AGENTS.md) with boundaries and safe 
+commands.
+● Security checks, clear logs and an isolated development 
+environment.
+Review AI-assisted software for risks
+Lecture #10: agent-ready checklist
+--- PAGE 16 ---
+● Level 1 - Baseline: formatter, linter, type checks, unit tests, 
+pinned dependencies.
+● Level 2 - Documented: .env.example, architecture notes and 
+AGENTS.md.
+● Level 3 - Agent-ready: CI, hooks, integration checks and 
+reviewable evidence.
+● Use these lecture levels as an audit rubric, not an automatic 
+certification.
+Review AI-assisted software for risks
+Repository readiness levels
+--- PAGE 17 ---
+● A remote agent may modify files while the developer is away.
+● Parallel tasks can conflict through shared ports, databases or 
+branches.
+● Unclear permissions can allow unnecessary external actions.
+● Require isolated branches/worktrees, test evidence and human 
+approval.
+Review AI-assisted software for risks
+Background coding agents: extra risks
+--- PAGE 18 ---
+Review AI-assisted software for risks
+Sandbox
+An AI sandbox is an isolated, controlled execution environment 
+where AI coding agents, LLM tool calls, or AI-generated code run 
+away from your host machine and production systems.
+Developers use AI sandboxing to let agents execute code freely 
+while keeping the host and its credentials out of reach.
+--- PAGE 19 ---
+Review AI-assisted software for risks
+Sandbox
+
+--- PAGE 20 ---
+Review AI-assisted software for risks
+Sandbox
+
+--- PAGE 21 ---
+Agenda: Lesson #10 - Software Engineering - Practice
+1 Review AI-assisted software for risks
+2 Practice work #10
+3 Q & A
+--- PAGE 22 ---
+● Open the final Smart Campus project from Practice #09.
+● Save a copy / checkpoint before any agent-assisted changes.
+● Locate README, AGENTS.md, tests and package scripts.
+● Run existing checks; record pass/fail and any missing commands.
+Practice work #10
+Task #01 - Prepare the baseline
+--- PAGE 23 ---
+Practice work #10
+Task #02 - Read-only risk review
+
+--- PAGE 24 ---
+● Choose at least five proposed risks across three categories.
+● Inspect the referenced code or repository evidence yourself.
+● Label each: confirmed, plausible / unverified, or unsupported.
+● Do not present an unexecuted test as a passed test.
+Practice work #10
+Task #03 - Challenge AI findings
+--- PAGE 25 ---
+● Record ID, category, cause/event/consequence and affected 
+component.
+● Add evidence, likelihood (1–3), impact (1–3) and score.
+● Record proposed mitigation, owner and verification method.
+● Include at least five risks; rank the top two for action.
+Practice work #10
+Task #04 - Build a risk register
+--- PAGE 26 ---
+● Check README accuracy, folder layout and documented setup.
+● Check automated tests, lint/type checks and build reproducibility.
+● Check AGENTS.md: scope, safe commands, forbidden actions and 
+review gates.
+● Assign a justified Level 1, 2 or 3 and list missing evidence.
+Practice work #10
+Task #05 - Agent-readiness audit
+--- PAGE 27 ---
+Practice work #10
+Task #06 - Audit the agent playbook
+
+--- PAGE 28 ---
+● Run baseline automated checks; capture commands and outputs.
+● Add a targeted regression test for a confirmed risk if feasible.
+● Perform a manual UI check for feedback and responsive layout.
+● Record before/after results and explicitly note any tests not run.
+Practice work #10
+Task #07 - Verify safely
+--- PAGE 29 ---
+● Select two confirmed, meaningful risks from the register.
+● Ask the agent for a minimal patch and review the diff first.
+● Approve only changes within scope; reject unrelated refactoring.
+● Rerun tests and revise residual risk scores with evidence.
+Practice work #10
+Task #08 - Mitigate two risks
+--- PAGE 30 ---
+● Assume an agent works asynchronously on a separate branch.
+● Specify isolation, permitted files, commands and prohibited 
+actions.
+● Define required evidence: diff, test output, build result and 
+review note.
+● Explain what must happen before merging or deploying.
+Practice work #10
+Task #09 - Background agent thought 
+experiment
+--- PAGE 31 ---
+Practice work #10
+Optional - Agent review checklist 
+prompt
+
+--- PAGE 32 ---
+● GO: key checks pass and no unacceptable unresolved risks 
+remain.
+● CONDITIONAL: known limitations have documented owners and 
+controls.
+● NO-GO: serious unmitigated risks or missing critical verification.
+● Justify the decision using the register, tests and remaining 
+uncertainty.
+Practice work #10
+Release decision: GO / CONDITIONAL / 
+NO-GO
+--- PAGE 33 ---
+Submission details
+● Project link or source archive; no real personal data.
+● Risk register with at least five evaluated findings.
+● Agent-readiness audit with level, gaps and AGENTS.md review.
+● Evidence of two mitigations, test outputs and a release decision.
+Practice work #10
+--- PAGE 34 ---
+References and continuity
+● Lesson #10 Lecture: Agent-Ready Codebases
+● Lesson #10 Lecture: Background Coding Agent Workflows
+● Lesson #09 Practice: Smart Campus, Bolt.new and repository 
+instructions.
+● Lessons #07–08 Practice: testing, regression and agent skills.
+Practice work #10
+--- PAGE 35 ---
+References and continuity
+● Lesson #10 Lecture: Agent-Ready Codebases
+● Lesson #10 Lecture: Background Coding Agent Workflows
+● Lesson #09 Practice: Smart Campus, Bolt.new and repository 
+instructions.
+● Lessons #07–08 Practice: testing, regression and agent skills.
+Practice work #10
+--- PAGE 36 ---
+Discussion
+● What makes an AI risk finding trustworthy?
+● Which missing repository check most weakens agent readiness?
+● Would you allow a background agent to merge changes 
+automatically?
+● What evidence would change your release decision?
+Practice work #10
+--- PAGE 37 ---
+Submission
+At the end of class, please, send your work screenshots to b.azimkhanov@kbtu.kz, indicating 
+AI-Driven Software Engineering Practice #11, your full name and ID on the title (topic) of 
+your mail:
+Example: AI-Driven Software Engineering Practice #11, Robin van Persie, 06B081983
+● Your classes time and day of the week
+● AI tool name, version, model
+● Include: project link (live demo using the publish option) and export,
+report, screenshots, etc.
+● Do not include OneDrive link, WinRAR, ZIP!
+Practice work #10
+
+--- PAGE 38 ---
+Agenda: Lesson #10 - Software Engineering - Practice
+Q & A

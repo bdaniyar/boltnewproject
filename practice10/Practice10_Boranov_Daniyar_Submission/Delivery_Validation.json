@@ -1,0 +1,34 @@
+{
+  "filesHashed": 207,
+  "bytes": 8934064,
+  "editableWord": true,
+  "font": "Times New Roman 12 pt black",
+  "reportPages": 12,
+  "reportImages": 4,
+  "reportSHA256": "f84058112daf833cc85506f0b924631570ecc165dfae0d0b1bf0be43267ec71a",
+  "reportContainsTeacherEmail": false,
+  "reportContainsSubmissionInstructions": false,
+  "riskFindings": 8,
+  "categories": 5,
+  "approvedMitigations": [
+    "R1",
+    "R2"
+  ],
+  "readinessLevel": 2,
+  "releaseDecision": "CONDITIONAL",
+  "dependencyPackagesReported": 25,
+  "fullVitest": "81/81",
+  "legacy": "9/9",
+  "mitigationChecks": "7/7",
+  "browser07": "12/12",
+  "browser08": "14/14",
+  "browser09": "18/18",
+  "uiComparisons": "25/25",
+  "sourceFiles": 38,
+  "sourceFreshInstallTestsBuild": "passed",
+  "archiveCreated": false,
+  "remainingExternalEvidence": [
+    "First hosted CI run and required-check enforcement not established; no authorized remote push"
+  ],
+  "historyHead": "2857ed197bbc05296c6731fb458fa20a550913e8"
+}

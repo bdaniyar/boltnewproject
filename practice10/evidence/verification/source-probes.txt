@@ -1,0 +1,6 @@
+{"check":"overlap and endpoint","start":660,"end":720,"expected":"available","actual":"available"}
+{"check":"overlap and endpoint","start":570,"end":600,"expected":"available","actual":"available"}
+{"check":"overlap and endpoint","start":630,"end":690,"expected":"unavailable","actual":"unavailable"}
+PASS frozen sample booking values unchanged
+PASS synthetic fixture markup escaped by real BookingPanel render; no raw script element
+{"check":"out-of-day supplied clock diagnostic","currentMinutes":-1,"actual":{"valid":true,"messages":[]},"scope":"UI clamps its clock; helper day-range policy for external callers is not specified"}

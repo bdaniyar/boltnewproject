@@ -1,0 +1,42 @@
+{
+  "approvedFiles": [
+    ".github/workflows/verify.yml",
+    "AGENTS.md",
+    "README.md",
+    "tests/practice09-browser.mjs"
+  ],
+  "observedTrackedChanges": [
+    "AGENTS.md",
+    "README.md",
+    "tests/practice09-browser.mjs"
+  ],
+  "newWorkflow": ".github/workflows/verify.yml",
+  "allApplicationSourceUnchanged": true,
+  "allPriorUnitSuitesUnchanged": true,
+  "packageAndLockfileUnchanged": true,
+  "existingUserZipDeletionPreserved": true,
+  "applicationHashes": {
+    "src/App.tsx": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091",
+    "src/bookingLogic.ts": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30",
+    "src/components/BookingPanel.tsx": "be1d5280c4f148d20f5496df7616b86ff1b6c94cc1cdb74ce955fd6b804adb33",
+    "src/components/CurrentTimeControl.tsx": "c811241c52206f743af845fe4cfbfa37b9820e8e7a2e136201d6fb7ea2f7fae1",
+    "src/components/RoomCard.tsx": "48e27e05b37542d98c6db43b62c939ab99256d1b9da792aab5953a05f8dbef52",
+    "src/components/Timeline.tsx": "0420983cd1e671014b36a58d1288cf4187306dd6f1b70fdfaf02ffabd1682d4f",
+    "src/index.css": "cc1a7ad0d019ddb1d32d0ecb588ba0ac26ce41d8625dd6c366348b25f83a28ec",
+    "src/main.tsx": "832842269af94b055b2cd42fd27a0f212773b36d20083b631b863cbb5f0fd09e",
+    "src/sampleData.ts": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629",
+    "src/types.ts": "156643c3915e5b5880a1d09adccc6035caa48a87b1f9cc323846c080169e6653",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "builtAssetsByteIdentical": true,
+  "baselineBuildHashes": {
+    "assets/index-8JG-y2iH.css": "1c057f33f4b926649e6b2e00cddc594f6e11cf4b30ad7f5095cf9fbd511be622",
+    "assets/index-yjZ0jvYV.js": "ec4eb810fa51065133c00f03c36470c018e5add2c4a5aa10494869a029e54420",
+    "index.html": "a495cca30089be5e1219a28824e04e1febda9abfa0a2e54694d1e04bd25a1e9d"
+  },
+  "afterBuildHashes": {
+    "assets/index-8JG-y2iH.css": "1c057f33f4b926649e6b2e00cddc594f6e11cf4b30ad7f5095cf9fbd511be622",
+    "assets/index-yjZ0jvYV.js": "ec4eb810fa51065133c00f03c36470c018e5add2c4a5aa10494869a029e54420",
+    "index.html": "a495cca30089be5e1219a28824e04e1febda9abfa0a2e54694d1e04bd25a1e9d"
+  }
+}

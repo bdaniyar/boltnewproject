@@ -1,0 +1,5 @@
+PASS workflow YAML parses; contents read; twelve steps; PR, main push and manual triggers
+PASS bash syntax for all proposed run blocks; run blocks were not executed
+PASS proposed browser script JavaScript syntax
+PASS git apply --check 01-repeatable-verification.patch; patch not applied
+PASS git apply --check 02-agent-boundaries.patch; patch not applied

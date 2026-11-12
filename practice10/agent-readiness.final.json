@@ -1,0 +1,91 @@
+{
+  "level": 2,
+  "stage": "after approved mitigations",
+  "checks": [
+    {
+      "level": "Level 1",
+      "check": "Formatting",
+      "state": "Partial",
+      "evidence": "Consistent TypeScript/React conventions; no tracked formatter or EditorConfig.",
+      "improvement": "Agree a formatting convention before wider team edits."
+    },
+    {
+      "level": "Level 1",
+      "check": "Lint / types",
+      "state": "Satisfied",
+      "evidence": "Fresh npm run lint and npm run typecheck exited 0. Typecheck covers src.",
+      "improvement": "Retain these checks."
+    },
+    {
+      "level": "Level 1",
+      "check": "Unit and component tests",
+      "state": "Satisfied",
+      "evidence": "Fresh full run: 81 tests in four files passed. Original17, improved43, Practice08six, Practice09fifteen.",
+      "improvement": "Confirm inclusion of new tests."
+    },
+    {
+      "level": "Level 1",
+      "check": "Build and dependency resolution",
+      "state": "Satisfied with security gap",
+      "evidence": "npm ci from tracked lockfile and npm run build passed. Declared ranges resolve exact versions via lockfile; existing advisories remain.",
+      "improvement": "Review compatible dependency upgrades."
+    },
+    {
+      "level": "Level 2",
+      "check": "README and setup",
+      "state": "Working setup; historical gaps remain",
+      "evidence": "Approved Practice10 section documents fresh evidence output; older context remains R5.",
+      "improvement": "Owner may review a later historical documentation cleanup."
+    },
+    {
+      "level": "Level 2",
+      "check": "Architecture and fixtures",
+      "state": "Satisfied",
+      "evidence": "Pure src/bookingLogic.ts, React components, types and five fictional fixtures clearly separated.",
+      "improvement": "Keep A-102 exercise and existing UI."
+    },
+    {
+      "level": "Level 2",
+      "check": "AGENTS.md",
+      "state": "Satisfied as documented rules",
+      "evidence": "Exact approved section applied; secret, isolation, human review and merge boundaries included.",
+      "improvement": "Continue enforcing the rules in each task; text is not a sandbox."
+    },
+    {
+      "level": "Level 2",
+      "check": "Environment example",
+      "state": "Not applicable",
+      "evidence": "Client-only fictional demo needs no application credentials or environment configuration.",
+      "improvement": "Do not add a .env solely for rubric compliance."
+    },
+    {
+      "level": "Level 3",
+      "check": "CI and hooks",
+      "state": "CI authored; hosted run unverified",
+      "evidence": "Pinned Actions workflow with read-only permission; local YAML/shell/command checks passed.",
+      "improvement": "First authorized remote run and owner-selected required checks; no push/deploy was performed."
+    },
+    {
+      "level": "Level 3",
+      "check": "Integration and evidence",
+      "state": "Satisfied locally",
+      "evidence": "Fresh output option and both evidence guards passed; 18/18 checks and 25/25 recorded comparisons matched.",
+      "improvement": "Preserve independent run folders and actual logs."
+    },
+    {
+      "level": "Level 3",
+      "check": "Security verification",
+      "state": "Partial",
+      "evidence": "Actual npm audit, advisory/source checks and limited secret-pattern scan; known development dependencies affected.",
+      "improvement": "Keep explicit owner and residual security controls."
+    },
+    {
+      "level": "Level 3",
+      "check": "Isolation and human approval",
+      "state": "Documented and used in this task",
+      "evidence": "Baseline isolated worktree; user approved both exact patches before application; no merge/deploy.",
+      "improvement": "Use a disposable credential-free sandbox for untrusted execution."
+    }
+  ],
+  "rationale": "Level 2 remains appropriate: local checks and stronger instructions are verified, but hosted CI execution/enforcement, a formal formatter and dependency remediation are not established. Level 3 is not automatically awarded."
+}

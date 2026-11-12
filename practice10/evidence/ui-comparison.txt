@@ -1,0 +1,37 @@
+node practice10/tools/compare-ui.mjs
+MATCH same-application-url
+MATCH same-browser-version
+MATCH same-test-ids
+MATCH same-check-results
+MATCH feedback-endpoint-after
+MATCH feedback-blocked-valid
+MATCH feedback-blocked-malformed-start
+MATCH feedback-blocked-malformed-end
+MATCH feedback-blocked-reversed
+MATCH feedback-missing-start
+MATCH feedback-malformed-end
+MATCH feedback-past
+MATCH feedback-zero-duration
+MATCH feedback-reversed
+MATCH feedback-duration-120
+MATCH feedback-duration-121
+MATCH feedback-endpoint-before
+MATCH feedback-overlap
+MATCH same-observable-state-ids
+MATCH same-initial-booking-records
+MATCH same-final-booking-records
+MATCH same-UI04-DESKTOP-observations
+MATCH same-UI04-MOBILE-observations
+MATCH same-UI05-observations
+MATCH same-no-page-errors
+DIFFERENT PNG 01-desktop.png
+DIFFERENT PNG 02-available.png
+DIFFERENT PNG 03-unavailable.png
+DIFFERENT PNG 04-validation.png
+DIFFERENT PNG 07-overlap.png
+IDENTICAL PNG 05-mobile.png
+IDENTICAL PNG mobile-feedback-viewport.png
+DIFFERENT PNG 06-data-preservation.png
+Behaviour comparisons: 25/25 equal
+Observable feedback states: 14
+UI before: 18/18 passed; after: 18/18 passed

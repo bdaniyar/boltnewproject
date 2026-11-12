@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "id": "T10-01 exact approved patch contents",
+      "status": "passed"
+    },
+    {
+      "id": "T10-02 preserve application source, fixtures and previous unit suites",
+      "status": "passed"
+    },
+    {
+      "id": "T10-03 runner assertions preserved; only output-directory option changed",
+      "status": "passed"
+    },
+    {
+      "id": "T10-04 new output directory contains the successful real browser run",
+      "status": "passed"
+    },
+    {
+      "id": "T10-05 rerun refuses to overwrite new evidence",
+      "status": "passed"
+    },
+    {
+      "id": "T10-06 default historical evidence remains protected",
+      "status": "passed"
+    },
+    {
+      "id": "T10-07 workflow structure, safe permissions and shell syntax",
+      "status": "passed"
+    }
+  ],
+  "passed": 7,
+  "failed": 0,
+  "scope": "Local mitigation-specific checks; not a hosted CI execution"
+}

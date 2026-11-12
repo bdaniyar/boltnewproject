@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm",
+    "ci"
+  ],
+  "cwd": "/private/var/folders/_x/tddpc1817tb9qpk0czts3zcr0000gn/T/smartcampus-practice10-source-dta6c5z_",
+  "startedAtUTC": "2026-11-12T09:38:07.100929+00:00",
+  "completedAtUTC": "2026-11-12T09:38:14.219430+00:00",
+  "exitCode": 0
+}

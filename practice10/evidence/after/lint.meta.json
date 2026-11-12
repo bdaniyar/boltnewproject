@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "lint"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-11-12T09:25:45.239787+00:00",
+  "completedAtUTC": "2026-11-12T09:25:46.602015+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,52 @@
+{
+  "stage": "baseline and challenged findings before approval",
+  "node": "v22.22.0",
+  "npm": "10.9.4",
+  "fullVitest": {
+    "passed": 81,
+    "failed": 0,
+    "log": "vitest.txt"
+  },
+  "legacy": {
+    "passed": 9,
+    "failed": 0,
+    "log": "legacy.txt"
+  },
+  "browser": {
+    "passed": 18,
+    "failed": 0,
+    "log": "browser.txt",
+    "evidenceAdapter": "browser-adapter.json"
+  },
+  "typecheck": "exit 0",
+  "lint": "exit 0",
+  "build": "exit 0",
+  "audit": {
+    "info": 0,
+    "low": 2,
+    "moderate": 7,
+    "high": 14,
+    "critical": 2,
+    "total": 25
+  },
+  "productionAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 1,
+    "critical": 0,
+    "total": 1
+  },
+  "expectedDiagnosticFailures": [
+    {
+      "command": "node tests/practice09-browser.mjs after",
+      "exitCode": 1,
+      "reason": "Historical evidence already exists"
+    },
+    {
+      "command": "npx vitest run tests/practice10.discovery-probe.test.ts",
+      "exitCode": 1,
+      "reason": "New diagnostic file excluded by fixed filename list"
+    }
+  ]
+}

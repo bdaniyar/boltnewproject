@@ -1,0 +1,21 @@
+{
+  "document": "Practice10_Boranov_Daniyar_Report.docx",
+  "sha256": "f84058112daf833cc85506f0b924631570ecc165dfae0d0b1bf0be43267ec71a",
+  "pages": 12,
+  "allPagesVisuallyInspected": true,
+  "review": "No clipping, overlap, broken tables or orphan conclusion. Final changed pages 2 and 3 reviewed; other ten page images match the fully inspected prior render.",
+  "pageImageHashes": {
+    "page-1.png": "fd63c5c88d5b657ff34f6c7170188ad148328127368726fae9c4b8bf6dc0a893",
+    "page-10.png": "61ec9b8caf1620a38b60dbc91221b71b9ba7449e5601ed44636f447005bb0539",
+    "page-11.png": "42511e65d2ced6de8bff0930fc2ae9f4e045098d97b5ef6a51395858624176bd",
+    "page-12.png": "15487bd04a76010f8ae99226e0887dc3574f38fcad626cda2ce4ffb35da7698b",
+    "page-2.png": "bf379678953ad102ffe84e5cb19ab3085f72e2b89c3b02a02bd469bafb68a391",
+    "page-3.png": "4ec313be00d1399fe163f18ab2113e9c50e62279d3c5681686da746b826d8c5e",
+    "page-4.png": "eab3467b27a4295d83cdf7e6b5c892e65a218d882adca434275dffef0cf954dc",
+    "page-5.png": "b3fe7a082febb2e443251b77441dddb7206edef8c160e1cba7644b8d7b02d8fa",
+    "page-6.png": "0b3f018519b827b66b1ff64850a2912288e1178522fd950185ef0728fac18b0b",
+    "page-7.png": "e843e212831565385cc8babd5f4eb02bfebb46b59451250b5e102364be379bf9",
+    "page-8.png": "74e68077f0f5c00f02e6a27fed2107d3ba5031d2c727db5b7cfe998a7e168897",
+    "page-9.png": "7f3b0ae746c6aa4053ae1fee6dc7da4a918f8bea93f3620344cfa7bc5687ea25"
+  }
+}

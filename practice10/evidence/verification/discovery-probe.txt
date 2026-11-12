@@ -1,0 +1,4 @@
+import { test, expect } from 'vitest';
+test('Practice10 discovery diagnostic', () => expect(2 + 2).toBe(4));
+
+Created only in isolated worktree; removed after the runner reported it excluded.

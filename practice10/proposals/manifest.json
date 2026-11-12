@@ -1,0 +1,20 @@
+[
+  {
+    "patch": "01-repeatable-verification.patch",
+    "files": [
+      ".github/workflows/verify.yml",
+      "tests/practice09-browser.mjs",
+      "README.md"
+    ],
+    "sha256": "21e0710720ccb2e7b85fe53adbee6735ed95f0a3c11563fc033880c192facc75",
+    "applied": false
+  },
+  {
+    "patch": "02-agent-boundaries.patch",
+    "files": [
+      "AGENTS.md"
+    ],
+    "sha256": "308048b9bc7868fe706a02e23c4f57a03195af2d8134cdb9ca39a6eb2ad96434",
+    "applied": false
+  }
+]

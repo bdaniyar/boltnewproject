@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "tests/.practice10-live.mjs"
+  ],
+  "cwd": "/private/tmp/smartcampus-practice10-baseline-20261112",
+  "startedAtUTC": "2026-11-12T09:12:46.169602+00:00",
+  "completedAtUTC": "2026-11-12T09:13:02.045854+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "original": "tests/browser.mjs",
+    "originalSHA256": "7773ef26f556f76391b2bca09c80835a41b2b6e37bb4ea3d3d27cd5bfe1a8a07",
+    "adapted": "tests/.practice10-browser06.mjs",
+    "adaptedSHA256": "be288385dbe742f1ba79b0ba5a1ad6fb61c98c2b4b57beb58c7328496e8a7fd9",
+    "onlyReplacements": [
+      [
+        "const out=`../evidence/${phase}`;",
+        "const out='/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice10/evidence/after/browser06';"
+      ],
+      [
+        "'http://127.0.0.1:5173'",
+        "'http://127.0.0.1:5180'"
+      ]
+    ],
+    "assertionsChanged": false
+  },
+  {
+    "original": "tests/practice07-browser.mjs",
+    "originalSHA256": "f39a67dbf79c6e660a18e119762e1a7e466955d406c4abee04e43acecf54c77f",
+    "adapted": "tests/.practice10-browser07.mjs",
+    "adaptedSHA256": "eaaec423c7597e29991ba9c0a6e649e78ccd95f53058d0057762ec843c15b652",
+    "onlyReplacements": [
+      [
+        "const submission = path.resolve(project, '../Practice07_Boranov_Daniyar');",
+        "const submission = '/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice10/evidence/after/browser07';"
+      ],
+      [
+        "url: 'http://127.0.0.1:5173'",
+        "url: 'http://127.0.0.1:5180'"
+      ]
+    ],
+    "assertionsChanged": false
+  },
+  {
+    "original": "tests/practice08-browser.mjs",
+    "originalSHA256": "9bcba2f2c68bef11fac3a01ffc2de87e53a28f1faa8cebafea85c46abe74ab2b",
+    "adapted": "tests/.practice10-browser08.mjs",
+    "adaptedSHA256": "f9b99074a9f79aad3f03e4d4a8f9ae782be2874faec3bc50e27718e5e78508e7",
+    "onlyReplacements": [
+      [
+        "const submission = path.resolve(project, 'practice08/evidence/ui');",
+        "const submission = '/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject/practice10/evidence/after/browser08';"
+      ]
+    ],
+    "assertionsChanged": false
+  }
+]

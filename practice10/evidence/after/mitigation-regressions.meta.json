@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "practice10/tools/verify-mitigations.mjs"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/boltnewproject",
+  "startedAtUTC": "2026-11-12T09:29:39.182465+00:00",
+  "completedAtUTC": "2026-11-12T09:29:39.965853+00:00",
+  "exitCode": 0
+}

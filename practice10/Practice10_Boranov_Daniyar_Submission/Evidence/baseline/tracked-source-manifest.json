@@ -1,0 +1,2207 @@
+[
+  {
+    "path": ".bolt/config.json",
+    "present": true,
+    "sha256": "da87f3867aa1c920ea2dc6b29775a1be2bcf844ee6caa7b947341fae1a7b1b91"
+  },
+  {
+    "path": ".bolt/prompt",
+    "present": true,
+    "sha256": "42def6ea7c0d74a7a1fd64b4a10a309872466bf38de50210f6764ed95c4bc1e6"
+  },
+  {
+    "path": ".gitignore",
+    "present": true,
+    "sha256": "7662a2dd7b435d06292d31c32e43b50f31a1be2fb12fde4107072e60fab7997a"
+  },
+  {
+    "path": "AGENTS.md",
+    "present": true,
+    "sha256": "27521ee845e2636152e34a6d4eebfb6ccf4584f032952c2be28385d822551fc3"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/EVIDENCE_CHECKLIST.md",
+    "present": true,
+    "sha256": "06cf9ae62b7c2c4e72e423b16496760783366334644d5112c697cc3293498b4f"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/Email_Draft.txt",
+    "present": true,
+    "sha256": "f7e7e3ebba2189b15ffd3196a68972923a7d3831f354220a50784458f7421655"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/PENDING_MANUAL_STEPS.md",
+    "present": true,
+    "sha256": "0bf0e57a3b2f86a8ffc7e41e217256372c957e1f17973fa45f7fcd529e667af2"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/Practice08_Boranov_Daniyar_Report.docx",
+    "present": true,
+    "sha256": "30089cfd7c2ad5681d5bf106bb6530568f32a3f7adc7e0b1f0272fb243aefcb2"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/README.md",
+    "present": true,
+    "sha256": "1fc17f67d36a5c5562250a590831f75341917705d8e09f8501a640b307b409cd"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/SHA256SUMS.txt",
+    "present": true,
+    "sha256": "8e7b8337b4dd26ad31bb19b27caa831862814b5eb0059acf55e27e159e2baa90"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/SKILL.md",
+    "present": true,
+    "sha256": "ced9223a79b80e69a464dddf9f62c015b8463f9838d1bfc11763a2942f639b24"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/SmartCampus_Source_Export.zip",
+    "present": true,
+    "sha256": "3b5567fb07cdf6758cfff4d9b54a2d7e40d1b4ce6ee364f827cc2090ab90b621"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/bug-detector.zip",
+    "present": true,
+    "sha256": "d9dc50a596ee8549cc12c5c7efbb78e4bfadcaf8d66980695d590ba9f3392146"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/bug-detector/SKILL.md",
+    "present": true,
+    "sha256": "ced9223a79b80e69a464dddf9f62c015b8463f9838d1bfc11763a2942f639b24"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/bug-detector/agents/openai.yaml",
+    "present": true,
+    "sha256": "23b341065eac913e7717cb047740173cf96cf8e3dd02d571862709d1e15b101f"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/comparison.md",
+    "present": true,
+    "sha256": "175b9ccefc74bddc770d4b36100c4b46ece2fe27fbe888de2033ccba7716bc84"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/defect_log.md",
+    "present": true,
+    "sha256": "ec6557d6383f29e58b337e1d2d757a9a5555ed1ff3630aa52dd9ecccac8fbaf9"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/SmartCampus_Baseline.zip",
+    "present": true,
+    "sha256": "cd4083f03630cb2e29a3c54f113e1f71684b22c73d1934d4d8630f138d0d388c"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/git-reference.txt",
+    "present": true,
+    "sha256": "b89746a9277f351957b0c7760b91093b21f5838e3c145645cd21204bef3f30fa"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/initial-source-diff.patch",
+    "present": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/lockfile-repair.patch",
+    "present": true,
+    "sha256": "f1d0ecd566c09a099cb9a9a47ff50971980ebb44deef1076725a0666c81c9073"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/lockfile-repair.txt",
+    "present": true,
+    "sha256": "5d01d1f790f11f0647203f6fa9356ff894da7bb0488b754aa337714f38148a0c"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/npm-ci-after-lock-repair.txt",
+    "present": true,
+    "sha256": "720fb162ef6bcba1d2c614a716b50ad83ac4773226a788c229396c18497b8a70"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/npm-ci.txt",
+    "present": true,
+    "sha256": "418e43a41aba0648f04f1c0138d9787fdc474b733591209878bff5ca9cc911d4"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice06-legacy.meta.json",
+    "present": true,
+    "sha256": "99c667ad02095b71f91f9a4bc072e269c47b92c5af14ca841cf560ea983c1ecb"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice06-legacy.txt",
+    "present": true,
+    "sha256": "fc28359cf5c65ccd43bf04fa853e86b62ba5c6c8dee6b03d655f0215a8c3395b"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice07-improved.meta.json",
+    "present": true,
+    "sha256": "3e7b9304837a44c6a527870a8ce0f006f64cb58012dc760d2a89dd24c2a1dca7"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice07-improved.txt",
+    "present": true,
+    "sha256": "9410dc3c5bc07086fafe50b2a8ebd95b84eb5083c2a6351bf1cbf4f262df0a94"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice07-original-browser-view.html",
+    "present": true,
+    "sha256": "33ac49a0ff429cab8b6fdbd28750db066040791be186a0d7bfe4fcea703f6d0a"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice07-original-browser-view.png",
+    "present": true,
+    "sha256": "ad857a53e64f5c7fd372db2a6e851f68f141d1df0b199686be9fab4769d56ee1"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice07-original.meta.json",
+    "present": true,
+    "sha256": "13857d243634c4f23418b159d9909f6e709331ec90d594e4a65427e4b5f2f83a"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/baseline/practice07-original.txt",
+    "present": true,
+    "sha256": "4ab3e04529f48a3715667f2e364627a11554593d9ca039222985e3a0bb6caf91"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/baseline-targeted.meta.json",
+    "present": true,
+    "sha256": "9e54c8500788f3411ae087ad1956754e513d4f3a07c6be70ae05cbfdef8f21f0"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/baseline-targeted.txt",
+    "present": true,
+    "sha256": "3309eefe8d63a30dfb39b5cbc34fde1af72e670ab5917cb29240a1374869c337"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/bookingLogic.after-fix.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/bookingLogic.baseline.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/bookingLogic.before-fix.ts",
+    "present": true,
+    "sha256": "be1a6857ee12d26eaab9bda3c6dd6411405e89e06a9d9c4d6aa4578cbd6c4ec8"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/case.json",
+    "present": true,
+    "sha256": "00caa23fa824661d48697e6991e150463d7a090cbecd49cdcf01539bb3809711"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/diagnosis-before-patch.md",
+    "present": true,
+    "sha256": "375d24cfbd1edbc4338c11cbbb29e306cd3c178401f895ca52889a2b71913fba"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/green-full.meta.json",
+    "present": true,
+    "sha256": "b2455419d17e5d951a14dadd1c81e9bab1fb687f236fd50f047a00769868f360"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/green-full.txt",
+    "present": true,
+    "sha256": "0b57dbb76ab944a15987454e06f83c63cf18e36616911c877432bd3509de6a4f"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/green-targeted.meta.json",
+    "present": true,
+    "sha256": "7afe7b1b668741cd2c8b0634c443e9fba7ec553fc4441bf263da346939f733d7"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/green-targeted.txt",
+    "present": true,
+    "sha256": "8d2f42f0445c68ec069188d7e6dc691451982c191b1b2ba9124cf1f85f9d7684"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/injected-defect.patch",
+    "present": true,
+    "sha256": "4d347a662f0c6e7c20390cd084ce41722b1f6a509f84f5735ddd1f270741f78d"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/minimal-repair.patch",
+    "present": true,
+    "sha256": "6465430c71414af118ec7e97a4818cc1342ad3178ed4fcd3ee196b8207239e57"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/practice08.regression.test.ts",
+    "present": true,
+    "sha256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/red-targeted-browser-view.html",
+    "present": true,
+    "sha256": "9d94d610b2c62d6d835b825e03e348d007f839e038d052140b8fa40e3d236f64"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/red-targeted-browser-view.png",
+    "present": true,
+    "sha256": "491f87a4e51cb476451ac64a0a3fcb33e0814bc6c43d6971b6cebca9358dd9c6"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/red-targeted.meta.json",
+    "present": true,
+    "sha256": "311b1eb0314411c04cef78e2f11e119b8f3e2840eba901545f3fc7d0f335289e"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-a/red-targeted.txt",
+    "present": true,
+    "sha256": "04cbbb96f6e45e8fdbcaf197f027c9281b8a545a98997d47121ff90f677b91b0"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/baseline-targeted.meta.json",
+    "present": true,
+    "sha256": "71156f1ced3e207b7638e3b163911533585fb3d9b35ad6ee911f93e521bf36e9"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/baseline-targeted.txt",
+    "present": true,
+    "sha256": "da373c0a88f8d9995142e2901d31ab9ba6225a2071acce0421bdf0dd318515c1"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/bookingLogic.after-fix.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/bookingLogic.baseline.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/bookingLogic.before-fix.ts",
+    "present": true,
+    "sha256": "8e3717694718152a7299bd556470d905e3f04a88fefdf704a92e2290fa54aaea"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/case.json",
+    "present": true,
+    "sha256": "a631909d77b20b4aaefbb737301fcba496c4bc430cceb6a1722ddbfcf4b3c0a2"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/diagnosis-before-patch.md",
+    "present": true,
+    "sha256": "06b8affb08e9dffa9d132df0c0258bec0ad3f01d27de12e5221ee0b3a6591a33"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/green-full.meta.json",
+    "present": true,
+    "sha256": "473a0b70411988eda8379eaccc3912b42f48e3296b7ea544839c1ad8b1e69550"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/green-full.txt",
+    "present": true,
+    "sha256": "f0054fef4da944a0a59bf11748bd6fe2c7a6d4e9f9275533106d57cc47e5baad"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/green-targeted.meta.json",
+    "present": true,
+    "sha256": "9365aa6972d46f97d145beff5bdd4b36ffbb8453ed7408dca80303580c6c6628"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/green-targeted.txt",
+    "present": true,
+    "sha256": "ac5528d35291a13ef2239f8c15bd2b300654a77f97c2bed903577c96530069f0"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/injected-defect.patch",
+    "present": true,
+    "sha256": "6be4516b61e94aaf3fcf095ed1214a0333e2a85ca3440886e4615aa13db6863d"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/minimal-repair.patch",
+    "present": true,
+    "sha256": "b1fc9ccb5c4b6b77e09b6a4b14cb92f66ebf9a3f565e926f09ebde312152ec39"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/practice08.regression.test.ts",
+    "present": true,
+    "sha256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/red-targeted-browser-view.html",
+    "present": true,
+    "sha256": "33790f4b9aa67c3c9558dd8d690f9e95dfe401107238f2215c49870fb21ef81a"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/red-targeted-browser-view.png",
+    "present": true,
+    "sha256": "d954d8b5ed8d9e2d9d211e58b8ec1dab45fea0182fbac171807a6b8adab393a6"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/red-targeted.meta.json",
+    "present": true,
+    "sha256": "c185f39639923f60b6cd5334f63bc92b692b27ef72a094d6cacf09247891e69f"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/bug-b/red-targeted.txt",
+    "present": true,
+    "sha256": "6123b557f26712a4aa4f42d18466e816f30c7c7125573e9f0e738a74dda7bd11"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/comparison/access-check.json",
+    "present": true,
+    "sha256": "80ac725cf564931abbe40530854b1f22d97cc25be4ff59ccc49f10f76fcd45a0"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/comparison/chatgpt-access-check.png",
+    "present": true,
+    "sha256": "ab8be6894b7b5edbefc93f8992b3eb8f4cded2249fccd237aac4e76536434d2d"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/build.meta.json",
+    "present": true,
+    "sha256": "c46a149398f15d866088812a50a147cd928e4e150570752ef978220e931f7e19"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/build.txt",
+    "present": true,
+    "sha256": "f08615fb09fba6786f41d30cdbdc0f181db53c8b3caab7762e8a4140ecaa007b"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/export-clean-install.meta.json",
+    "present": true,
+    "sha256": "c83bbe437dcf34c2efbe1ff996984c97cbebe8efc2e44ec4c37d1f955ce6077e"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/export-clean-install.txt",
+    "present": true,
+    "sha256": "720fb162ef6bcba1d2c614a716b50ad83ac4773226a788c229396c18497b8a70"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/export-full-vitest.meta.json",
+    "present": true,
+    "sha256": "622a846603d02639f06166454248ab5fdfa3d0c692fbc06a2e079bda95f764be"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/export-full-vitest.txt",
+    "present": true,
+    "sha256": "d50b47a84efbaa587c818eb4bf95061711bcd48be6f2a0e73f4ca5bd29df2268"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/final-project.patch",
+    "present": true,
+    "sha256": "ceddcdfade143e282dcd32aa1474f1fcb7ffb09c84e223c6924452bd142c2a97"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/final-tracked-changes.patch",
+    "present": true,
+    "sha256": "47d9b2ec18b9e0965b55e11ce01f97128e2c772c83c359a8824270702e5faec2"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/full-vitest.meta.json",
+    "present": true,
+    "sha256": "ed2147ed3f037133690e029c4b7eeb21db27490f6ef1fa11ca5650310b75b9eb"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/full-vitest.txt",
+    "present": true,
+    "sha256": "0a4d34e5508ecd3f0478822ffaa530f7a3f101ade239663b5d6b26bf57fef221"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/legacy.meta.json",
+    "present": true,
+    "sha256": "34d0ded90c29b4b1d9ca2069c6034433881879b59bac4048aed38938c1035905"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/legacy.txt",
+    "present": true,
+    "sha256": "2e9d16bb19c02bd54c1de181fd2217cc190786092f1eb7f5f77c9aaf429bb7fe"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/lint.meta.json",
+    "present": true,
+    "sha256": "676578eb57b77726879147560587a6f5214381f3495160322898bb9b967552a7"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/lint.txt",
+    "present": true,
+    "sha256": "b87b0553ce7ede9cd687ee2826d6d5c67944d845831f5d3d0ebeaf5bf31f072a"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/practice08-targeted.meta.json",
+    "present": true,
+    "sha256": "f1e459ec348f902a08b4369c39c805cc91fc78962bd92c56e6aa8642425de4d7"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/practice08-targeted.txt",
+    "present": true,
+    "sha256": "85cda4dfe8b391a6f70c9a14518589718bc7dd1843b4ec33fc4acba40ee4e7aa"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/preserved-original-source.patch",
+    "present": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/report-validation.json",
+    "present": true,
+    "sha256": "e5e896d218ff6a006da58e55c4731772090c78e2ad512735373ed8ab61018b28"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/source-preservation.json",
+    "present": true,
+    "sha256": "b1481821fa42ac197237e47c2230d189642a865c42e9b7ef4f8d0a31f8694c02"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/typecheck.meta.json",
+    "present": true,
+    "sha256": "74a224481c1b319cfd81653545cbae3080958c13914e91b9c7675436d8f81d28"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/regression/typecheck.txt",
+    "present": true,
+    "sha256": "859c4cc422c2c1e17f29e0b04205936fb1bcd8547564b0d78b3fe3e0ced5a9cd"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/skill/validation.json",
+    "present": true,
+    "sha256": "97b71c2e9524bef3ab3c1ce55f4f96f9105542a71556f82c26226e1aafc03b34"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/skill/zip-inspection.txt",
+    "present": true,
+    "sha256": "7b136c1e51f16f2a1ddbdbafa1810385cd169e549fac3572d19c05f72bd90e76"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/skill/zip-structure.html",
+    "present": true,
+    "sha256": "19d80721715dfa8be8e6ceb048319b36e7a72381798d1ceea7dbc5cd11c45b7e"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/skill/zip-structure.png",
+    "present": true,
+    "sha256": "fa29ef2069f7f0ef77770e8b2bb7a83efe6189a515651810154e6b7fb72c6320"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/01-desktop.png",
+    "present": true,
+    "sha256": "33d4abab11a0d80f1dd197be48156f8f2c2d66ccbce0c879adebe16ede7091fb"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/02-available.png",
+    "present": true,
+    "sha256": "2b38a12c69b48816d31867d1906a6a4fff316cdf733b296d6d415b2df5925e1f"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/03-unavailable.png",
+    "present": true,
+    "sha256": "4c72c8a79d5ff8a7a7e7ce50113b49c59d705688128c225730dd1cb0c37ecf90"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/04-validation.png",
+    "present": true,
+    "sha256": "6b35f81d241aa3014f77213b8cf3630d7a2551b0f9dbd43b6bbf8d72a4beb478"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/05-mobile.png",
+    "present": true,
+    "sha256": "e2a90b151cbc083a0f1f6c2716d40636a9d2db9aec1c68ebcad8d61c5bc9f128"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/06-data-preservation.png",
+    "present": true,
+    "sha256": "594c022d7562ac3bd4e9dfc93a3b85676dcfc10fb4853fabc5fe1a7f7d3d4433"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/07-overlap.png",
+    "present": true,
+    "sha256": "d6a6a737b30f3e9ab0a1cd9400e66ff3326a46d36710066368068832884cd882"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/browser-run.txt",
+    "present": true,
+    "sha256": "873daa1f94512d11cfd7a297ae27cba01ac8974f2010d48ac4bb75d92a2538e9"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/evidence-viewer-captures.json",
+    "present": true,
+    "sha256": "52dca7535400557e145afaa623d6f0452646bd38e7fe3d69c14df4b9c5d720e0"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/initial-launch.txt",
+    "present": true,
+    "sha256": "78ade02ba3352909181b637274297d60cc070303a971607308656bb6701faf62"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/mobile-feedback-capture.json",
+    "present": true,
+    "sha256": "efe5aa71afe13026906dfa1b0aa65e9870c93dd87fc87e31db84dab897fd5f74"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/mobile-feedback-viewport.png",
+    "present": true,
+    "sha256": "8286d07a0bc321ff69ecdb89b19b7f5d7449586f44b227ab663d8ec647fbb126"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/origin-verification.txt",
+    "present": true,
+    "sha256": "4faf7a940c2268ebabbc0148508c1f23885e3318ed11178c8151966b9a6cdf8a"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/playwright-ui-output.txt",
+    "present": true,
+    "sha256": "519a22332498cb5d60edca7a79ea146a4547b539fa5b76e42f9d76f18bc10392"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/evidence/ui/playwright-ui-results.json",
+    "present": true,
+    "sha256": "579f13d1d581aa3b88b0f42b0a8f69e56c5c8abf3b5fe4c653f6f0085f36eb19"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/prompts/COMPARE_SHARED_INPUT.md",
+    "present": true,
+    "sha256": "1ed6c62bf7b0bcc145d8f5d2124cce0c92049d0e1dc0fefbc7a533110159a479"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/prompts/COMPARE_SHARED_INPUT.sha256",
+    "present": true,
+    "sha256": "18ca6102f84ab21264dd6cac54c994efed2951a7a19cf41cc2451b6beff663ed"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/prompts/NO_SKILL_CHAT.md",
+    "present": true,
+    "sha256": "7f0c4b99c6d64e72b4957b1a4136be24cbd26d43fd4fa291dd427843202d1358"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/prompts/PROMPT_ONLY_SIMULATION.md",
+    "present": true,
+    "sha256": "028a552c3b56127d6a44697e6427a00516cff228d1f6fb9b8baa181375053742"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/prompts/WITH_SKILL_CHAT.md",
+    "present": true,
+    "sha256": "ff93979563650526d3d9c0c6145dab272945d061980aff0716a5d3eebff25129"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/tools/assemble_submission.py",
+    "present": true,
+    "sha256": "eb70c03671881d8871ffbd6b2fab73050de2eecf5c77091f2d5ad0dc6bc97f31"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/tools/build_report.py",
+    "present": true,
+    "sha256": "e657c417a83556dc322954f65e4d1ef6a695c44a5359ddca9ff3f932855e40e2"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/tools/capture-evidence-viewer.mjs",
+    "present": true,
+    "sha256": "b323b8e2274c98053fbebf83acd1cba7f8689c6a7735800836bb995eb34c860a"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/tools/capture-mobile-feedback.mjs",
+    "present": true,
+    "sha256": "fee7be210f9bac176a3c031dd70a09ce2b93f5d293b72eda75565a4fe1d40827"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/tools/controlled_experiments.py",
+    "present": true,
+    "sha256": "d3ec037e0032783faf26ca3a23f17d0658bcfd9327d537a658260e3568ae9f53"
+  },
+  {
+    "path": "Practice08_Boranov_Daniyar_Submission/tools/run_logged.py",
+    "present": true,
+    "sha256": "eea945910c909ca143b2121699e51bc1dbd0c32d2a49f917e3df2a0c5f56d57d"
+  },
+  {
+    "path": "Practice08_Codex_Starter/CODEX_MASTER_PROMPT.md",
+    "present": true,
+    "sha256": "104e9318b83f7bcb63d9f6654a9d906ef06a9b3bf6c8f0bdaeb343fb8e3efceb"
+  },
+  {
+    "path": "Practice08_Codex_Starter/README.md",
+    "present": true,
+    "sha256": "dac8cb98240067b96a56776ca3c376dba207ea938dca705a12baf4b3d8e2afef"
+  },
+  {
+    "path": "Practice08_Codex_Starter/bug-detector.zip",
+    "present": true,
+    "sha256": "86627a45ce417e13155f3d36297f69a1a1a1b3b8c3385434c53e1a0a4315fa3e"
+  },
+  {
+    "path": "Practice08_Codex_Starter/bug-detector/SKILL.md",
+    "present": true,
+    "sha256": "ced9223a79b80e69a464dddf9f62c015b8463f9838d1bfc11763a2942f639b24"
+  },
+  {
+    "path": "Practice08_Codex_Starter/bug-detector/agents/openai.yaml",
+    "present": true,
+    "sha256": "23b341065eac913e7717cb047740173cf96cf8e3dd02d571862709d1e15b101f"
+  },
+  {
+    "path": "Practice08_Codex_Starter/prompts/COMPARE_SHARED_INPUT_TEMPLATE.md",
+    "present": true,
+    "sha256": "f7f60b3a5066da01a1c709dc36240942704713cbde7de3280922c489addf63ed"
+  },
+  {
+    "path": "Practice08_Codex_Starter/prompts/NO_SKILL_CHAT.md",
+    "present": true,
+    "sha256": "7f0c4b99c6d64e72b4957b1a4136be24cbd26d43fd4fa291dd427843202d1358"
+  },
+  {
+    "path": "Practice08_Codex_Starter/prompts/WITH_SKILL_CHAT.md",
+    "present": true,
+    "sha256": "ff93979563650526d3d9c0c6145dab272945d061980aff0716a5d3eebff25129"
+  },
+  {
+    "path": "Practice08_Codex_Starter/templates/COMPARISON.md",
+    "present": true,
+    "sha256": "72792c7ee8ad3e899a084e9795467ec6b6989a69f08d43dc00c5f9c87599a941"
+  },
+  {
+    "path": "Practice08_Codex_Starter/templates/DEFECT_LOG.md",
+    "present": true,
+    "sha256": "95a45c50e9b5523d5087e69f5ccf088eb65d52900b1b772e2b8eef8fb6984a81"
+  },
+  {
+    "path": "Practice08_Codex_Starter/templates/EMAIL_DRAFT.md",
+    "present": true,
+    "sha256": "de9fd49359cd6834a291a22d1ff28bee4c3169a5f2dc943b73f6867a985007c4"
+  },
+  {
+    "path": "Practice08_Codex_Starter/templates/EVIDENCE_CHECKLIST.md",
+    "present": true,
+    "sha256": "6fb40ea9745b3f4cee5955cca31ff0dd314c4f47d6e923489c3595381528623c"
+  },
+  {
+    "path": "Practice08_Codex_Starter/templates/MANUAL_STEPS.md",
+    "present": true,
+    "sha256": "897848447d610c7ab6ec776a6e98bb3ef5c5498c9efad53ea9c177aaa2e95457"
+  },
+  {
+    "path": "Practice08_Codex_Starter/templates/REPORT_OUTLINE.md",
+    "present": true,
+    "sha256": "8e5a4e64766b3601ceb8c7b3d6115143a83a2195fd201251aecf00a74e46f6b7"
+  },
+  {
+    "path": "README.md",
+    "present": true,
+    "sha256": "5ee89c226740bed2e3a6ff91c992651eaf3c4d63869fb1b062786593f2bc19e2"
+  },
+  {
+    "path": "bug-detector.zip",
+    "present": true,
+    "sha256": "d9dc50a596ee8549cc12c5c7efbb78e4bfadcaf8d66980695d590ba9f3392146"
+  },
+  {
+    "path": "bug-detector/SKILL.md",
+    "present": true,
+    "sha256": "ced9223a79b80e69a464dddf9f62c015b8463f9838d1bfc11763a2942f639b24"
+  },
+  {
+    "path": "bug-detector/agents/openai.yaml",
+    "present": true,
+    "sha256": "23b341065eac913e7717cb047740173cf96cf8e3dd02d571862709d1e15b101f"
+  },
+  {
+    "path": "eslint.config.js",
+    "present": true,
+    "sha256": "fa3cc12579fb0ef678a3153b31ec396d81ef2fec284a1a5ecb779c0ff336cfe0"
+  },
+  {
+    "path": "index.html",
+    "present": true,
+    "sha256": "003ae8f02be23e301d2a2c8d1638864ecc3c55045af300ab8aa6a1d7cc2e794c"
+  },
+  {
+    "path": "package-lock.json",
+    "present": true,
+    "sha256": "333d4db7df7382cd4367cf351f4c383b633888feda8d70425cc72bd14ee0e43b"
+  },
+  {
+    "path": "package.json",
+    "present": true,
+    "sha256": "2b2a749b284072e8af2bcb3cd0d5582a0f1f934fc934b343d2175ead86a23f87"
+  },
+  {
+    "path": "postcss.config.js",
+    "present": true,
+    "sha256": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc"
+  },
+  {
+    "path": "practice08/EVIDENCE_CHECKLIST.md",
+    "present": true,
+    "sha256": "06cf9ae62b7c2c4e72e423b16496760783366334644d5112c697cc3293498b4f"
+  },
+  {
+    "path": "practice08/Email_Draft.txt",
+    "present": true,
+    "sha256": "f7e7e3ebba2189b15ffd3196a68972923a7d3831f354220a50784458f7421655"
+  },
+  {
+    "path": "practice08/PENDING_MANUAL_STEPS.md",
+    "present": true,
+    "sha256": "0bf0e57a3b2f86a8ffc7e41e217256372c957e1f17973fa45f7fcd529e667af2"
+  },
+  {
+    "path": "practice08/README.md",
+    "present": true,
+    "sha256": "1fc17f67d36a5c5562250a590831f75341917705d8e09f8501a640b307b409cd"
+  },
+  {
+    "path": "practice08/comparison.md",
+    "present": true,
+    "sha256": "175b9ccefc74bddc770d4b36100c4b46ece2fe27fbe888de2033ccba7716bc84"
+  },
+  {
+    "path": "practice08/defect_log.md",
+    "present": true,
+    "sha256": "ec6557d6383f29e58b337e1d2d757a9a5555ed1ff3630aa52dd9ecccac8fbaf9"
+  },
+  {
+    "path": "practice08/evidence/baseline/SmartCampus_Baseline.zip",
+    "present": true,
+    "sha256": "cd4083f03630cb2e29a3c54f113e1f71684b22c73d1934d4d8630f138d0d388c"
+  },
+  {
+    "path": "practice08/evidence/baseline/git-reference.txt",
+    "present": true,
+    "sha256": "b89746a9277f351957b0c7760b91093b21f5838e3c145645cd21204bef3f30fa"
+  },
+  {
+    "path": "practice08/evidence/baseline/initial-source-diff.patch",
+    "present": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "practice08/evidence/baseline/lockfile-repair.patch",
+    "present": true,
+    "sha256": "f1d0ecd566c09a099cb9a9a47ff50971980ebb44deef1076725a0666c81c9073"
+  },
+  {
+    "path": "practice08/evidence/baseline/lockfile-repair.txt",
+    "present": true,
+    "sha256": "5d01d1f790f11f0647203f6fa9356ff894da7bb0488b754aa337714f38148a0c"
+  },
+  {
+    "path": "practice08/evidence/baseline/npm-ci-after-lock-repair.txt",
+    "present": true,
+    "sha256": "720fb162ef6bcba1d2c614a716b50ad83ac4773226a788c229396c18497b8a70"
+  },
+  {
+    "path": "practice08/evidence/baseline/npm-ci.txt",
+    "present": true,
+    "sha256": "418e43a41aba0648f04f1c0138d9787fdc474b733591209878bff5ca9cc911d4"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice06-legacy.meta.json",
+    "present": true,
+    "sha256": "99c667ad02095b71f91f9a4bc072e269c47b92c5af14ca841cf560ea983c1ecb"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice06-legacy.txt",
+    "present": true,
+    "sha256": "fc28359cf5c65ccd43bf04fa853e86b62ba5c6c8dee6b03d655f0215a8c3395b"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice07-improved.meta.json",
+    "present": true,
+    "sha256": "3e7b9304837a44c6a527870a8ce0f006f64cb58012dc760d2a89dd24c2a1dca7"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice07-improved.txt",
+    "present": true,
+    "sha256": "9410dc3c5bc07086fafe50b2a8ebd95b84eb5083c2a6351bf1cbf4f262df0a94"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice07-original-browser-view.html",
+    "present": true,
+    "sha256": "33ac49a0ff429cab8b6fdbd28750db066040791be186a0d7bfe4fcea703f6d0a"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice07-original-browser-view.png",
+    "present": true,
+    "sha256": "ad857a53e64f5c7fd372db2a6e851f68f141d1df0b199686be9fab4769d56ee1"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice07-original.meta.json",
+    "present": true,
+    "sha256": "13857d243634c4f23418b159d9909f6e709331ec90d594e4a65427e4b5f2f83a"
+  },
+  {
+    "path": "practice08/evidence/baseline/practice07-original.txt",
+    "present": true,
+    "sha256": "4ab3e04529f48a3715667f2e364627a11554593d9ca039222985e3a0bb6caf91"
+  },
+  {
+    "path": "practice08/evidence/bug-a/baseline-targeted.meta.json",
+    "present": true,
+    "sha256": "9e54c8500788f3411ae087ad1956754e513d4f3a07c6be70ae05cbfdef8f21f0"
+  },
+  {
+    "path": "practice08/evidence/bug-a/baseline-targeted.txt",
+    "present": true,
+    "sha256": "3309eefe8d63a30dfb39b5cbc34fde1af72e670ab5917cb29240a1374869c337"
+  },
+  {
+    "path": "practice08/evidence/bug-a/bookingLogic.after-fix.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "practice08/evidence/bug-a/bookingLogic.baseline.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "practice08/evidence/bug-a/bookingLogic.before-fix.ts",
+    "present": true,
+    "sha256": "be1a6857ee12d26eaab9bda3c6dd6411405e89e06a9d9c4d6aa4578cbd6c4ec8"
+  },
+  {
+    "path": "practice08/evidence/bug-a/case.json",
+    "present": true,
+    "sha256": "00caa23fa824661d48697e6991e150463d7a090cbecd49cdcf01539bb3809711"
+  },
+  {
+    "path": "practice08/evidence/bug-a/diagnosis-before-patch.md",
+    "present": true,
+    "sha256": "375d24cfbd1edbc4338c11cbbb29e306cd3c178401f895ca52889a2b71913fba"
+  },
+  {
+    "path": "practice08/evidence/bug-a/green-full.meta.json",
+    "present": true,
+    "sha256": "b2455419d17e5d951a14dadd1c81e9bab1fb687f236fd50f047a00769868f360"
+  },
+  {
+    "path": "practice08/evidence/bug-a/green-full.txt",
+    "present": true,
+    "sha256": "0b57dbb76ab944a15987454e06f83c63cf18e36616911c877432bd3509de6a4f"
+  },
+  {
+    "path": "practice08/evidence/bug-a/green-targeted.meta.json",
+    "present": true,
+    "sha256": "7afe7b1b668741cd2c8b0634c443e9fba7ec553fc4441bf263da346939f733d7"
+  },
+  {
+    "path": "practice08/evidence/bug-a/green-targeted.txt",
+    "present": true,
+    "sha256": "8d2f42f0445c68ec069188d7e6dc691451982c191b1b2ba9124cf1f85f9d7684"
+  },
+  {
+    "path": "practice08/evidence/bug-a/injected-defect.patch",
+    "present": true,
+    "sha256": "4d347a662f0c6e7c20390cd084ce41722b1f6a509f84f5735ddd1f270741f78d"
+  },
+  {
+    "path": "practice08/evidence/bug-a/minimal-repair.patch",
+    "present": true,
+    "sha256": "6465430c71414af118ec7e97a4818cc1342ad3178ed4fcd3ee196b8207239e57"
+  },
+  {
+    "path": "practice08/evidence/bug-a/practice08.regression.test.ts",
+    "present": true,
+    "sha256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4"
+  },
+  {
+    "path": "practice08/evidence/bug-a/red-targeted-browser-view.html",
+    "present": true,
+    "sha256": "9d94d610b2c62d6d835b825e03e348d007f839e038d052140b8fa40e3d236f64"
+  },
+  {
+    "path": "practice08/evidence/bug-a/red-targeted-browser-view.png",
+    "present": true,
+    "sha256": "491f87a4e51cb476451ac64a0a3fcb33e0814bc6c43d6971b6cebca9358dd9c6"
+  },
+  {
+    "path": "practice08/evidence/bug-a/red-targeted.meta.json",
+    "present": true,
+    "sha256": "311b1eb0314411c04cef78e2f11e119b8f3e2840eba901545f3fc7d0f335289e"
+  },
+  {
+    "path": "practice08/evidence/bug-a/red-targeted.txt",
+    "present": true,
+    "sha256": "04cbbb96f6e45e8fdbcaf197f027c9281b8a545a98997d47121ff90f677b91b0"
+  },
+  {
+    "path": "practice08/evidence/bug-b/baseline-targeted.meta.json",
+    "present": true,
+    "sha256": "71156f1ced3e207b7638e3b163911533585fb3d9b35ad6ee911f93e521bf36e9"
+  },
+  {
+    "path": "practice08/evidence/bug-b/baseline-targeted.txt",
+    "present": true,
+    "sha256": "da373c0a88f8d9995142e2901d31ab9ba6225a2071acce0421bdf0dd318515c1"
+  },
+  {
+    "path": "practice08/evidence/bug-b/bookingLogic.after-fix.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "practice08/evidence/bug-b/bookingLogic.baseline.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "practice08/evidence/bug-b/bookingLogic.before-fix.ts",
+    "present": true,
+    "sha256": "8e3717694718152a7299bd556470d905e3f04a88fefdf704a92e2290fa54aaea"
+  },
+  {
+    "path": "practice08/evidence/bug-b/case.json",
+    "present": true,
+    "sha256": "a631909d77b20b4aaefbb737301fcba496c4bc430cceb6a1722ddbfcf4b3c0a2"
+  },
+  {
+    "path": "practice08/evidence/bug-b/diagnosis-before-patch.md",
+    "present": true,
+    "sha256": "06b8affb08e9dffa9d132df0c0258bec0ad3f01d27de12e5221ee0b3a6591a33"
+  },
+  {
+    "path": "practice08/evidence/bug-b/green-full.meta.json",
+    "present": true,
+    "sha256": "473a0b70411988eda8379eaccc3912b42f48e3296b7ea544839c1ad8b1e69550"
+  },
+  {
+    "path": "practice08/evidence/bug-b/green-full.txt",
+    "present": true,
+    "sha256": "f0054fef4da944a0a59bf11748bd6fe2c7a6d4e9f9275533106d57cc47e5baad"
+  },
+  {
+    "path": "practice08/evidence/bug-b/green-targeted.meta.json",
+    "present": true,
+    "sha256": "9365aa6972d46f97d145beff5bdd4b36ffbb8453ed7408dca80303580c6c6628"
+  },
+  {
+    "path": "practice08/evidence/bug-b/green-targeted.txt",
+    "present": true,
+    "sha256": "ac5528d35291a13ef2239f8c15bd2b300654a77f97c2bed903577c96530069f0"
+  },
+  {
+    "path": "practice08/evidence/bug-b/injected-defect.patch",
+    "present": true,
+    "sha256": "6be4516b61e94aaf3fcf095ed1214a0333e2a85ca3440886e4615aa13db6863d"
+  },
+  {
+    "path": "practice08/evidence/bug-b/minimal-repair.patch",
+    "present": true,
+    "sha256": "b1fc9ccb5c4b6b77e09b6a4b14cb92f66ebf9a3f565e926f09ebde312152ec39"
+  },
+  {
+    "path": "practice08/evidence/bug-b/practice08.regression.test.ts",
+    "present": true,
+    "sha256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4"
+  },
+  {
+    "path": "practice08/evidence/bug-b/red-targeted-browser-view.html",
+    "present": true,
+    "sha256": "33790f4b9aa67c3c9558dd8d690f9e95dfe401107238f2215c49870fb21ef81a"
+  },
+  {
+    "path": "practice08/evidence/bug-b/red-targeted-browser-view.png",
+    "present": true,
+    "sha256": "d954d8b5ed8d9e2d9d211e58b8ec1dab45fea0182fbac171807a6b8adab393a6"
+  },
+  {
+    "path": "practice08/evidence/bug-b/red-targeted.meta.json",
+    "present": true,
+    "sha256": "c185f39639923f60b6cd5334f63bc92b692b27ef72a094d6cacf09247891e69f"
+  },
+  {
+    "path": "practice08/evidence/bug-b/red-targeted.txt",
+    "present": true,
+    "sha256": "6123b557f26712a4aa4f42d18466e816f30c7c7125573e9f0e738a74dda7bd11"
+  },
+  {
+    "path": "practice08/evidence/comparison/access-check.json",
+    "present": true,
+    "sha256": "80ac725cf564931abbe40530854b1f22d97cc25be4ff59ccc49f10f76fcd45a0"
+  },
+  {
+    "path": "practice08/evidence/comparison/chatgpt-access-check.png",
+    "present": true,
+    "sha256": "ab8be6894b7b5edbefc93f8992b3eb8f4cded2249fccd237aac4e76536434d2d"
+  },
+  {
+    "path": "practice08/evidence/regression/build.meta.json",
+    "present": true,
+    "sha256": "c46a149398f15d866088812a50a147cd928e4e150570752ef978220e931f7e19"
+  },
+  {
+    "path": "practice08/evidence/regression/build.txt",
+    "present": true,
+    "sha256": "f08615fb09fba6786f41d30cdbdc0f181db53c8b3caab7762e8a4140ecaa007b"
+  },
+  {
+    "path": "practice08/evidence/regression/export-clean-install.meta.json",
+    "present": true,
+    "sha256": "c83bbe437dcf34c2efbe1ff996984c97cbebe8efc2e44ec4c37d1f955ce6077e"
+  },
+  {
+    "path": "practice08/evidence/regression/export-clean-install.txt",
+    "present": true,
+    "sha256": "720fb162ef6bcba1d2c614a716b50ad83ac4773226a788c229396c18497b8a70"
+  },
+  {
+    "path": "practice08/evidence/regression/export-full-vitest.meta.json",
+    "present": true,
+    "sha256": "622a846603d02639f06166454248ab5fdfa3d0c692fbc06a2e079bda95f764be"
+  },
+  {
+    "path": "practice08/evidence/regression/export-full-vitest.txt",
+    "present": true,
+    "sha256": "d50b47a84efbaa587c818eb4bf95061711bcd48be6f2a0e73f4ca5bd29df2268"
+  },
+  {
+    "path": "practice08/evidence/regression/final-project.patch",
+    "present": true,
+    "sha256": "ceddcdfade143e282dcd32aa1474f1fcb7ffb09c84e223c6924452bd142c2a97"
+  },
+  {
+    "path": "practice08/evidence/regression/final-tracked-changes.patch",
+    "present": true,
+    "sha256": "47d9b2ec18b9e0965b55e11ce01f97128e2c772c83c359a8824270702e5faec2"
+  },
+  {
+    "path": "practice08/evidence/regression/full-vitest.meta.json",
+    "present": true,
+    "sha256": "ed2147ed3f037133690e029c4b7eeb21db27490f6ef1fa11ca5650310b75b9eb"
+  },
+  {
+    "path": "practice08/evidence/regression/full-vitest.txt",
+    "present": true,
+    "sha256": "0a4d34e5508ecd3f0478822ffaa530f7a3f101ade239663b5d6b26bf57fef221"
+  },
+  {
+    "path": "practice08/evidence/regression/legacy.meta.json",
+    "present": true,
+    "sha256": "34d0ded90c29b4b1d9ca2069c6034433881879b59bac4048aed38938c1035905"
+  },
+  {
+    "path": "practice08/evidence/regression/legacy.txt",
+    "present": true,
+    "sha256": "2e9d16bb19c02bd54c1de181fd2217cc190786092f1eb7f5f77c9aaf429bb7fe"
+  },
+  {
+    "path": "practice08/evidence/regression/lint.meta.json",
+    "present": true,
+    "sha256": "676578eb57b77726879147560587a6f5214381f3495160322898bb9b967552a7"
+  },
+  {
+    "path": "practice08/evidence/regression/lint.txt",
+    "present": true,
+    "sha256": "b87b0553ce7ede9cd687ee2826d6d5c67944d845831f5d3d0ebeaf5bf31f072a"
+  },
+  {
+    "path": "practice08/evidence/regression/practice08-targeted.meta.json",
+    "present": true,
+    "sha256": "f1e459ec348f902a08b4369c39c805cc91fc78962bd92c56e6aa8642425de4d7"
+  },
+  {
+    "path": "practice08/evidence/regression/practice08-targeted.txt",
+    "present": true,
+    "sha256": "85cda4dfe8b391a6f70c9a14518589718bc7dd1843b4ec33fc4acba40ee4e7aa"
+  },
+  {
+    "path": "practice08/evidence/regression/preserved-original-source.patch",
+    "present": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "practice08/evidence/regression/report-validation.json",
+    "present": true,
+    "sha256": "e5e896d218ff6a006da58e55c4731772090c78e2ad512735373ed8ab61018b28"
+  },
+  {
+    "path": "practice08/evidence/regression/source-preservation.json",
+    "present": true,
+    "sha256": "b1481821fa42ac197237e47c2230d189642a865c42e9b7ef4f8d0a31f8694c02"
+  },
+  {
+    "path": "practice08/evidence/regression/typecheck.meta.json",
+    "present": true,
+    "sha256": "74a224481c1b319cfd81653545cbae3080958c13914e91b9c7675436d8f81d28"
+  },
+  {
+    "path": "practice08/evidence/regression/typecheck.txt",
+    "present": true,
+    "sha256": "859c4cc422c2c1e17f29e0b04205936fb1bcd8547564b0d78b3fe3e0ced5a9cd"
+  },
+  {
+    "path": "practice08/evidence/skill/validation.json",
+    "present": true,
+    "sha256": "97b71c2e9524bef3ab3c1ce55f4f96f9105542a71556f82c26226e1aafc03b34"
+  },
+  {
+    "path": "practice08/evidence/skill/zip-inspection.txt",
+    "present": true,
+    "sha256": "7b136c1e51f16f2a1ddbdbafa1810385cd169e549fac3572d19c05f72bd90e76"
+  },
+  {
+    "path": "practice08/evidence/skill/zip-structure.html",
+    "present": true,
+    "sha256": "19d80721715dfa8be8e6ceb048319b36e7a72381798d1ceea7dbc5cd11c45b7e"
+  },
+  {
+    "path": "practice08/evidence/skill/zip-structure.png",
+    "present": true,
+    "sha256": "fa29ef2069f7f0ef77770e8b2bb7a83efe6189a515651810154e6b7fb72c6320"
+  },
+  {
+    "path": "practice08/evidence/ui/01-desktop.png",
+    "present": true,
+    "sha256": "33d4abab11a0d80f1dd197be48156f8f2c2d66ccbce0c879adebe16ede7091fb"
+  },
+  {
+    "path": "practice08/evidence/ui/02-available.png",
+    "present": true,
+    "sha256": "2b38a12c69b48816d31867d1906a6a4fff316cdf733b296d6d415b2df5925e1f"
+  },
+  {
+    "path": "practice08/evidence/ui/03-unavailable.png",
+    "present": true,
+    "sha256": "4c72c8a79d5ff8a7a7e7ce50113b49c59d705688128c225730dd1cb0c37ecf90"
+  },
+  {
+    "path": "practice08/evidence/ui/04-validation.png",
+    "present": true,
+    "sha256": "6b35f81d241aa3014f77213b8cf3630d7a2551b0f9dbd43b6bbf8d72a4beb478"
+  },
+  {
+    "path": "practice08/evidence/ui/05-mobile.png",
+    "present": true,
+    "sha256": "e2a90b151cbc083a0f1f6c2716d40636a9d2db9aec1c68ebcad8d61c5bc9f128"
+  },
+  {
+    "path": "practice08/evidence/ui/06-data-preservation.png",
+    "present": true,
+    "sha256": "594c022d7562ac3bd4e9dfc93a3b85676dcfc10fb4853fabc5fe1a7f7d3d4433"
+  },
+  {
+    "path": "practice08/evidence/ui/07-overlap.png",
+    "present": true,
+    "sha256": "d6a6a737b30f3e9ab0a1cd9400e66ff3326a46d36710066368068832884cd882"
+  },
+  {
+    "path": "practice08/evidence/ui/browser-run.txt",
+    "present": true,
+    "sha256": "873daa1f94512d11cfd7a297ae27cba01ac8974f2010d48ac4bb75d92a2538e9"
+  },
+  {
+    "path": "practice08/evidence/ui/evidence-viewer-captures.json",
+    "present": true,
+    "sha256": "52dca7535400557e145afaa623d6f0452646bd38e7fe3d69c14df4b9c5d720e0"
+  },
+  {
+    "path": "practice08/evidence/ui/initial-launch.txt",
+    "present": true,
+    "sha256": "78ade02ba3352909181b637274297d60cc070303a971607308656bb6701faf62"
+  },
+  {
+    "path": "practice08/evidence/ui/mobile-feedback-capture.json",
+    "present": true,
+    "sha256": "efe5aa71afe13026906dfa1b0aa65e9870c93dd87fc87e31db84dab897fd5f74"
+  },
+  {
+    "path": "practice08/evidence/ui/mobile-feedback-viewport.png",
+    "present": true,
+    "sha256": "8286d07a0bc321ff69ecdb89b19b7f5d7449586f44b227ab663d8ec647fbb126"
+  },
+  {
+    "path": "practice08/evidence/ui/origin-verification.txt",
+    "present": true,
+    "sha256": "4faf7a940c2268ebabbc0148508c1f23885e3318ed11178c8151966b9a6cdf8a"
+  },
+  {
+    "path": "practice08/evidence/ui/playwright-ui-output.txt",
+    "present": true,
+    "sha256": "519a22332498cb5d60edca7a79ea146a4547b539fa5b76e42f9d76f18bc10392"
+  },
+  {
+    "path": "practice08/evidence/ui/playwright-ui-results.json",
+    "present": true,
+    "sha256": "579f13d1d581aa3b88b0f42b0a8f69e56c5c8abf3b5fe4c653f6f0085f36eb19"
+  },
+  {
+    "path": "practice08/prompts/COMPARE_SHARED_INPUT.md",
+    "present": true,
+    "sha256": "1ed6c62bf7b0bcc145d8f5d2124cce0c92049d0e1dc0fefbc7a533110159a479"
+  },
+  {
+    "path": "practice08/prompts/COMPARE_SHARED_INPUT.sha256",
+    "present": true,
+    "sha256": "18ca6102f84ab21264dd6cac54c994efed2951a7a19cf41cc2451b6beff663ed"
+  },
+  {
+    "path": "practice08/prompts/NO_SKILL_CHAT.md",
+    "present": true,
+    "sha256": "7f0c4b99c6d64e72b4957b1a4136be24cbd26d43fd4fa291dd427843202d1358"
+  },
+  {
+    "path": "practice08/prompts/PROMPT_ONLY_SIMULATION.md",
+    "present": true,
+    "sha256": "028a552c3b56127d6a44697e6427a00516cff228d1f6fb9b8baa181375053742"
+  },
+  {
+    "path": "practice08/prompts/WITH_SKILL_CHAT.md",
+    "present": true,
+    "sha256": "ff93979563650526d3d9c0c6145dab272945d061980aff0716a5d3eebff25129"
+  },
+  {
+    "path": "practice08/qa-export-location.txt",
+    "present": true,
+    "sha256": "0fcd5383eb19e18674fecedbd561c4f365e3cd27956b826e0a0fc8d24832b44c"
+  },
+  {
+    "path": "practice08/qa-render-final.txt",
+    "present": true,
+    "sha256": "3861851952c42e138c7124a0c635a8de48a1143d64090c7b3514e2156c5156dc"
+  },
+  {
+    "path": "practice08/qa-render-log.txt",
+    "present": true,
+    "sha256": "b71206464d77c5068c919d59c4950d6e32f0f07ad37087ea54fe174434fa994d"
+  },
+  {
+    "path": "practice08/qa/contact-1.png",
+    "present": true,
+    "sha256": "098fb34f7f6176c886041194fbdc8bdb5d7c20ca4ed865320be386cd5a2146fa"
+  },
+  {
+    "path": "practice08/qa/contact-2.png",
+    "present": true,
+    "sha256": "4a0d709e645e55ef130754972e52296dba3d483ae1aebc10657a22aa6167054e"
+  },
+  {
+    "path": "practice08/qa/contact-3.png",
+    "present": true,
+    "sha256": "db9090da4d42f64a988d31d24217a71fd7f2bb728950702abdf75ff6f9b55144"
+  },
+  {
+    "path": "practice08/qa/contact-4.png",
+    "present": true,
+    "sha256": "cef3a2944220bec412cd1bc7178c6576cb0d62362ee19043854ef8f8a233fe6f"
+  },
+  {
+    "path": "practice08/qa/final/page-1.png",
+    "present": true,
+    "sha256": "32fc02e432ef6ea2a761c85f3c62e30e1c01ad4eaf419a1a87a14bf30c570c41"
+  },
+  {
+    "path": "practice08/qa/final/page-10.png",
+    "present": true,
+    "sha256": "3c3918407cd6b841727d516d05486054ce5e098070ff1b28c2b3da31396de5c1"
+  },
+  {
+    "path": "practice08/qa/final/page-11.png",
+    "present": true,
+    "sha256": "456278862aefc30f9e7b175d6ce51484828ffdf92d0c59057a1154799f8f4182"
+  },
+  {
+    "path": "practice08/qa/final/page-12.png",
+    "present": true,
+    "sha256": "c3efd9cb0c15bb784483839c290ecfde98bfdfd7be4370c17779ee5c5f09fada"
+  },
+  {
+    "path": "practice08/qa/final/page-13.png",
+    "present": true,
+    "sha256": "0ad27037a95e0328ea335c509fb7dff538a4f4390fd62f9fd2da16465d274081"
+  },
+  {
+    "path": "practice08/qa/final/page-14.png",
+    "present": true,
+    "sha256": "b059dbb79e1060d2feaf7d58ffcd398ca73ca2c67810951ff56d05387a1899a7"
+  },
+  {
+    "path": "practice08/qa/final/page-15.png",
+    "present": true,
+    "sha256": "42942f5d723caacf9a4758a4da055bc7589152d008ee16f027b6c48cf040a906"
+  },
+  {
+    "path": "practice08/qa/final/page-16.png",
+    "present": true,
+    "sha256": "fb981bf9ab3b82f422de7ba79d240d6ffa12ea146beec083f85930090f8d3df8"
+  },
+  {
+    "path": "practice08/qa/final/page-17.png",
+    "present": true,
+    "sha256": "151c427d9acde58731a2f46d766008cfa3e220b1d96cd29a51a39f8d871d0b9b"
+  },
+  {
+    "path": "practice08/qa/final/page-18.png",
+    "present": true,
+    "sha256": "bf7536cd0f8f32e4528665d4f9258c922c12e527c8b385335495d803bba818bc"
+  },
+  {
+    "path": "practice08/qa/final/page-19.png",
+    "present": true,
+    "sha256": "1de95fe38ddf2f1df76c4132fd3ba5200ff99cb64757cd9359363b1c3e863961"
+  },
+  {
+    "path": "practice08/qa/final/page-2.png",
+    "present": true,
+    "sha256": "1268040cde8e767ed4a59cc2617168f664bc370eb4bff548d85d075ea12489b2"
+  },
+  {
+    "path": "practice08/qa/final/page-3.png",
+    "present": true,
+    "sha256": "812a62d2c3d649aac249ce3fdbef3d1e639a993c891aac99b78c076d42546bdb"
+  },
+  {
+    "path": "practice08/qa/final/page-4.png",
+    "present": true,
+    "sha256": "2505bb7630c6c2bf99f24a915815a824d3eb316212978a39482e6a2911c15eb2"
+  },
+  {
+    "path": "practice08/qa/final/page-5.png",
+    "present": true,
+    "sha256": "5a3ee56e0cef0da4fc9b20d41efa57a814d5c51135125791228bfd4e992dbdc3"
+  },
+  {
+    "path": "practice08/qa/final/page-6.png",
+    "present": true,
+    "sha256": "42aad8edfe5084aacf10f004bfec17f176b8ff8b9ce0d8c95ee3efe1865a8c12"
+  },
+  {
+    "path": "practice08/qa/final/page-7.png",
+    "present": true,
+    "sha256": "c19b51397a0617db4af34caaa8ba08d5377d77fb70d02a0c90665dbaa75877f2"
+  },
+  {
+    "path": "practice08/qa/final/page-8.png",
+    "present": true,
+    "sha256": "ca201aeca22f766ade4d5609a3ab3815fcfd85544f023f322529edd00df4ce4d"
+  },
+  {
+    "path": "practice08/qa/final/page-9.png",
+    "present": true,
+    "sha256": "7bdb1c77924f60aa2c4603fde9ddfff1ddafd3faae610eb08d02fdc54911021d"
+  },
+  {
+    "path": "practice08/qa/report/page-1.png",
+    "present": true,
+    "sha256": "5046771f33ab424ddbd7a2e16a5e9954794b14d2ec4074d1e52319d6545fe2f6"
+  },
+  {
+    "path": "practice08/qa/report/page-10.png",
+    "present": true,
+    "sha256": "336d266b9ad747067f8e40377976d7a366238f530b04b7052dbfd53deba7d58c"
+  },
+  {
+    "path": "practice08/qa/report/page-11.png",
+    "present": true,
+    "sha256": "657dd336ced10dc6ce54dd95f3f0df58429200359745334b00b1cbfd77da6630"
+  },
+  {
+    "path": "practice08/qa/report/page-12.png",
+    "present": true,
+    "sha256": "f4209cb7d800d9efcb7d29f6ddbe20d42a3a33cd7c75180be920ce4cb92792c3"
+  },
+  {
+    "path": "practice08/qa/report/page-13.png",
+    "present": true,
+    "sha256": "4aa0445280761f7e5c10b25266ecab04804d0c1df0230b108af24aa982f5c6a8"
+  },
+  {
+    "path": "practice08/qa/report/page-14.png",
+    "present": true,
+    "sha256": "103de64074fed516ad533b371be6a6b12eacc22ecfc2fb46822b19a664abd2f1"
+  },
+  {
+    "path": "practice08/qa/report/page-15.png",
+    "present": true,
+    "sha256": "5f0a92522e2f67c220fce11767a5164ef6d1def09663cd3fa1e368fd94ad00f6"
+  },
+  {
+    "path": "practice08/qa/report/page-16.png",
+    "present": true,
+    "sha256": "5d9b3f738600f8de9c28d831197062860a7f851957f7bf6e48383a8d74c8c8f3"
+  },
+  {
+    "path": "practice08/qa/report/page-17.png",
+    "present": true,
+    "sha256": "92290082294941a1618201b54191b7f970be0d91669e9d545b5d91d98d7f6e66"
+  },
+  {
+    "path": "practice08/qa/report/page-18.png",
+    "present": true,
+    "sha256": "3e472c8e095428f8d02f086a4f5cad9a115d9c046d3acd7467d233493cd3a9d0"
+  },
+  {
+    "path": "practice08/qa/report/page-19.png",
+    "present": true,
+    "sha256": "c46e732e3f77e1c47cc6c01ca1c4d423446771f65f2095f20ef16ab7a19969b2"
+  },
+  {
+    "path": "practice08/qa/report/page-2.png",
+    "present": true,
+    "sha256": "1268040cde8e767ed4a59cc2617168f664bc370eb4bff548d85d075ea12489b2"
+  },
+  {
+    "path": "practice08/qa/report/page-20.png",
+    "present": true,
+    "sha256": "9a262003db8bd85b8f473eed6a9fc1e67cea48bd1913f577005feff70e6bdb33"
+  },
+  {
+    "path": "practice08/qa/report/page-3.png",
+    "present": true,
+    "sha256": "3911cdaea19d194f5b8e35e8d33bfe2f393cc7c136ecff2655e058a865ce44ef"
+  },
+  {
+    "path": "practice08/qa/report/page-4.png",
+    "present": true,
+    "sha256": "2505bb7630c6c2bf99f24a915815a824d3eb316212978a39482e6a2911c15eb2"
+  },
+  {
+    "path": "practice08/qa/report/page-5.png",
+    "present": true,
+    "sha256": "5a3ee56e0cef0da4fc9b20d41efa57a814d5c51135125791228bfd4e992dbdc3"
+  },
+  {
+    "path": "practice08/qa/report/page-6.png",
+    "present": true,
+    "sha256": "aa450fe1fd96cbe0238f2f597519fac287a3da1101a963cf5339729552314f1c"
+  },
+  {
+    "path": "practice08/qa/report/page-7.png",
+    "present": true,
+    "sha256": "3ee64ce045347ab20731dcc892f85ca47627ac6394f26a107f077c778822812c"
+  },
+  {
+    "path": "practice08/qa/report/page-8.png",
+    "present": true,
+    "sha256": "48629b3937753bf23c1195b9560733bc037856a50f140d79791c3cb5b881a8c3"
+  },
+  {
+    "path": "practice08/qa/report/page-9.png",
+    "present": true,
+    "sha256": "df82c6bab845374aa4e67ba081114b2363b4659c726df339a834711bf819442d"
+  },
+  {
+    "path": "practice08/reports/Practice08_Boranov_Daniyar_Report.docx",
+    "present": true,
+    "sha256": "30089cfd7c2ad5681d5bf106bb6530568f32a3f7adc7e0b1f0272fb243aefcb2"
+  },
+  {
+    "path": "practice08/tools/assemble_submission.py",
+    "present": true,
+    "sha256": "eb70c03671881d8871ffbd6b2fab73050de2eecf5c77091f2d5ad0dc6bc97f31"
+  },
+  {
+    "path": "practice08/tools/build_report.py",
+    "present": true,
+    "sha256": "e657c417a83556dc322954f65e4d1ef6a695c44a5359ddca9ff3f932855e40e2"
+  },
+  {
+    "path": "practice08/tools/capture-evidence-viewer.mjs",
+    "present": true,
+    "sha256": "b323b8e2274c98053fbebf83acd1cba7f8689c6a7735800836bb995eb34c860a"
+  },
+  {
+    "path": "practice08/tools/capture-mobile-feedback.mjs",
+    "present": true,
+    "sha256": "fee7be210f9bac176a3c031dd70a09ce2b93f5d293b72eda75565a4fe1d40827"
+  },
+  {
+    "path": "practice08/tools/controlled_experiments.py",
+    "present": true,
+    "sha256": "d3ec037e0032783faf26ca3a23f17d0658bcfd9327d537a658260e3568ae9f53"
+  },
+  {
+    "path": "practice08/tools/run_logged.py",
+    "present": true,
+    "sha256": "eea945910c909ca143b2121699e51bc1dbd0c32d2a49f917e3df2a0c5f56d57d"
+  },
+  {
+    "path": "practice09/Email_Draft.txt",
+    "present": true,
+    "sha256": "15686d605324bbd0ccd15b704f61236f05cdcd8ef59cb5dcac6fbcd7fbdd635a"
+  },
+  {
+    "path": "practice09/Practice09_Boranov_Daniyar_Report.docx",
+    "present": true,
+    "sha256": "8e9679cb0a7f3a3460ccd7338dd3565216fd8688c4af39cfb6e54e8d133ec06a"
+  },
+  {
+    "path": "practice09/Practice09_Boranov_Daniyar_Submission.zip",
+    "present": false,
+    "sha256": null
+  },
+  {
+    "path": "practice09/README.md",
+    "present": true,
+    "sha256": "4e22fd1e8aea81f4081d9995ac5c5aa1dd248405f11e447e49ce16a9dec78fee"
+  },
+  {
+    "path": "practice09/SmartCampus_Source_Export.zip",
+    "present": true,
+    "sha256": "30b9d7e5a6f0887b303883d8b5e8c298c83c695e00c2a7349e0421711667700a"
+  },
+  {
+    "path": "practice09/UNAVAILABLE_EVIDENCE.md",
+    "present": true,
+    "sha256": "e5ad24f928529c945a3451fea47ce0f86ed1ff9ac4a202ec30a9d34f3eeb2194"
+  },
+  {
+    "path": "practice09/changed-files.md",
+    "present": true,
+    "sha256": "27aab3bdfc200a9ea6db7859fe255ae54a34e81a1efd45447d945fe3cc344c29"
+  },
+  {
+    "path": "practice09/comparison.md",
+    "present": true,
+    "sha256": "7847bf70b829f97fd7001e2b0448888fbca63405e39c2356173fc6369e72d70f"
+  },
+  {
+    "path": "practice09/evidence/baseline/SmartCampus_Baseline_Source.zip",
+    "present": true,
+    "sha256": "03b221e89d8631b3285f53f636b2b74c45c041005e869138d65d5ec009098c33"
+  },
+  {
+    "path": "practice09/evidence/baseline/app-source-manifest.json",
+    "present": true,
+    "sha256": "ca5efe60fc257f304bc3d28e99dfa778f9dbd1e2471465b042d394b03035a152"
+  },
+  {
+    "path": "practice09/evidence/baseline/compact-export-cleanup.json",
+    "present": true,
+    "sha256": "9ee03ade0e42a8c5ae92146156aef2b77048782f18a14fd8fef498a9ef11f5b4"
+  },
+  {
+    "path": "practice09/evidence/baseline/compact-export-typecheck.meta.json",
+    "present": true,
+    "sha256": "0dc00c7648f461fce630055c913b50a9f74ea8d2d6cd56fe221f845d753a7af9"
+  },
+  {
+    "path": "practice09/evidence/baseline/compact-export-typecheck.txt",
+    "present": true,
+    "sha256": "859c4cc422c2c1e17f29e0b04205936fb1bcd8547564b0d78b3fe3e0ced5a9cd"
+  },
+  {
+    "path": "practice09/evidence/baseline/compact-export-verification.meta.json",
+    "present": true,
+    "sha256": "72302dd88f2be8cc05be618e2a9db373894c1993f914a005ff520e61eaffe0cb"
+  },
+  {
+    "path": "practice09/evidence/baseline/compact-export-verification.txt",
+    "present": true,
+    "sha256": "912120b9d54cbc0e1f31461b1b158d4b08cc12499d2562c1423dd9e39ab248ed"
+  },
+  {
+    "path": "practice09/evidence/baseline/full-vitest.meta.json",
+    "present": true,
+    "sha256": "de9ec7618076ba32c057268cce0becbe038489523666c13910ac64f01712ac93"
+  },
+  {
+    "path": "practice09/evidence/baseline/full-vitest.txt",
+    "present": true,
+    "sha256": "b218eb0eb8f59ed391e2ad3713df1f8d17717cf06727c672355328318356e2ee"
+  },
+  {
+    "path": "practice09/evidence/baseline/git-reference.txt",
+    "present": true,
+    "sha256": "310d14af613c1683cdf5afd613fc88113de1c20d9fce6833e47cc4c891626272"
+  },
+  {
+    "path": "practice09/evidence/baseline/git-status-tracked.txt",
+    "present": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "practice09/evidence/baseline/legacy.meta.json",
+    "present": true,
+    "sha256": "e17dd70f3c3db2a75761b4005ef9821b7ebbacb464fcbccc3e3d670e51bb54cd"
+  },
+  {
+    "path": "practice09/evidence/baseline/legacy.txt",
+    "present": true,
+    "sha256": "a883005d843f438a61c0804f27fef4d8dfaf91056239b0917a1e04034acc661a"
+  },
+  {
+    "path": "practice09/evidence/baseline/original.meta.json",
+    "present": true,
+    "sha256": "611df61175f7199ac2b199caa3c913b23ed1bb5af45ee29290c54fa4115e32d7"
+  },
+  {
+    "path": "practice09/evidence/baseline/original.txt",
+    "present": true,
+    "sha256": "7231b11c955bddcb22b837909378a7762811376a03377fdd2ca7c7878244c111"
+  },
+  {
+    "path": "practice09/evidence/baseline/practice08-regressions.meta.json",
+    "present": true,
+    "sha256": "659ce78e33e793de377311bcc2a176997bece5b7fa6e271cc53c65df5cd732c7"
+  },
+  {
+    "path": "practice09/evidence/baseline/practice08-regressions.txt",
+    "present": true,
+    "sha256": "05a9918313ddac261a9ee492fb6fe1f7b00406c174f2d4f4e51f1caf85f6ca81"
+  },
+  {
+    "path": "practice09/evidence/baseline/refactoring-characterization.meta.json",
+    "present": true,
+    "sha256": "ccf265c66a07d4289e16244771d9f14dfbf84bd0f028507227dc85d97a48ecc3"
+  },
+  {
+    "path": "practice09/evidence/baseline/refactoring-characterization.txt",
+    "present": true,
+    "sha256": "91da74b3219d6280e1093a8747943c88d670c1b60930495bddc905a472e8d2ba"
+  },
+  {
+    "path": "practice09/evidence/baseline/tracked-files.txt",
+    "present": true,
+    "sha256": "4fb3bed28f0baf4f6f13e85f6337dc1caaeef488ba3ba2aa0c2d45959ad29925"
+  },
+  {
+    "path": "practice09/evidence/bolt-a/access-check.md",
+    "present": true,
+    "sha256": "eb7b3943436d33505252cc18403d2a6dcb688777c7c55ed46a8c4e50a367b154"
+  },
+  {
+    "path": "practice09/evidence/bolt-a/bolt-access.png",
+    "present": true,
+    "sha256": "5d77777172e378e0ab2833367072157fdc01958c0a28ef0c46f28acc6f74e0cf"
+  },
+  {
+    "path": "practice09/evidence/implementation/BookingPanel.after.tsx.txt",
+    "present": true,
+    "sha256": "be1d5280c4f148d20f5496df7616b86ff1b6c94cc1cdb74ce955fd6b804adb33"
+  },
+  {
+    "path": "practice09/evidence/implementation/BookingPanel.before.tsx.txt",
+    "present": true,
+    "sha256": "e0e794fa76abc8deec19b84f8bae2fee629347b62dcb2ba1fbc711d0859ff427"
+  },
+  {
+    "path": "practice09/evidence/implementation/bookingLogic.before.ts.txt",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "practice09/evidence/implementation/decision-before-patch.md",
+    "present": true,
+    "sha256": "c0d7a9c1da7b5b0b1e8abb8250f1915bd1c60dfefd20e3d28710d6e9590c0fd6"
+  },
+  {
+    "path": "practice09/evidence/implementation/independent-review.md",
+    "present": true,
+    "sha256": "484e1dea84498dd55039ce4361f4a1c0c1b96f0ed2501a815c603c0f2ec6e7ab"
+  },
+  {
+    "path": "practice09/evidence/implementation/minimal-refactor.patch",
+    "present": true,
+    "sha256": "8ee76d3e1ac5f1834feaccf927f64399ebf1b2d5d60193f6743bd133e705f375"
+  },
+  {
+    "path": "practice09/evidence/implementation/preservation-check.json",
+    "present": true,
+    "sha256": "007c08c18f718e6dbc73d0f1c53348bbecac89c3f214af200661f6da41a3223c"
+  },
+  {
+    "path": "practice09/evidence/implementation/report-content-review.md",
+    "present": true,
+    "sha256": "8fe9b70da66e2cd9929d5b9cf712035d82f731bb9d5c3bad22ac5dd821790ddf"
+  },
+  {
+    "path": "practice09/evidence/implementation/sampleData.before.ts.txt",
+    "present": true,
+    "sha256": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629"
+  },
+  {
+    "path": "practice09/evidence/implementation/working-source.patch",
+    "present": true,
+    "sha256": "3864fb7f2564703a8f80ef6ab1bee846ae7eea577c4f01e041b10f10f2a6dc9c"
+  },
+  {
+    "path": "practice09/evidence/inspection/inspection-before-changes.md",
+    "present": true,
+    "sha256": "60be209306eb6b60c2de8362227a557b738356ede96fbee729a50d16345fced9"
+  },
+  {
+    "path": "practice09/evidence/inspection/source-structure.txt",
+    "present": true,
+    "sha256": "34841bbd5e15634c555e7288f68fc116f9512ea15073a94836b43d2b7969c83b"
+  },
+  {
+    "path": "practice09/evidence/instructor/slide-requirements-map.md",
+    "present": true,
+    "sha256": "8ea6d6653e5f575270bf05d016f6beb5ad814a1e2ee8ca17232404633a2e3568"
+  },
+  {
+    "path": "practice09/evidence/instructor/source-manifest.json",
+    "present": true,
+    "sha256": "c342ec9f5796e1c4faea7469a8cc84caf8855026fa6ca15a4f20cc1fd4e18e5d"
+  },
+  {
+    "path": "practice09/evidence/regression/build.meta.json",
+    "present": true,
+    "sha256": "f363e58bc712c954e6fcaa41beb2c8338cca9e2f30099ca52f11d50840905321"
+  },
+  {
+    "path": "practice09/evidence/regression/build.txt",
+    "present": true,
+    "sha256": "f39ca16b82039bcdf2afddf4c559724439706e64db8e37200d334891c2e70ee2"
+  },
+  {
+    "path": "practice09/evidence/regression/clean-export-npm-ci.meta.json",
+    "present": true,
+    "sha256": "4383d7988969ccba68bc013191459a06a566f28ee525e5cb26ad756763f5a1cb"
+  },
+  {
+    "path": "practice09/evidence/regression/clean-export-npm-ci.txt",
+    "present": true,
+    "sha256": "7f42c3efe2e25b07e4c58594d9edfaf82e23ac11a39668fabad05019b5bf083d"
+  },
+  {
+    "path": "practice09/evidence/regression/clean-export-portable-git.txt",
+    "present": true,
+    "sha256": "695f5bdac055a30028ccc432ee8466ec63679d2fcb132df9225213c69fe9dd73"
+  },
+  {
+    "path": "practice09/evidence/regression/clean-export-run.txt",
+    "present": true,
+    "sha256": "45949832d78f973f5db536e66bcf581bd53b24a10a89ab7a596ea13e36a09c00"
+  },
+  {
+    "path": "practice09/evidence/regression/clean-export-vitest.meta.json",
+    "present": true,
+    "sha256": "cbf052a6231aac82142517ec6fede16ca501f03d018e682e61482eda1077f0ab"
+  },
+  {
+    "path": "practice09/evidence/regression/clean-export-vitest.txt",
+    "present": true,
+    "sha256": "872f8acfab085055c0293fae8bf43a82d1c8ec4b3aa0a25afe3c2c45a3827ba5"
+  },
+  {
+    "path": "practice09/evidence/regression/full-vitest.meta.json",
+    "present": true,
+    "sha256": "b5e8160d9eb10a4fb41d6f07ea3b17caa659e798f077809911d0c1fa55aa1d42"
+  },
+  {
+    "path": "practice09/evidence/regression/full-vitest.txt",
+    "present": true,
+    "sha256": "de808b3d97d28c2bec64b961b0b7b0a71abc908ada8394e03da71f39500a0483"
+  },
+  {
+    "path": "practice09/evidence/regression/legacy.meta.json",
+    "present": true,
+    "sha256": "56f6247128024e34e649fbdb40d98c973f35dc1f43dcb5e8c1aaec95495e3f01"
+  },
+  {
+    "path": "practice09/evidence/regression/legacy.txt",
+    "present": true,
+    "sha256": "859f175dafffb8459af117081bb3d9dd71ac6cd64443bd7af5f079532d80e856"
+  },
+  {
+    "path": "practice09/evidence/regression/lint.meta.json",
+    "present": true,
+    "sha256": "6e52f3f8c7e3191fb78ab52ac8dbf63922d88a3aa82b6ed392b9355a2684a1dd"
+  },
+  {
+    "path": "practice09/evidence/regression/lint.txt",
+    "present": true,
+    "sha256": "b87b0553ce7ede9cd687ee2826d6d5c67944d845831f5d3d0ebeaf5bf31f072a"
+  },
+  {
+    "path": "practice09/evidence/regression/original.meta.json",
+    "present": true,
+    "sha256": "42f1175f1a0842705aaed836c090eddba37f00032e03a449e0934a11957f883e"
+  },
+  {
+    "path": "practice09/evidence/regression/original.txt",
+    "present": true,
+    "sha256": "3ed36952b40820093d133d175f1d790ceb63bd912ba0229d88a1f3dfe2a33927"
+  },
+  {
+    "path": "practice09/evidence/regression/practice08-regressions.meta.json",
+    "present": true,
+    "sha256": "bc8527cfa923f5874982a3db8c948fc75dc67e43458e7ddc3791e3f78c3ab66b"
+  },
+  {
+    "path": "practice09/evidence/regression/practice08-regressions.txt",
+    "present": true,
+    "sha256": "44c62b033561dd1aba1b6a11d93cc657aa3bb7406f2eea7d00db86f09ae4a6db"
+  },
+  {
+    "path": "practice09/evidence/regression/refactoring.meta.json",
+    "present": true,
+    "sha256": "76a48a22ba2d3e5c26faca91161f1aa94cef2f70c12ac969b8f80fca02dd4ad4"
+  },
+  {
+    "path": "practice09/evidence/regression/refactoring.txt",
+    "present": true,
+    "sha256": "c86f8fc0a19478e7462b2899be5b78d875f3ba7ba5b9516364e7240e77d7a852"
+  },
+  {
+    "path": "practice09/evidence/regression/source-export-manifest.json",
+    "present": true,
+    "sha256": "2505d711cd031ef9cd92a1e9ba94acc22a2784a3873cd0d39ad3e48c4705c7e9"
+  },
+  {
+    "path": "practice09/evidence/regression/typecheck.meta.json",
+    "present": true,
+    "sha256": "77a36964832c593dc75ef312fbd203376b29ad5a30da88286611ef9ce04a418c"
+  },
+  {
+    "path": "practice09/evidence/regression/typecheck.txt",
+    "present": true,
+    "sha256": "859c4cc422c2c1e17f29e0b04205936fb1bcd8547564b0d78b3fe3e0ced5a9cd"
+  },
+  {
+    "path": "practice09/evidence/ui-after/01-desktop.png",
+    "present": true,
+    "sha256": "a1af983d16b73c9940c62e861512c716630972a1d999abfdb4ad9af4a5fa4127"
+  },
+  {
+    "path": "practice09/evidence/ui-after/02-available.png",
+    "present": true,
+    "sha256": "a6b5b9eb1911df62bc955604d3776b865910b1858a72a4991fe644ca55440e52"
+  },
+  {
+    "path": "practice09/evidence/ui-after/03-unavailable.png",
+    "present": true,
+    "sha256": "38387bccf5dfb0f22f7c569eff4e0db7283341b4b558acb768a02d5ae70bd6d1"
+  },
+  {
+    "path": "practice09/evidence/ui-after/04-validation.png",
+    "present": true,
+    "sha256": "092d2971e5c180fbac5fa3372326528dfbcba20bfb95bfbb5c98225935270196"
+  },
+  {
+    "path": "practice09/evidence/ui-after/05-mobile.png",
+    "present": true,
+    "sha256": "e2a90b151cbc083a0f1f6c2716d40636a9d2db9aec1c68ebcad8d61c5bc9f128"
+  },
+  {
+    "path": "practice09/evidence/ui-after/06-data-preservation.png",
+    "present": true,
+    "sha256": "ade6b20439915e4ec5688c4fea14013da10ff644c5843808ad4c504dd4b32561"
+  },
+  {
+    "path": "practice09/evidence/ui-after/07-overlap.png",
+    "present": true,
+    "sha256": "56e9f92fa426091629dcc891fe02e6cd0140e3ab9154d203ca45aecc91677d17"
+  },
+  {
+    "path": "practice09/evidence/ui-after/browser-run.txt",
+    "present": true,
+    "sha256": "b16af4e427ceb97c45043e7459d5fb1100248659ca2d2374f9b578378a42ef77"
+  },
+  {
+    "path": "practice09/evidence/ui-after/mobile-feedback-viewport.png",
+    "present": true,
+    "sha256": "356be6249505e7fed6b42742aa1737104a000640c59fc160c1dc6becd1c3f1ed"
+  },
+  {
+    "path": "practice09/evidence/ui-after/origin-verification.txt",
+    "present": true,
+    "sha256": "91026c0f88058d7cebf4157c1f3448a0a600dbb2468810b28ca3b60f434ab6ca"
+  },
+  {
+    "path": "practice09/evidence/ui-after/playwright-ui-output.txt",
+    "present": true,
+    "sha256": "5a0b3388efa433b345b4c0edf54e5057604a06bf90898cb91bc73ace9b4ae76b"
+  },
+  {
+    "path": "practice09/evidence/ui-after/playwright-ui-results.json",
+    "present": true,
+    "sha256": "fc925402228984b0e49530dd16ba7bb7d21c484e5199d023099cbd11df6775c3"
+  },
+  {
+    "path": "practice09/evidence/ui-before/01-desktop.png",
+    "present": true,
+    "sha256": "a1af983d16b73c9940c62e861512c716630972a1d999abfdb4ad9af4a5fa4127"
+  },
+  {
+    "path": "practice09/evidence/ui-before/02-available.png",
+    "present": true,
+    "sha256": "11eb690320a5d0eec99efe7ce5d8df68551f3af3933a34c85e502c82a6ea34c9"
+  },
+  {
+    "path": "practice09/evidence/ui-before/03-unavailable.png",
+    "present": true,
+    "sha256": "38387bccf5dfb0f22f7c569eff4e0db7283341b4b558acb768a02d5ae70bd6d1"
+  },
+  {
+    "path": "practice09/evidence/ui-before/04-validation.png",
+    "present": true,
+    "sha256": "e250d066ad927b99282a1c4c1f7350997489b433ef9042a56a5dab27a7ae5681"
+  },
+  {
+    "path": "practice09/evidence/ui-before/05-mobile.png",
+    "present": true,
+    "sha256": "ccde497a0bf3b8e29e61ddac50b574bf11394d1f4ef4bcb32389023894afcd1f"
+  },
+  {
+    "path": "practice09/evidence/ui-before/06-data-preservation.png",
+    "present": true,
+    "sha256": "49876c60966922f389435377716ca13e36de9a1617c1dbcf2c83ac1144dac3bb"
+  },
+  {
+    "path": "practice09/evidence/ui-before/07-overlap.png",
+    "present": true,
+    "sha256": "844cfc800c2a328675cfbf065b1708576a5ffd55fe670291a49c6a0b9dd384f0"
+  },
+  {
+    "path": "practice09/evidence/ui-before/browser-run.txt",
+    "present": true,
+    "sha256": "b16af4e427ceb97c45043e7459d5fb1100248659ca2d2374f9b578378a42ef77"
+  },
+  {
+    "path": "practice09/evidence/ui-before/mobile-feedback-viewport.png",
+    "present": true,
+    "sha256": "356be6249505e7fed6b42742aa1737104a000640c59fc160c1dc6becd1c3f1ed"
+  },
+  {
+    "path": "practice09/evidence/ui-before/origin-verification.txt",
+    "present": true,
+    "sha256": "3cdd4e6b7c8dec2236127d8b5e996359ea3ea9943f5bae1e3d8d20723d8fa5b9"
+  },
+  {
+    "path": "practice09/evidence/ui-before/playwright-ui-output.txt",
+    "present": true,
+    "sha256": "555f010ec14700dbc23075c2d001d87314fe0d3a079962f2193dc1e85cc1b60c"
+  },
+  {
+    "path": "practice09/evidence/ui-before/playwright-ui-results.json",
+    "present": true,
+    "sha256": "4c693461d2922e3d9159f173765eb488f37d69831baf20d264f51907a8cc32c9"
+  },
+  {
+    "path": "practice09/evidence/ui-comparison.json",
+    "present": true,
+    "sha256": "a2704c7a00f501c4821990d7e916073438d15b5c4dccbe7dbcb436559c2923be"
+  },
+  {
+    "path": "practice09/evidence/ui-comparison.txt",
+    "present": true,
+    "sha256": "871501fcc699f4cf1070954d580282209f0bc6d786ccef9e81c7661721c952ad"
+  },
+  {
+    "path": "practice09/evidence/ui-pixel-differences.json",
+    "present": true,
+    "sha256": "6edb83414f1848a95492f25372c7c846dfa0eace3bab355b4c12e176365b1282"
+  },
+  {
+    "path": "practice09/evidence/ui-screenshot-review.txt",
+    "present": true,
+    "sha256": "a64b085a6e2f7d107029025a88b6fa16eaf9f74c592d84ab1562a3ad59a83048"
+  },
+  {
+    "path": "practice09/evidence/verification-summary.json",
+    "present": true,
+    "sha256": "a190ba88feb04bc15105e720edfc33eb65f840fe6cf59a48970cd6b39ece9ad0"
+  },
+  {
+    "path": "practice09/package-verification.json",
+    "present": true,
+    "sha256": "4797ffdf0ddcd9d84b88733cc45be208754ced03434ce274094dc91d0f54ae65"
+  },
+  {
+    "path": "practice09/pattern-rationale.md",
+    "present": true,
+    "sha256": "3ed788ab65216cb506faf0c0f751056dc29c9d9b33a1d95695a12780305c3313"
+  },
+  {
+    "path": "practice09/prompts/AGENTS_EXPLICIT_CONTEXT.md",
+    "present": true,
+    "sha256": "27521ee845e2636152e34a6d4eebfb6ccf4584f032952c2be28385d822551fc3"
+  },
+  {
+    "path": "practice09/prompts/BOLT_A_WITHOUT_INSTRUCTIONS.txt",
+    "present": true,
+    "sha256": "7d9cd5f67f8239bbc016d158166389c658fc859c1d0e5f1e4068f7b2876a1b04"
+  },
+  {
+    "path": "practice09/prompts/BOLT_B_WITH_EXPLICIT_AGENTS.txt",
+    "present": true,
+    "sha256": "c5e896132717107c56d97400f3319b83b490f6fab8439849f642621494fd85ad"
+  },
+  {
+    "path": "practice09/prompts/BOLT_EXPLICIT_READ.txt",
+    "present": true,
+    "sha256": "00e4663d0377c8094c293d7f1f817a1b81109602da4a98a15113ee67e1636f5e"
+  },
+  {
+    "path": "practice09/prompts/BOLT_IMPLEMENTATION.txt",
+    "present": true,
+    "sha256": "db3f76c3790ee84eaae9b75320d267054063cd3cc4dbbc384009b0954de0f123"
+  },
+  {
+    "path": "practice09/prompts/baseline-source-reference.json",
+    "present": true,
+    "sha256": "73921f227c77154df4a18a27cbfd0a7cd9ffa9e2ea5a3d50803d3692fb90b8eb"
+  },
+  {
+    "path": "practice09/source-export-manifest.json",
+    "present": true,
+    "sha256": "2505d711cd031ef9cd92a1e9ba94acc22a2784a3873cd0d39ad3e48c4705c7e9"
+  },
+  {
+    "path": "practice09/tools/adapt-browser.py",
+    "present": true,
+    "sha256": "45d8efa95850fb002846681b2603c8c2b7d269ce878f8d582f9d499febcff783"
+  },
+  {
+    "path": "practice09/tools/build_report.py",
+    "present": true,
+    "sha256": "45514ecf9cc47deea81c851f98aa5d6889f92533de2a35af824ff3e85f6027b5"
+  },
+  {
+    "path": "practice09/tools/compare-ui-pixels.mjs",
+    "present": true,
+    "sha256": "e600f04143d4df5686d09dc21dc16ad23bf27b6e6dc2853d8cedce2fb6f8a129"
+  },
+  {
+    "path": "practice09/tools/compare-ui.mjs",
+    "present": true,
+    "sha256": "261c954ad51a6ac8abcd2b88bd2d10cc801375e1b74746084c98d558a94da651"
+  },
+  {
+    "path": "practice09/tools/package-source-export.py",
+    "present": true,
+    "sha256": "8626c85955f43ea23cf66e69eff7d8ac6e311dfec275d4c2e515fbe3c9683c86"
+  },
+  {
+    "path": "practice09/tools/package_submission.py",
+    "present": true,
+    "sha256": "8f9e4e6c1e2ab4db60ee2382d685da9b64c63d90bcc60eff3970076f9c37cba3"
+  },
+  {
+    "path": "practice09/tools/run_logged.py",
+    "present": true,
+    "sha256": "eea945910c909ca143b2121699e51bc1dbd0c32d2a49f917e3df2a0c5f56d57d"
+  },
+  {
+    "path": "practice09/tools/summarize_evidence.py",
+    "present": true,
+    "sha256": "dfc12493ed800e106fe3fa77966283bf9d3d64ecc7569da5ad34680141899619"
+  },
+  {
+    "path": "src/App.tsx",
+    "present": true,
+    "sha256": "f3f382b2207ff3752a708104061c89ca90620be12431243c47c83e2afe671091"
+  },
+  {
+    "path": "src/bookingLogic.ts",
+    "present": true,
+    "sha256": "c56c291594f42040ab9291350035a06bc7bc0e4a81476b296927e8c606cb6a30"
+  },
+  {
+    "path": "src/components/BookingPanel.tsx",
+    "present": true,
+    "sha256": "be1d5280c4f148d20f5496df7616b86ff1b6c94cc1cdb74ce955fd6b804adb33"
+  },
+  {
+    "path": "src/components/CurrentTimeControl.tsx",
+    "present": true,
+    "sha256": "c811241c52206f743af845fe4cfbfa37b9820e8e7a2e136201d6fb7ea2f7fae1"
+  },
+  {
+    "path": "src/components/RoomCard.tsx",
+    "present": true,
+    "sha256": "48e27e05b37542d98c6db43b62c939ab99256d1b9da792aab5953a05f8dbef52"
+  },
+  {
+    "path": "src/components/Timeline.tsx",
+    "present": true,
+    "sha256": "0420983cd1e671014b36a58d1288cf4187306dd6f1b70fdfaf02ffabd1682d4f"
+  },
+  {
+    "path": "src/index.css",
+    "present": true,
+    "sha256": "cc1a7ad0d019ddb1d32d0ecb588ba0ac26ce41d8625dd6c366348b25f83a28ec"
+  },
+  {
+    "path": "src/main.tsx",
+    "present": true,
+    "sha256": "832842269af94b055b2cd42fd27a0f212773b36d20083b631b863cbb5f0fd09e"
+  },
+  {
+    "path": "src/sampleData.ts",
+    "present": true,
+    "sha256": "1b5acd30d94f52fbcd2c2f8130ab7bfad35edf857703bb8df00800d385914629"
+  },
+  {
+    "path": "src/types.ts",
+    "present": true,
+    "sha256": "156643c3915e5b5880a1d09adccc6035caa48a87b1f9cc323846c080169e6653"
+  },
+  {
+    "path": "src/vite-env.d.ts",
+    "present": true,
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "path": "tailwind.config.js",
+    "present": true,
+    "sha256": "316c86f90ec708a4e953dbba5f6064ddae1feb701754f872b599c4bc2a0aceb5"
+  },
+  {
+    "path": "tests/booking.test.mjs",
+    "present": true,
+    "sha256": "dbf58fa723b33dd4e570021553a56eb906fc4cfda709f127fe56b8350cbd62ec"
+  },
+  {
+    "path": "tests/browser.mjs",
+    "present": true,
+    "sha256": "7773ef26f556f76391b2bca09c80835a41b2b6e37bb4ea3d3d27cd5bfe1a8a07"
+  },
+  {
+    "path": "tests/practice07-browser.mjs",
+    "present": true,
+    "sha256": "f39a67dbf79c6e660a18e119762e1a7e466955d406c4abee04e43acecf54c77f"
+  },
+  {
+    "path": "tests/practice07.improved.test.ts",
+    "present": true,
+    "sha256": "f21e425bce156f27dbe461839656020fbb62eb973b031249cd3bb049154151e4"
+  },
+  {
+    "path": "tests/practice07.original.test.ts",
+    "present": true,
+    "sha256": "8ac8244a65e8aedbcb5beeec8c536e8bbc579c938c4737ebe808f55a4c562216"
+  },
+  {
+    "path": "tests/practice08-browser.mjs",
+    "present": true,
+    "sha256": "9bcba2f2c68bef11fac3a01ffc2de87e53a28f1faa8cebafea85c46abe74ab2b"
+  },
+  {
+    "path": "tests/practice08.regression.test.ts",
+    "present": true,
+    "sha256": "b084f7d31d32cc7c4e8b5a5c38529fb9e5772d3ec821f6d0d73a919ed6ef5af4"
+  },
+  {
+    "path": "tests/practice09-browser.mjs",
+    "present": true,
+    "sha256": "6fdc9f1058c02eb3882efbd236e2d001ebbc460e9dba9722eb62b913b719d2d7"
+  },
+  {
+    "path": "tests/practice09.refactoring.test.tsx",
+    "present": true,
+    "sha256": "88557a9f0787e0f7ce8ec9a6c57dd271f0dc637317a68a66864890baaec4a05b"
+  },
+  {
+    "path": "tsconfig.app.json",
+    "present": true,
+    "sha256": "9750ea1ad666ba467781ab8e047a2337b7692b774de0865a98dbd189ca3fd87e"
+  },
+  {
+    "path": "tsconfig.json",
+    "present": true,
+    "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+  },
+  {
+    "path": "tsconfig.node.json",
+    "present": true,
+    "sha256": "a96b9ba5e40d95b92adf56431fdf9cbe25b5c2557621f0666615bff6889dfc50"
+  },
+  {
+    "path": "vite.config.ts",
+    "present": true,
+    "sha256": "05ae7de06a27b96af0ac0b8ff23daa94b3b22a40a5c3fbf88a5e1d1f78d384e3"
+  },
+  {
+    "path": "vitest.config.ts",
+    "present": true,
+    "sha256": "d00a5e13039888c99349bd47ec4b9827c5d265740b8cd3626aba92137fc033df"
+  },
+  {
+    "path": "vitest.original.config.ts",
+    "present": true,
+    "sha256": "2f610f95b60957d7602562904c902816edbdc219f55ef5ada9539194927d6083"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "url": "http://127.0.0.1:5180/src/sampleData.ts",
+  "method": "GET",
+  "Origin": "https://practice10-audit.invalid",
+  "status": 200,
+  "accessControlAllowOrigin": "*",
+  "responseIsFictionalSource": true,
+  "scope": "Benign request to this task-owned loopback server, no secrets accessed and no browser exploit attempted."
+}

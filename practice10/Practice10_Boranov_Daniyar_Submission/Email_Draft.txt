@@ -1,0 +1,21 @@
+To: b.azimkhanov@kbtu.kz
+Subject: AI-Driven Software Engineering Practice #11, Boranov Daniyar, 24B031718
+
+Dear Mr. Azimkhanov,
+
+Please find my Software Engineering Practice Work #10 report and supporting evidence attached as separate files.
+
+Name: Boranov Daniyar
+Student ID: 24B031718
+Class: Thursday, 14:00–17:00
+AI tool: OpenAI Codex
+Model identifier: gpt-6.1-sol. An exact model build and application version were not exposed.
+
+Project demo: https://smart-campus-room-ch-50zs.bolt.host/
+Original source reference: https://github.com/bdaniyar/boltnewproject/tree/2857ed197bbc05296c6731fb458fa20a550913e8
+The reviewed changes and current clean source are supplied individually with the evidence. The existing demo link was checked; no new deployment was performed.
+
+The report contains the evaluated risk register, agent-readiness audit, two approved mitigations, real test results and a CONDITIONAL release decision. The supporting files include exact diffs, logs and genuine desktop/mobile screenshots. Known dependency findings are documented.
+
+Best regards,
+Boranov Daniyar

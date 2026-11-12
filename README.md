@@ -51,3 +51,15 @@ The root [AGENTS.md](AGENTS.md) describes the actual architecture, AC1–AC6, sc
 Run the new component regressions with `npx vitest run tests/practice09.refactoring.test.tsx`. For browser evidence, start the app on port 5176 and run `node tests/practice09-browser.mjs after`. The script preserves existing evidence and refuses to overwrite it. It supports `PRACTICE09_URL` and requires installed Google Chrome. Compare fresh before/after captures with `node practice09/tools/compare-ui.mjs`.
 
 The `practice09/` folder contains the editable report, submission package, frozen baseline, actual test/UI evidence, rationale, and explicit Bolt experiment prompts. Real Bolt comparison responses and the remote implementation demonstration were unavailable; no response or verified publication is claimed. See `practice09/UNAVAILABLE_EVIDENCE.md` for the exact remaining external evidence.
+
+## Practice 10 verification
+
+Use a new evidence directory for each browser run to preserve earlier results:
+
+```sh
+npm run dev -- --host 127.0.0.1 --port 5180 --strictPort
+# In another terminal:
+PRACTICE09_URL=http://127.0.0.1:5180 PRACTICE09_EVIDENCE_DIR=practice10/evidence/ui-after node tests/practice09-browser.mjs after
+```
+
+The GitHub verification workflow runs the existing tests, typecheck, lint, build and desktop/mobile checks on an isolated runner. It records dependency advisories for human review. Passing CI does not authorize merging or deployment; the owner must review the diff, evidence and unresolved risks.
