@@ -1,0 +1,8 @@
+{
+  "command": "npm run test:browser",
+  "workingDirectory": "/private/tmp/p11verify.PxAyMr/candidate",
+  "startedAt": "2026-11-19T07:16:19.459282+00:00",
+  "finishedAt": "2026-11-19T07:16:25.004743+00:00",
+  "exitCode": 0,
+  "environment": {}
+}

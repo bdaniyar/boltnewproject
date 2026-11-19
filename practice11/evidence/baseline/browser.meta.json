@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tests/practice09-browser.mjs",
+    "before"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11",
+  "startedAtUTC": "2026-11-19T06:46:38.304028+00:00",
+  "completedAtUTC": "2026-11-19T06:46:49.210082+00:00",
+  "exitCode": 0
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11",
+  "startedAtUTC": "2026-11-19T06:50:30.721955+00:00",
+  "completedAtUTC": "2026-11-19T06:50:33.735967+00:00",
+  "exitCode": 0
+}

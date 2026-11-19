@@ -1,0 +1,44 @@
+{
+  "base": "ab36a3a97aba212d072a102f5d8ae10e745ca5b0",
+  "candidatePatchSha256": "e0db5dfb33c9672abe720a3105e81f604aac365fbc3883b8b85127f0ba1e5892",
+  "finalSourcePatchSha256": "291e2b13102464867f92f7a41a627a2e04bb12501f7a7d2b131c6609a12bb840",
+  "reviewedRepairs": [
+    {
+      "patch": "01-preserve-keyboard-focus.patch",
+      "files": [
+        "src/components/AvailabilityExplanation.tsx",
+        "tests/practice11-browser.mjs"
+      ],
+      "sha256": "909b0b76a5ac70fcc85e88cf3776d9368ae2146bece632b4783fcd5a22419425",
+      "applied": true
+    },
+    {
+      "patch": "02-enforce-output-shape.patch",
+      "files": [
+        "src/explanations/service.ts",
+        "tests/practice11.explanation.test.ts"
+      ],
+      "sha256": "c343c8ef8d2c953c63159f61e52d4720539ef5f353320a10f5cf09fb2b1b792f",
+      "applied": true
+    }
+  ],
+  "expectedRepairPaths": [
+    "src/components/AvailabilityExplanation.tsx",
+    "src/explanations/service.ts",
+    "tests/practice11-browser.mjs",
+    "tests/practice11.explanation.test.ts"
+  ],
+  "postRepairSourceFilesSha256": {
+    "README.md": "a702c44f87806410bab11a166d5759e6910d8cd183f8d98bd2c17ad9570bfe72",
+    "src/components/BookingPanel.tsx": "8096db03970805f319a25e63adb6c691f80618e0e4fea32ba2d1a041c0f452be",
+    "src/components/AvailabilityExplanation.tsx": "8c6747141ad6981573b0d1c29534b2dd7fe460b3e66b4e103e53189da03751b9",
+    "src/explanations/context.ts": "c72d64ee91b12c3e4f7056d680b5ec95737b507d59bf4a2cc9b8e3ca4b55603b",
+    "src/explanations/service.ts": "ebabb532675382a429a74fb64b72536582714051797e5357e08056842c7737af",
+    "src/explanations/mockAdapter.ts": "09c5c798b00b6b91009bf6be1be93519d97993673d6061aab81a55fa48bdf8cb",
+    "tests/practice11.explanation.test.ts": "2055ab794b6cc642ab90979fa10c50c09798665b749f29707cbb9d43f2fccecb",
+    "tests/practice11-browser.mjs": "d9bd805af1b486b5be94e049cf15ba2bdf3d80e61371c473c493009b6513fa28",
+    "vitest.config.ts": "ab0da4ec7a6d45bfc4e35d0f7c3782091731f41cc5a9a1b3746584edf4c1af64"
+  },
+  "isolatedPreflightExitCodes": "preflight/exit-codes.json",
+  "finalExitCodes": "../final/exit-codes.json"
+}

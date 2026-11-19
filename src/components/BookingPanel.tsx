@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 import { CalendarPlus, CheckCircle2, AlertTriangle } from 'lucide-react';
 import type { AvailabilityStatus, Booking, Room, ValidationResult } from '@/types';
 import { formatTime, parseTime, validateBooking } from '@/bookingLogic';
+import { prepareExplanation } from '@/explanations/context';
+import { AvailabilityExplanation } from './AvailabilityExplanation';
 
 interface Props {
   room: Room | null;
@@ -152,6 +154,13 @@ export function BookingPanel({
                 </li>
               ))}
             </ul>
+          )}
+
+          {liveValidation && liveAvailability && (
+            <AvailabilityExplanation
+              key={JSON.stringify([room.name, room.blocked, startTime, endTime, currentMinutes, liveAvailability])}
+              input={prepareExplanation(room.name, startTime, endTime, liveValidation, liveAvailability)}
+            />
           )}
 
           <p className="text-xs text-slate-500">Availability check only. No booking is saved or confirmed.</p>

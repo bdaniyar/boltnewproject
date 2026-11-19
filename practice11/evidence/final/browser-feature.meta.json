@@ -1,0 +1,10 @@
+{
+  "command": "node tests/practice11-browser.mjs",
+  "workingDirectory": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11",
+  "startedAt": "2026-11-19T07:16:01.479389+00:00",
+  "finishedAt": "2026-11-19T07:16:15.316250+00:00",
+  "exitCode": 0,
+  "environment": {
+    "PRACTICE11_EVIDENCE_DIR": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11/practice11/evidence/final/ui-feature"
+  }
+}

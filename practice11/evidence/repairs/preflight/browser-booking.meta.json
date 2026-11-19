@@ -1,0 +1,11 @@
+{
+  "command": "node tests/practice09-browser.mjs after",
+  "workingDirectory": "/private/tmp/p11verify.PxAyMr/candidate",
+  "startedAt": "2026-11-19T07:15:08.115022+00:00",
+  "finishedAt": "2026-11-19T07:15:17.090175+00:00",
+  "exitCode": 0,
+  "environment": {
+    "PRACTICE09_URL": "http://127.0.0.1:5191/",
+    "PRACTICE09_EVIDENCE_DIR": "/private/tmp/p11verify.PxAyMr/preflight/ui-booking"
+  }
+}

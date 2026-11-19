@@ -1,0 +1,17 @@
+
+> vite-react-typescript-starter@0.0.0 test:browser
+> node tests/browser.mjs final
+
+{
+  phase: 'final',
+  before: 1,
+  checkDoesNotAddBookings: true,
+  invalidFormatFeedback: 1,
+  blankStartAndMalformedEndFeedback: true,
+  durationFeedback: true,
+  widths: [
+    { width: 1440, scrollWidth: 1440 },
+    { width: 390, scrollWidth: 390 }
+  ],
+  errors: []
+}

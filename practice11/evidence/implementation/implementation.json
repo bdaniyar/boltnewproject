@@ -1,0 +1,16 @@
+{
+  "base": "ab36a3a97aba212d072a102f5d8ae10e745ca5b0",
+  "diffSha256": "e0db5dfb33c9672abe720a3105e81f604aac365fbc3883b8b85127f0ba1e5892",
+  "files": {
+    "README.md": "a702c44f87806410bab11a166d5759e6910d8cd183f8d98bd2c17ad9570bfe72",
+    "src/components/BookingPanel.tsx": "8096db03970805f319a25e63adb6c691f80618e0e4fea32ba2d1a041c0f452be",
+    "src/components/AvailabilityExplanation.tsx": "3b958800a470e6475487a89e93d4472c5955ceee9281e6dd5c8c4737dff5d0b9",
+    "src/explanations/context.ts": "c72d64ee91b12c3e4f7056d680b5ec95737b507d59bf4a2cc9b8e3ca4b55603b",
+    "src/explanations/service.ts": "3aba7d7a87515b936354d435d91ce4199491063198575dbb60e2c7493cca123c",
+    "src/explanations/mockAdapter.ts": "09c5c798b00b6b91009bf6be1be93519d97993673d6061aab81a55fa48bdf8cb",
+    "tests/practice11.explanation.test.ts": "dc07015d97020318d37318e6a1a68500bd6310bd7e1f3ff0c7c2184ffddaee9f",
+    "tests/practice11-browser.mjs": "cfe742b4b7b9fc467658c26fff52e673a7d8f4067f47eb78318d2840c1f8164f",
+    "vitest.config.ts": "ab0da4ec7a6d45bfc4e35d0f7c3782091731f41cc5a9a1b3746584edf4c1af64"
+  },
+  "status": "candidate before separate review"
+}

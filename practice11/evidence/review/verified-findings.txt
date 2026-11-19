@@ -1,0 +1,5 @@
+{"id":"R11-01","expected":"BUTTON after Enter and result","observed":{"before":"BUTTON","after":"BODY"},"classification":"CONFIRMED"}
+{"id":"R11-02","expected":"fallback","observed":{"allOwnKeys":["extra","explanation"],"enumerableKeys":["extra"],"source":"mock"},"classification":"CONFIRMED"}
+{"id":"R11-03","expected":"all browser pages included in runtime-error evidence","observed":{"pages":["page","failurePage","racePage"],"listeners":["page"]},"classification":"CONFIRMED"}
+{"id":"R11-04","observed":"Raw times are used in the reset key. The context separately rejects overlength inputs.","unverified":"User-visible slowdown","classification":"PLAUSIBLE / UNVERIFIED"}
+{"id":"R11-05","observed":"No bookings setter. B07 observed old completion with current explanation preserved.","classification":"UNSUPPORTED in the current app"}

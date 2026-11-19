@@ -1,0 +1,8 @@
+{
+  "command": "npm run test:original",
+  "workingDirectory": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11",
+  "startedAt": "2026-11-19T07:15:58.171725+00:00",
+  "finishedAt": "2026-11-19T07:15:59.125865+00:00",
+  "exitCode": 0,
+  "environment": {}
+}

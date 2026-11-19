@@ -22,7 +22,7 @@ npm run lint
 npm run build
 ```
 
-The default Vitest command runs 81 tests: the preserved original 17, improved 43, six Practice 08 regressions, and 15 Practice 09 component regressions. The original suite can still run separately through `test:original`. Nine pre-existing Node tests remain available through `test:legacy`. Booking suites import or transpile the real `src/bookingLogic.ts`; the new component suite renders the real `BookingPanel`. Availability and validation share the same rules, including finite numeric inputs.
+Before Practice 11, the default Vitest command ran 81 tests: the preserved original 17, improved 43, six Practice 08 regressions, and 15 Practice 09 component regressions. The original suite can still run separately through `test:original`. Nine pre-existing Node tests remain available through `test:legacy`. Booking suites import or transpile the real `src/bookingLogic.ts`; the new component suite renders the real `BookingPanel`. Availability and validation share the same rules, including finite numeric inputs.
 
 With the real development server at http://127.0.0.1:5173 and installed Google Chrome:
 
@@ -63,3 +63,9 @@ PRACTICE09_URL=http://127.0.0.1:5180 PRACTICE09_EVIDENCE_DIR=practice10/evidence
 ```
 
 The GitHub verification workflow runs the existing tests, typecheck, lint, build and desktop/mobile checks on an isolated runner. It records dependency advisories for human review. Passing CI does not authorize merging or deployment; the owner must review the diff, evidence and unresolved risks.
+
+## Practice 11
+
+After selecting a room and entering times, choose **Explain Availability** to see a short mock explanation below the current decision. The booking checker remains the authority. The local mock uses five structured fields and requires no API credentials. See [the feature contract](practice11/Feature_Contract.md).
+
+Run the focused suite with `npx vitest run tests/practice11.explanation.test.ts`. With the development server on loopback port 5191, set `PRACTICE11_EVIDENCE_DIR` to a new directory and run `node tests/practice11-browser.mjs`.

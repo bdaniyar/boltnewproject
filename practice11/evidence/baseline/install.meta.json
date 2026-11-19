@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm",
+    "ci",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11",
+  "startedAtUTC": "2026-11-19T06:46:01.707710+00:00",
+  "completedAtUTC": "2026-11-19T06:46:04.648715+00:00",
+  "exitCode": 0
+}

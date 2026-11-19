@@ -1,0 +1,31 @@
+diff --git a/src/explanations/service.ts b/src/explanations/service.ts
+--- a/src/explanations/service.ts
++++ b/src/explanations/service.ts
+@@ -16,7 +16,8 @@
+ 
+ function validateOutput(output: unknown, expected: string): string | undefined {
+   if (typeof output !== 'object' || output === null || Array.isArray(output)) return;
+-  if (Object.keys(output).length !== 1 || !Object.prototype.hasOwnProperty.call(output, 'explanation')) return;
++  const keys = Reflect.ownKeys(output);
++  if (keys.length !== 1 || keys[0] !== 'explanation') return;
+ 
+   const { explanation } = output as { explanation: unknown };
+   if (typeof explanation !== 'string' || explanation.length > MAX_EXPLANATION_LENGTH) return;
+diff --git a/tests/practice11.explanation.test.ts b/tests/practice11.explanation.test.ts
+--- a/tests/practice11.explanation.test.ts
++++ b/tests/practice11.explanation.test.ts
+@@ -107,6 +107,14 @@
+     expect(actual).toEqual({ ...available, startTime: '09:30', endTime: '10:00' });
+   });
+ 
++  it('E24 rejects an adapter object with a hidden explanation and extra field', async () => {
++    const output = { extra: true };
++    Object.defineProperty(output, 'explanation', { value: availableText });
++    const actual = await explainAvailability(available, async () => output, signal());
++    observe('E24', { ...actual, ownKeys: Reflect.ownKeys(output) });
++    expect(actual).toEqual({ explanation: availableText, source: 'fallback' });
++  });
++
+   it('E23 handles unfamiliar validation wording without inventing a cause', () => {
+     const actual = prepareExplanation('A-102', '11:00', '12:00', { valid: false, messages: ['Unknown validator message'] }, 'unavailable');
+     observe('E23', actual);
