@@ -1,0 +1,9 @@
+{
+  "browser-booking": 0,
+  "browser-feature": 0,
+  "build": 0,
+  "legacy": 0,
+  "lint": 0,
+  "typecheck": 0,
+  "vitest": 0
+}

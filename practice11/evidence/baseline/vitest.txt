@@ -1,0 +1,17 @@
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11
+
+ ✓ tests/practice07.original.test.ts (17 tests) 5ms
+ ✓ tests/practice08.regression.test.ts (6 tests) 4ms
+ ✓ tests/practice07.improved.test.ts (43 tests) 5ms
+ ✓ tests/practice09.refactoring.test.tsx (15 tests) 45ms
+
+ Test Files  4 passed (4)
+      Tests  81 passed (81)
+   Start at  11:46:30
+   Duration  1.48s (transform 128ms, setup 0ms, collect 470ms, tests 60ms, environment 0ms, prepare 576ms)
+

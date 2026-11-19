@@ -1,0 +1,8 @@
+{
+  "command": "npm run dev -- --host 127.0.0.1 --port 5191 --strictPort",
+  "workingDirectory": "/private/tmp/p11verify.PxAyMr/candidate",
+  "startedAt": "2026-11-19T07:15:05.213242+00:00",
+  "readyAt": "2026-11-19T07:15:08.113597+00:00",
+  "url": "http://127.0.0.1:5191/",
+  "pid": 64614
+}

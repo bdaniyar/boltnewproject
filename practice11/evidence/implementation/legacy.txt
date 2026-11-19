@@ -1,0 +1,74 @@
+
+> vite-react-typescript-starter@0.0.0 test:legacy
+> node --test tests/booking.test.mjs
+
+TAP version 13
+# {"name":"1 Touching endpoints","expected":"Available","actual":"available","messages":[]}
+# {"name":"2 Overlapping booking","expected":"Unavailable","actual":"unavailable","messages":["Overlaps existing booking by Test student (10:00–11:00)."]}
+# {"name":"3 Blocked room","expected":"Unavailable","actual":"blocked","messages":["Room Test is currently blocked and cannot be booked."]}
+# {"name":"4 Exactly 120 minutes","expected":"Available","actual":"available","messages":[]}
+# {"name":"5 More than 120 minutes","expected":"Unavailable","actual":"unavailable","messages":["Booking duration is 121 minutes — the maximum allowed is 120 minutes."]}
+# {"name":"6 Starts at current time","expected":"Unavailable","actual":"unavailable","messages":["Start time must be after the current time (09:00)."]}
+# Subtest: 1 Touching endpoints
+ok 1 - 1 Touching endpoints
+  ---
+  duration_ms: 1.588334
+  type: 'test'
+  ...
+# Subtest: 2 Overlapping booking
+ok 2 - 2 Overlapping booking
+  ---
+  duration_ms: 0.192708
+  type: 'test'
+  ...
+# Subtest: 3 Blocked room
+ok 3 - 3 Blocked room
+  ---
+  duration_ms: 0.258583
+  type: 'test'
+  ...
+# Subtest: 4 Exactly 120 minutes
+ok 4 - 4 Exactly 120 minutes
+  ---
+  duration_ms: 0.074875
+  type: 'test'
+  ...
+# Subtest: 5 More than 120 minutes
+ok 5 - 5 More than 120 minutes
+  ---
+  duration_ms: 0.273584
+  type: 'test'
+  ...
+# Subtest: 6 Starts at current time
+ok 6 - 6 Starts at current time
+  ---
+  duration_ms: 0.062125
+  type: 'test'
+  ...
+# Subtest: AC1 bounds, reversed range, past start and end at 1440
+ok 7 - AC1 bounds, reversed range, past start and end at 1440
+  ---
+  duration_ms: 0.206875
+  type: 'test'
+  ...
+# Subtest: Other rooms do not conflict; touching before existing booking is allowed
+ok 8 - Other rooms do not conflict; touching before existing booking is allowed
+  ---
+  duration_ms: 0.058542
+  type: 'test'
+  ...
+# Subtest: Time parser rejects invalid and accepts 24:00
+ok 9 - Time parser rejects invalid and accepts 24:00
+  ---
+  duration_ms: 0.53325
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 561.001167

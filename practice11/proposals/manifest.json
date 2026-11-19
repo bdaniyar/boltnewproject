@@ -1,0 +1,20 @@
+[
+  {
+    "patch": "01-preserve-keyboard-focus.patch",
+    "files": [
+      "src/components/AvailabilityExplanation.tsx",
+      "tests/practice11-browser.mjs"
+    ],
+    "sha256": "909b0b76a5ac70fcc85e88cf3776d9368ae2146bece632b4783fcd5a22419425",
+    "applied": false
+  },
+  {
+    "patch": "02-enforce-output-shape.patch",
+    "files": [
+      "src/explanations/service.ts",
+      "tests/practice11.explanation.test.ts"
+    ],
+    "sha256": "c343c8ef8d2c953c63159f61e52d4720539ef5f353320a10f5cf09fb2b1b792f",
+    "applied": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "samplesMs": {
+    "B01": 239,
+    "B02": 213,
+    "B03": 226,
+    "B05": 210
+  },
+  "minMs": 210,
+  "medianMs": 219.5,
+  "maxMs": 239,
+  "mockDelayMs": 100,
+  "externalModelCalls": 0,
+  "method": "Playwright click to asserted label, explanation and status. Includes mock delay and browser and assertion overhead."
+}

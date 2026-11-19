@@ -1,0 +1,14 @@
+{
+  "samplesMs": [
+    212,
+    205,
+    213,
+    219
+  ],
+  "minMs": 205,
+  "medianMs": 212.5,
+  "maxMs": 219,
+  "method": "End-to-end from Playwright click to asserted label, text and confirmed status. This includes the configured mock delay and browser/assertion overhead.",
+  "mockDelayMs": 100,
+  "paidModelCalls": 0
+}

@@ -1,0 +1,8 @@
+{
+  "command": "npm run dev -- --host 127.0.0.1 --port 5191 --strictPort",
+  "workingDirectory": "/Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice11",
+  "startedAt": "2026-11-19T07:15:55.202766+00:00",
+  "readyAt": "2026-11-19T07:15:56.582041+00:00",
+  "url": "http://127.0.0.1:5191/",
+  "pid": 65673
+}

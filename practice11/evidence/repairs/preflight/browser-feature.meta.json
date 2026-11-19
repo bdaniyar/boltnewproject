@@ -1,0 +1,10 @@
+{
+  "command": "node tests/practice11-browser.mjs",
+  "workingDirectory": "/private/tmp/p11verify.PxAyMr/candidate",
+  "startedAt": "2026-11-19T07:15:17.090857+00:00",
+  "finishedAt": "2026-11-19T07:15:30.062357+00:00",
+  "exitCode": 0,
+  "environment": {
+    "PRACTICE11_EVIDENCE_DIR": "/private/tmp/p11verify.PxAyMr/preflight/ui-feature"
+  }
+}

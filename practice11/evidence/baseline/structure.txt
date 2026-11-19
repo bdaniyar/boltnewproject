@@ -1,0 +1,32 @@
+Booking decision: src/bookingLogic.ts (validateBooking, checkAvailability, parseTime).
+Panel: src/components/BookingPanel.tsx. App: src/App.tsx. Fixtures: src/sampleData.ts.
+Four Vitest suites (bookings and rendered panel), legacy Node suite, browser runners, Practice10 CI.
+
+.github/workflows/verify.yml
+AGENTS.md
+README.md
+eslint.config.js
+package-lock.json
+package.json
+src/App.tsx
+src/bookingLogic.ts
+src/components/BookingPanel.tsx
+src/components/CurrentTimeControl.tsx
+src/components/RoomCard.tsx
+src/components/Timeline.tsx
+src/index.css
+src/main.tsx
+src/sampleData.ts
+src/types.ts
+src/vite-env.d.ts
+tests/booking.test.mjs
+tests/browser.mjs
+tests/practice07-browser.mjs
+tests/practice07.improved.test.ts
+tests/practice07.original.test.ts
+tests/practice08-browser.mjs
+tests/practice08.regression.test.ts
+tests/practice09-browser.mjs
+tests/practice09.refactoring.test.tsx
+vite.config.ts
+vitest.config.ts

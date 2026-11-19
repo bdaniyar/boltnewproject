@@ -1,0 +1,8 @@
+{
+  "command": "node tests/practice07-browser.mjs",
+  "workingDirectory": "/private/tmp/p11verify.PxAyMr/candidate",
+  "startedAt": "2026-11-19T07:16:25.005157+00:00",
+  "finishedAt": "2026-11-19T07:16:31.607135+00:00",
+  "exitCode": 0,
+  "environment": {}
+}

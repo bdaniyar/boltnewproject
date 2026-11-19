@@ -1,0 +1,8 @@
+[
+  {"roomLabel":"A-102","startTime":"11:00","endTime":"12:00","isAvailable":true,"reasonCode":"AVAILABLE"},
+  {"roomLabel":"A-102","startTime":"10:30","endTime":"11:30","isAvailable":false,"reasonCode":"OVERLAP"},
+  {"roomLabel":"A-102","startTime":"11:00","endTime":"12:00","isAvailable":false,"reasonCode":"BLOCKED"},
+  {"roomLabel":"A-102","startTime":"08:00","endTime":"08:30","isAvailable":false,"reasonCode":"PAST"},
+  {"roomLabel":"A-102","startTime":"12:30","endTime":"12:00","isAvailable":false,"reasonCode":"INVALID_INTERVAL"},
+  {"roomLabel":"A-102","startTime":"12:00","endTime":"14:01","isAvailable":false,"reasonCode":"TOO_LONG"}
+]

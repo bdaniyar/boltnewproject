@@ -1,0 +1,53 @@
+diff --git a/src/components/AvailabilityExplanation.tsx b/src/components/AvailabilityExplanation.tsx
+--- a/src/components/AvailabilityExplanation.tsx
++++ b/src/components/AvailabilityExplanation.tsx
+@@ -37,8 +37,8 @@
+       <button
+         type="button"
+         onClick={explain}
+-        disabled={state.kind === 'loading'}
+-        className="rounded-lg border border-sky-200 bg-white px-3 py-2 text-sm font-medium text-sky-800 hover:bg-sky-50 disabled:opacity-60"
++        aria-disabled={state.kind === 'loading'}
++        className="rounded-lg border border-sky-200 bg-white px-3 py-2 text-sm font-medium text-sky-800 hover:bg-sky-50 aria-disabled:opacity-60"
+       >
+         Explain Availability
+       </button>
+diff --git a/tests/practice11-browser.mjs b/tests/practice11-browser.mjs
+--- a/tests/practice11-browser.mjs
++++ b/tests/practice11-browser.mjs
+@@ -109,6 +109,7 @@
+   await racePage.route('**/src/explanations/mockAdapter.ts*', (route) =>
+     route.fulfill({ contentType: 'application/javascript', body: `
+       export const mockAdapter = (context) => new Promise((resolve) => {
++        window.dispatchEvent(new Event('adapter-started'));
+         const overlap = context.reasonCode === 'OVERLAP';
+         setTimeout(() => {
+           window.dispatchEvent(new Event('adapter-completed-' + context.reasonCode));
+@@ -136,6 +137,27 @@
+     await explain(racePage, 'Available for 11:00–12:00', 'The room is available for the selected time.');
+     return { ...result, oldCompletionObserved: true, newExplanationPreserved: true, repeatPassed: true };
+   });
++  await scenario('B08', 'Keyboard focus and repeated activation', 'Focus stays on the explanation button and one adapter starts per request', async () => {
++    await start(racePage).fill('10:30');
++    await end(racePage).fill('11:30');
++    await racePage.evaluate(() => {
++      window.addEventListener('adapter-started', () => {
++        const root = document.documentElement;
++        root.dataset.adapterStarts = String(Number(root.dataset.adapterStarts ?? 0) + 1);
++      });
++    });
++    const control = button(racePage);
++    await control.focus();
++    await racePage.keyboard.press('Enter');
++    await expect(control).toHaveAttribute('aria-disabled', 'true');
++    await expect(control).toBeFocused();
++    await racePage.keyboard.press('Enter');
++    await expect(explanation(racePage)).toContainText('Mock explanation');
++    await expect(control).toBeFocused();
++    await expect(racePage.locator('html')).toHaveAttribute('data-adapter-starts', '1');
++    await expect(status(racePage)).toHaveText('Unavailable for 10:30–11:30');
++    return { focusedAfterResult: true, adapterStarts: 1, status: await status(racePage).innerText() };
++  });
+   assert.deepEqual(pageErrors, []);
+ } finally {
+   const report = { url, browser: browser.version(), results, pageErrors, passed: results.filter((entry) => entry.passed).length, failed: results.filter((entry) => !entry.passed).length };
