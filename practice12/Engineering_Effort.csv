@@ -1,0 +1,11 @@
+﻿Track,Phase,Start (Almaty UTC+05:00),End (Almaty UTC+05:00),Elapsed seconds,Basis
+Code,Install from lockfile,2026-11-26T11:27:08+05:00,,7.08,/usr/bin/time measures npm ci
+Code,Implementation,2026-11-26T11:27:52+05:00,2026-11-26T11:29:10+05:00,78,Contract preparation and React adaptation. No code repair was needed.
+Appsmith,Environment setup,2026-11-26T11:27:28+05:00,2026-11-26T11:32:42+05:00,314,From Docker container start command to app creation
+Appsmith,Implementation,2026-11-26T11:32:42+05:00,2026-11-26T11:37:47+05:00,305,"Native layout, JS object and widget bindings"
+Appsmith,Repair,2026-11-26T11:37:47+05:00,2026-11-26T11:42:15+05:00,268,Table lint error and initial layout changes
+Appsmith,Mobile column refinement,,,1.4,Browser adjustment wall time
+Code,Final shared browser run,2026-11-26T11:50:51+05:00,2026-11-26T11:50:54+05:00,3.799,Command exit 0
+Appsmith,First shared browser run,2026-11-26T11:40:37+05:00,2026-11-26T11:40:42+05:00,4.94,Command exit 0
+Appsmith,Final shared browser run,2026-11-26T11:50:51+05:00,2026-11-26T11:50:58+05:00,7.195,Command exit 0
+Appsmith,Final re-import browser run,2026-11-26T11:50:51+05:00,2026-11-26T11:51:00+05:00,9.377,Command exit 0

@@ -1,0 +1,130 @@
+Working copy: temporary copy of the submission Source directory.
+
+$ npm ci
+Exit code: 0
+
+added 322 packages, and audited 323 packages in 5s
+
+74 packages are looking for funding
+  run `npm fund` for details
+
+25 vulnerabilities (2 low, 7 moderate, 14 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+$ npm run build
+Exit code: 0
+
+> vite-react-typescript-starter@0.0.0 build
+> vite build
+
+vite v5.4.8 building for production...
+transforming...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+✓ 1580 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.71 kB │ gzip:  0.38 kB
+dist/assets/index-BYsopl8n.css   17.04 kB │ gzip:  3.90 kB
+dist/assets/index-BBiwpyzD.js   169.85 kB │ gzip: 53.63 kB
+✓ built in 1.06s
+
+$ npm test
+Exit code: 0
+
+> vite-react-typescript-starter@0.0.0 test
+> vitest run
+
+
+ RUN  v2.1.9 /private/tmp/practice12-package-check.rmt9vs
+
+ ✓ tests/practice08.regression.test.ts (6 tests) 3ms
+ ✓ tests/practice07.original.test.ts (17 tests) 4ms
+ ✓ tests/practice07.improved.test.ts (43 tests) 5ms
+ ✓ tests/practice09.refactoring.test.tsx (15 tests) 23ms
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E01 derives the correct reason from the booking engine
+{"id":"E01","actual":{"context":{"roomLabel":"A-102","startTime":"11:30","endTime":"12:00","isAvailable":true,"reasonCode":"AVAILABLE"},"response":{"explanation":"The room is available for the selected time.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E02 derives the correct reason from the booking engine
+{"id":"E02","actual":{"context":{"roomLabel":"A-102","startTime":"10:30","endTime":"11:30","isAvailable":false,"reasonCode":"OVERLAP"},"response":{"explanation":"The selected time overlaps an existing booking.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E03 derives the correct reason from the booking engine
+{"id":"E03","actual":{"context":{"roomLabel":"A-102","startTime":"11:00","endTime":"12:00","isAvailable":false,"reasonCode":"BLOCKED"},"response":{"explanation":"This room is blocked and cannot be booked.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E04 derives the correct reason from the booking engine
+{"id":"E04","actual":{"context":{"roomLabel":"A-102","startTime":"12:30","endTime":"12:00","isAvailable":false,"reasonCode":"INVALID_INTERVAL"},"response":{"explanation":"The start time must be earlier than the end time.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E05 derives the correct reason from the booking engine
+{"id":"E05","actual":{"context":{"roomLabel":"A-102","startTime":"08:00","endTime":"08:30","isAvailable":false,"reasonCode":"PAST"},"response":{"explanation":"Choose a start time after the current time.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E06 derives the correct reason from the booking engine
+{"id":"E06","actual":{"context":{"roomLabel":"A-102","startTime":"12:00","endTime":"14:01","isAvailable":false,"reasonCode":"TOO_LONG"},"response":{"explanation":"Choose a time slot of 120 minutes or less.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E07 derives the correct reason from the booking engine
+{"id":"E07","actual":{"context":{"roomLabel":"A-102","startTime":"12:00","endTime":"14:00","isAvailable":true,"reasonCode":"AVAILABLE"},"response":{"explanation":"The room is available for the selected time.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E08 derives the correct reason from the booking engine
+{"id":"E08","actual":{"context":{"roomLabel":"A-102","startTime":"11:00","endTime":"12:00","isAvailable":true,"reasonCode":"AVAILABLE"},"response":{"explanation":"The room is available for the selected time.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E09 derives the correct reason from the booking engine
+{"id":"E09","actual":{"context":{"roomLabel":"A-102","startTime":"09:30","endTime":"10:00","isAvailable":true,"reasonCode":"AVAILABLE"},"response":{"explanation":"The room is available for the selected time.","source":"mock"}}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E10 rejects input before building adapter context
+{"id":"E10","actual":{"error":"Select a room and enter both times to request an explanation."}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E11 rejects input before building adapter context
+{"id":"E11","actual":{"error":"Use a valid room and times in HH:MM format to request an explanation."}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E12 rejects input before building adapter context
+{"id":"E12","actual":{"error":"The room or time input is too long for an explanation."}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E13 rejects input before building adapter context
+{"id":"E13","actual":{"error":"Use a valid room and times in HH:MM format to request an explanation."}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E14 handles timeout and aborts the adapter
+{"id":"E14","actual":{"explanation":"The room is available for the selected time.","source":"fallback","aborted":true,"elapsedMs":1500,"clock":"simulated"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E15 returns safe fallback for an unusable adapter result
+{"id":"E15","actual":{"explanation":"The room is available for the selected time.","source":"fallback"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E16 returns safe fallback for an unusable adapter result
+{"id":"E16","actual":{"explanation":"The room is available for the selected time.","source":"fallback"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E17 returns safe fallback for an unusable adapter result
+{"id":"E17","actual":{"explanation":"The room is available for the selected time.","source":"fallback"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E18 returns safe fallback for an unusable adapter result
+{"id":"E18","actual":{"explanation":"The room is available for the selected time.","source":"fallback"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E19 returns safe fallback for an unusable adapter result
+{"id":"E19","actual":{"explanation":"The room is available for the selected time.","source":"fallback"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E20 returns safe fallback for an unusable adapter result
+{"id":"E20","actual":{"explanation":"The room is available for the selected time.","source":"fallback"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E21 leaves booking fixtures unchanged across repeated requests
+{"id":"E21","actual":{"sources":["mock","mock","mock"],"valuesUnchanged":true,"referencesUnchanged":true}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E22 forwards only canonical time and five agreed fields
+{"id":"E22","actual":{"roomLabel":"A-102","startTime":"09:30","endTime":"10:00","isAvailable":true,"reasonCode":"AVAILABLE"}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E24 rejects an adapter object with a hidden explanation and extra field
+{"id":"E24","actual":{"explanation":"The room is available for the selected time.","source":"fallback","ownKeys":["extra","explanation"]}}
+
+stdout | tests/practice11.explanation.test.ts > Explain Availability > E23 handles unfamiliar validation wording without inventing a cause
+{"id":"E23","actual":{"context":{"roomLabel":"A-102","startTime":"11:00","endTime":"12:00","isAvailable":false,"reasonCode":"UNAVAILABLE"}}}
+
+ ✓ tests/practice11.explanation.test.ts (24 tests) 1033ms
+
+ Test Files  5 passed (5)
+      Tests  105 passed (105)
+   Start at  11:54:55
+   Duration  1.48s (transform 175ms, setup 0ms, collect 322ms, tests 1.07s, environment 0ms, prepare 205ms)

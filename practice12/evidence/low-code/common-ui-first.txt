@@ -1,0 +1,311 @@
+{
+  "platform": "appsmith",
+  "origin": "http://127.0.0.1:8186/app/smart-campus-availability-practice-12/page1-6b07d28aa4c312c7e2747ef5/edit",
+  "startTime": "2026-11-26T06:40:37.756Z",
+  "endTime": "2026-11-26T06:40:42.433Z",
+  "results": [
+    {
+      "id": "T1",
+      "input": {
+        "id": "T1",
+        "start": "12:00",
+        "duration": "60",
+        "blocked": false,
+        "available": true,
+        "reason": "AVAILABLE"
+      },
+      "observed": "Available · Room A-102 is available for this interval. [AVAILABLE]",
+      "pass": true,
+      "elapsedMs": 163
+    },
+    {
+      "id": "T2",
+      "input": {
+        "id": "T2",
+        "start": "10:30",
+        "duration": "60",
+        "blocked": false,
+        "available": false,
+        "reason": "BOOKING_OVERLAP"
+      },
+      "observed": "Unavailable · This interval overlaps an existing booking. [BOOKING_OVERLAP]",
+      "pass": true,
+      "elapsedMs": 184
+    },
+    {
+      "id": "T3",
+      "input": {
+        "id": "T3",
+        "start": "12:00",
+        "duration": "60",
+        "blocked": true,
+        "available": false,
+        "reason": "ROOM_BLOCKED"
+      },
+      "observed": "Unavailable · Room A-102 is blocked. [ROOM_BLOCKED]",
+      "pass": true,
+      "elapsedMs": 218
+    },
+    {
+      "id": "T4",
+      "input": {
+        "id": "T4",
+        "start": "12:00",
+        "duration": "0",
+        "blocked": false,
+        "available": false,
+        "reason": "INVALID_DURATION"
+      },
+      "observed": "Unavailable · Enter a whole-number duration from 1 to 120 minutes. [INVALID_DURATION]",
+      "pass": true,
+      "elapsedMs": 183
+    },
+    {
+      "id": "T5",
+      "input": {
+        "id": "T5",
+        "start": "12:00",
+        "duration": "121",
+        "blocked": false,
+        "available": false,
+        "reason": "INVALID_DURATION"
+      },
+      "observed": "Unavailable · Enter a whole-number duration from 1 to 120 minutes. [INVALID_DURATION]",
+      "pass": true,
+      "elapsedMs": 109
+    },
+    {
+      "id": "T6",
+      "input": {
+        "id": "T6",
+        "start": "08:30",
+        "duration": "30",
+        "blocked": false,
+        "available": false,
+        "reason": "START_NOT_FUTURE"
+      },
+      "observed": "Unavailable · Start time must be after 09:00. [START_NOT_FUTURE]",
+      "pass": true,
+      "elapsedMs": 156
+    },
+    {
+      "id": "T7",
+      "input": {
+        "id": "T7",
+        "start": "11:00",
+        "duration": "60",
+        "blocked": false,
+        "available": true,
+        "reason": "AVAILABLE"
+      },
+      "observed": "Available · Room A-102 is available for this interval. [AVAILABLE]",
+      "pass": true,
+      "elapsedMs": 166
+    },
+    {
+      "id": "T8",
+      "input": {
+        "id": "T8",
+        "repeat": [
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5",
+          "T6",
+          "T7"
+        ],
+        "reason": "BOOKINGS_UNCHANGED"
+      },
+      "observed": {
+        "before": [
+          "10:00",
+          "11:00",
+          "Lab Team 3"
+        ],
+        "after": [
+          "10:00",
+          "11:00",
+          "Lab Team 3"
+        ]
+      },
+      "pass": true,
+      "elapsedMs": 52
+    }
+  ],
+  "security": [
+    {
+      "id": "D1",
+      "input": {
+        "start": "",
+        "duration": "60",
+        "blocked": false,
+        "available": false,
+        "id": "D1",
+        "reason": "INVALID_START"
+      },
+      "observed": "Unavailable · Enter a valid start time in HH:MM format. [INVALID_START]",
+      "pass": true,
+      "elapsedMs": 210
+    },
+    {
+      "id": "D2",
+      "input": {
+        "start": "25:99",
+        "duration": "60",
+        "blocked": false,
+        "available": false,
+        "id": "D2",
+        "reason": "INVALID_START"
+      },
+      "observed": "Unavailable · Enter a valid start time in HH:MM format. [INVALID_START]",
+      "pass": true,
+      "elapsedMs": 61
+    },
+    {
+      "id": "D3",
+      "input": {
+        "start": "<b>demo</b>",
+        "duration": "60",
+        "blocked": false,
+        "available": false,
+        "id": "D3",
+        "reason": "INVALID_START"
+      },
+      "observed": "Unavailable · Enter a valid start time in HH:MM format. [INVALID_START]",
+      "pass": true,
+      "elapsedMs": 194
+    },
+    {
+      "id": "D4",
+      "input": {
+        "start": "12:00",
+        "duration": "",
+        "blocked": false,
+        "available": false,
+        "id": "D4",
+        "reason": "INVALID_DURATION"
+      },
+      "observed": "Unavailable · Enter a whole-number duration from 1 to 120 minutes. [INVALID_DURATION]",
+      "pass": true,
+      "elapsedMs": 115
+    },
+    {
+      "id": "D5",
+      "input": {
+        "start": "12:00",
+        "duration": "1.5",
+        "blocked": false,
+        "available": false,
+        "id": "D5",
+        "reason": "INVALID_DURATION"
+      },
+      "observed": "Unavailable · Enter a whole-number duration from 1 to 120 minutes. [INVALID_DURATION]",
+      "pass": true,
+      "elapsedMs": 29
+    },
+    {
+      "id": "D6",
+      "input": {
+        "start": "12:00",
+        "duration": "<b>demo</b>",
+        "blocked": false,
+        "available": false,
+        "id": "D6",
+        "reason": "INVALID_DURATION"
+      },
+      "observed": "Unavailable · Enter a whole-number duration from 1 to 120 minutes. [INVALID_DURATION]",
+      "pass": true,
+      "elapsedMs": 90
+    },
+    {
+      "id": "D7",
+      "input": {
+        "start": "09:00",
+        "duration": "0",
+        "blocked": true,
+        "available": false,
+        "id": "D7",
+        "reason": "START_NOT_FUTURE"
+      },
+      "observed": "Unavailable · Start time must be after 09:00. [START_NOT_FUTURE]",
+      "pass": true,
+      "elapsedMs": 138
+    },
+    {
+      "id": "D8",
+      "input": {
+        "start": "23:30",
+        "duration": "60",
+        "blocked": false,
+        "available": false,
+        "id": "D8",
+        "reason": "END_OUT_OF_DAY"
+      },
+      "observed": "Unavailable · The interval must end by 24:00. [END_OUT_OF_DAY]",
+      "pass": true,
+      "elapsedMs": 99
+    },
+    {
+      "id": "D9",
+      "input": {
+        "start": "12:00",
+        "duration": "120",
+        "blocked": false,
+        "available": true,
+        "id": "D9",
+        "reason": "AVAILABLE"
+      },
+      "observed": "Available · Room A-102 is available for this interval. [AVAILABLE]",
+      "pass": true,
+      "elapsedMs": 87
+    }
+  ],
+  "mobile": {
+    "observed": "Available · Room A-102 is available for this interval. [AVAILABLE]",
+    "viewport": {
+      "width": 375,
+      "documentWidth": 375
+    },
+    "widgets": [
+      {
+        "x": 11,
+        "y": 205,
+        "width": 63.734375,
+        "height": 30
+      },
+      {
+        "x": 11,
+        "y": 285,
+        "width": 63.734375,
+        "height": 30
+      },
+      {
+        "x": 27.015625,
+        "y": 311.5,
+        "width": 13,
+        "height": 13
+      },
+      {
+        "x": 10,
+        "y": 408,
+        "width": 60.0625,
+        "height": 32
+      },
+      {
+        "x": 283.921875,
+        "y": 474,
+        "width": 534.515625,
+        "height": 40
+      },
+      {
+        "x": 96.078125,
+        "y": 299,
+        "width": 184.84375,
+        "height": 268
+      }
+    ],
+    "withinWidth": false
+  },
+  "pageErrors": []
+}

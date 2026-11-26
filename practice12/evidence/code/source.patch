@@ -1,0 +1,164 @@
+diff --git a/src/App.tsx b/src/App.tsx
+index 04e2a5e..95a12bb 100644
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -7,8 +7,9 @@ import { CurrentTimeControl } from '@/components/CurrentTimeControl';
+ import { RoomCard } from '@/components/RoomCard';
+ import { Timeline } from '@/components/Timeline';
+ import { BookingPanel } from '@/components/BookingPanel';
++import { Practice12Checker } from '@/components/Practice12Checker';
+ 
+-function App() {
++function CampusChecker() {
+   const [rooms, setRooms] = useState<Room[]>(() => SAMPLE_ROOMS.map((room) => ({ ...room })));
+   const [bookings] = useState<Booking[]>(SAMPLE_BOOKINGS);
+   const [currentMinutes, setCurrentMinutes] = useState(DEFAULT_CURRENT_MINUTES);
+@@ -123,10 +124,15 @@ function App() {
+       </main>
+ 
+       <footer className="border-t border-slate-200 py-4 text-center text-xs text-slate-400">
+-        Smart Campus · Fictional sample data · No real bookings
++        Smart Campus · Fictional sample data · No real bookings · <a href="?practice=12" className="text-sky-700 underline">Practice 12 duration checker</a>
+       </footer>
+     </div>
+   );
+ }
+ 
+-export default App;
++export default function App() {
++  if (new URLSearchParams(window.location.search).get('practice') === '12') {
++    return <div className="min-h-screen bg-slate-50"><Practice12Checker /></div>;
++  }
++  return <CampusChecker />;
++}
+diff --git a/src/practice12Availability.ts b/src/practice12Availability.ts
+new file mode 100644
+index 0000000..713c27c
+--- /dev/null
++++ b/src/practice12Availability.ts
+@@ -0,0 +1,36 @@
++import { formatTime, parseTime, validateBooking } from './bookingLogic';
++import type { Booking, Room } from './types';
++
++export const PRACTICE12_CLOCK = 9 * 60;
++
++const messages = {
++  INVALID_START: 'Enter a valid start time in HH:MM format.',
++  START_NOT_FUTURE: `Start time must be after ${formatTime(PRACTICE12_CLOCK)}.`,
++  INVALID_DURATION: 'Enter a whole-number duration from 1 to 120 minutes.',
++  END_OUT_OF_DAY: 'The interval must end by 24:00.',
++  ROOM_BLOCKED: 'Room A-102 is blocked.',
++  BOOKING_OVERLAP: 'This interval overlaps an existing booking.',
++  AVAILABLE: 'Room A-102 is available for this interval.',
++};
++
++function decision(reason: keyof typeof messages) {
++  return { available: reason === 'AVAILABLE', reason, message: messages[reason] };
++}
++
++export function checkPractice12(startText: string, durationText: string, room: Room, bookings: Booking[]) {
++  const start = parseTime(startText);
++  if (start === null) return decision('INVALID_START');
++  if (start <= PRACTICE12_CLOCK) return decision('START_NOT_FUTURE');
++
++  const duration = Number(durationText);
++  if (!/^\d+$/.test(durationText.trim()) || duration < 1 || duration > 120) {
++    return decision('INVALID_DURATION');
++  }
++
++  const end = start + duration;
++  if (end > 1440) return decision('END_OUT_OF_DAY');
++
++  const validation = validateBooking(start, end, room, bookings, PRACTICE12_CLOCK);
++  if (validation.valid) return decision('AVAILABLE');
++  return decision(room.blocked ? 'ROOM_BLOCKED' : 'BOOKING_OVERLAP');
++}
+diff --git a/src/components/Practice12Checker.tsx b/src/components/Practice12Checker.tsx
+new file mode 100644
+index 0000000..ed80ff9
+--- /dev/null
++++ b/src/components/Practice12Checker.tsx
+@@ -0,0 +1,83 @@
++import { useState } from 'react';
++import { formatTime } from '@/bookingLogic';
++import { checkPractice12, PRACTICE12_CLOCK } from '@/practice12Availability';
++import { SAMPLE_BOOKINGS, SAMPLE_ROOMS } from '@/sampleData';
++
++const room = SAMPLE_ROOMS.find(({ name }) => name === 'A-102')!;
++const bookings = SAMPLE_BOOKINGS.filter(({ roomName }) => roomName === room.name);
++const inputStyle = 'block w-full rounded-lg border border-slate-300 bg-white px-3 py-2';
++
++export function Practice12Checker() {
++  const [start, setStart] = useState('12:00');
++  const [duration, setDuration] = useState('60');
++  const [blocked, setBlocked] = useState(room.blocked);
++  const [result, setResult] = useState<ReturnType<typeof checkPractice12> | null>(null);
++
++  return (
++    <main className="mx-auto max-w-4xl px-4 py-6 text-slate-900">
++      <a href="./" className="text-sm font-medium text-sky-800 underline">All campus rooms</a>
++      <h1 className="mt-3 text-2xl font-bold">Smart Campus Availability</h1>
++      <p className="mt-2 text-sm text-slate-700">Room {room.name} · Reference clock {formatTime(PRACTICE12_CLOCK)}</p>
++      <div className="mt-5 grid items-start gap-5 md:grid-cols-2">
++        <form
++          className="space-y-4 rounded-xl border border-slate-200 bg-white p-5"
++          noValidate
++          onSubmit={(event) => {
++            event.preventDefault();
++            setResult(checkPractice12(start, duration, { ...room, blocked }, bookings));
++          }}
++        >
++          <label className="block text-sm font-medium">
++            <span className="mb-1 block">Start time (HH:MM)</span>
++            <input className={inputStyle} value={start} onChange={(event) => {
++              setStart(event.target.value);
++              setResult(null);
++            }} />
++          </label>
++          <label className="block text-sm font-medium">
++            <span className="mb-1 block">Duration (minutes)</span>
++            <input className={inputStyle} inputMode="numeric" value={duration} onChange={(event) => {
++              setDuration(event.target.value);
++              setResult(null);
++            }} />
++          </label>
++          <label className="flex items-center gap-2 text-sm">
++            <input type="checkbox" checked={blocked} onChange={(event) => {
++              setBlocked(event.target.checked);
++              setResult(null);
++            }} />
++            Room blocked
++          </label>
++          <button type="submit" className="w-full rounded-lg bg-sky-700 px-4 py-2 font-semibold text-white hover:bg-sky-800">
++            Check Availability
++          </button>
++          <div role="status" aria-atomic="true">
++            {result && (
++              <div data-available={result.available} className={`rounded-lg p-3 ${result.available ? 'bg-emerald-50' : 'bg-rose-50'}`}>
++                <p className="font-semibold">{result.available ? 'Available' : 'Unavailable'}</p>
++                <p className="mt-1 text-sm">{result.message}</p>
++                <p className="mt-1 break-words font-mono text-xs">{result.reason}</p>
++              </div>
++            )}
++          </div>
++        </form>
++        <section className="rounded-xl border border-slate-200 bg-white p-5">
++          <h2 id="existing-bookings" className="font-semibold">Existing bookings</h2>
++          <table aria-labelledby="existing-bookings" className="mt-3 w-full text-left text-sm">
++            <thead><tr><th scope="col">Start</th><th scope="col">End</th><th scope="col">Booked by</th></tr></thead>
++            <tbody>
++              {bookings.map((booking) => (
++                <tr key={booking.id} className="border-t border-slate-200">
++                  <td className="py-2">{formatTime(booking.start)}</td>
++                  <td>{formatTime(booking.end)}</td>
++                  <td>{booking.bookedBy}</td>
++                </tr>
++              ))}
++            </tbody>
++          </table>
++          <p className="mt-3 text-sm text-slate-600">Fictional bookings. Checks leave this schedule unchanged.</p>
++        </section>
++      </div>
++    </main>
++  );
++}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tests/practice09-browser.mjs",
+    "before"
+  ],
+  "startedAt": "2026-11-26T06:27:52.819+00:00",
+  "endedAt": "2026-11-26T06:28:04.221+00:00",
+  "elapsedSeconds": 11.401,
+  "exitCode": 0
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm",
+    "test"
+  ],
+  "startedAt": "2026-11-26T06:27:43.675+00:00",
+  "endedAt": "2026-11-26T06:27:48.400+00:00",
+  "elapsedSeconds": 4.724,
+  "exitCode": 0
+}

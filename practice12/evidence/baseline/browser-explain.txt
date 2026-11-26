@@ -1,0 +1,102 @@
+{
+  "url": "http://127.0.0.1:5191/",
+  "browser": "158.0.8127.88",
+  "results": [
+    {
+      "id": "B01",
+      "name": "Overlap on desktop",
+      "expected": "Unavailable 10:30–11:30 and separate mock overlap sentence",
+      "actual": {
+        "confirmed": "Unavailable for 10:30–11:30",
+        "separateExplanation": "Mock explanation\n\nThe selected time overlaps an existing booking.",
+        "elapsedMs": 236
+      },
+      "passed": true
+    },
+    {
+      "id": "B02",
+      "name": "Available endpoint on desktop",
+      "expected": "Available 11:00–12:00 and separate mock available sentence",
+      "actual": {
+        "confirmed": "Available for 11:00–12:00",
+        "separateExplanation": "Mock explanation\n\nThe room is available for the selected time.",
+        "elapsedMs": 225
+      },
+      "passed": true
+    },
+    {
+      "id": "B03",
+      "name": "Blocked room",
+      "expected": "Blocked status and separate blocked explanation",
+      "actual": {
+        "confirmed": "Unavailable — room is blocked",
+        "separateExplanation": "Mock explanation\n\nThis room is blocked and cannot be booked.",
+        "elapsedMs": 220
+      },
+      "passed": true
+    },
+    {
+      "id": "B04",
+      "name": "Empty, malformed and long text",
+      "expected": "Each input shows local guidance without a generated label",
+      "actual": [
+        "Select a room and enter both times to request an explanation.",
+        "Use a valid room and times in HH:MM format to request an explanation.",
+        "The room or time input is too long for an explanation."
+      ],
+      "passed": true
+    },
+    {
+      "id": "B05",
+      "name": "Responsive mobile panel",
+      "expected": "Button and available explanation fit the 375 px viewport",
+      "actual": {
+        "confirmed": "Available for 11:00–12:00",
+        "separateExplanation": "Mock explanation\n\nThe room is available for the selected time.",
+        "elapsedMs": 458,
+        "documentWidth": 375
+      },
+      "passed": true
+    },
+    {
+      "id": "B06",
+      "name": "Failed adapter fallback",
+      "expected": "Fallback states overlap while confirmed status stays unchanged",
+      "actual": {
+        "confirmed": "Unavailable for 10:30–11:30",
+        "separateExplanation": "Fallback explanation\n\nThe selected time overlaps an existing booking.",
+        "elapsedMs": 48,
+        "adapterMode": "test-only injected failure"
+      },
+      "passed": true
+    },
+    {
+      "id": "B07",
+      "name": "Stale completion and repeated request",
+      "expected": "Old overlap completion cannot replace the later available explanation",
+      "actual": {
+        "confirmed": "Available for 11:00–12:00",
+        "separateExplanation": "Mock explanation\n\nThe room is available for the selected time.",
+        "elapsedMs": 116,
+        "oldCompletionObserved": true,
+        "newExplanationPreserved": true,
+        "repeatPassed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "B08",
+      "name": "Keyboard focus and repeated activation",
+      "expected": "Focus stays on the explanation button and one adapter starts per request",
+      "actual": {
+        "focusedAfterResult": true,
+        "adapterStarts": 1,
+        "status": "Unavailable for 10:30–11:30"
+      },
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "passed": 8,
+  "failed": 0
+}

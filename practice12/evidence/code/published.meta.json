@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "practice12/tools/check-published.mjs"
+  ],
+  "startedAt": "2026-11-26T06:45:01.590+00:00",
+  "endedAt": "2026-11-26T06:45:06.726+00:00",
+  "elapsedSeconds": 5.135,
+  "exitCode": 0
+}
