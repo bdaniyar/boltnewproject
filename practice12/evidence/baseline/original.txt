@@ -1,0 +1,14 @@
+
+> vite-react-typescript-starter@0.0.0 test:original
+> vitest run --config vitest.original.config.ts
+
+
+ RUN  v2.1.9 /Users/daniarboranov/Documents/code_materials/se/boltprcproject/smartcampus-practice12
+
+ ✓ tests/practice07.original.test.ts (17 tests) 8ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  11:27:53
+   Duration  3.37s (transform 184ms, setup 0ms, collect 205ms, tests 8ms, environment 0ms, prepare 830ms)
+

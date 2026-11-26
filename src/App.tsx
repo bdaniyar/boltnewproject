@@ -7,8 +7,9 @@ import { CurrentTimeControl } from '@/components/CurrentTimeControl';
 import { RoomCard } from '@/components/RoomCard';
 import { Timeline } from '@/components/Timeline';
 import { BookingPanel } from '@/components/BookingPanel';
+import { Practice12Checker } from '@/components/Practice12Checker';
 
-function App() {
+function CampusChecker() {
   const [rooms, setRooms] = useState<Room[]>(() => SAMPLE_ROOMS.map((room) => ({ ...room })));
   const [bookings] = useState<Booking[]>(SAMPLE_BOOKINGS);
   const [currentMinutes, setCurrentMinutes] = useState(DEFAULT_CURRENT_MINUTES);
@@ -123,10 +124,15 @@ function App() {
       </main>
 
       <footer className="border-t border-slate-200 py-4 text-center text-xs text-slate-400">
-        Smart Campus · Fictional sample data · No real bookings
+        Smart Campus · Fictional sample data · No real bookings · <a href="?practice=12" className="text-sky-700 underline">Practice 12 duration checker</a>
       </footer>
     </div>
   );
 }
 
-export default App;
+export default function App() {
+  if (new URLSearchParams(window.location.search).get('practice') === '12') {
+    return <div className="min-h-screen bg-slate-50"><Practice12Checker /></div>;
+  }
+  return <CampusChecker />;
+}

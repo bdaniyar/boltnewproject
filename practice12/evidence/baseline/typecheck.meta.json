@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "typecheck"
+  ],
+  "startedAt": "2026-11-26T06:27:52.806+00:00",
+  "endedAt": "2026-11-26T06:27:59.696+00:00",
+  "elapsedSeconds": 6.889,
+  "exitCode": 0
+}

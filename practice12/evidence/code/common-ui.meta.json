@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "practice12/tools/check-ui.mjs",
+    "code",
+    "http://127.0.0.1:5191/?practice=12",
+    "practice12/evidence/code/acceptance"
+  ],
+  "startedAt": "2026-11-26T06:50:51.134+00:00",
+  "endedAt": "2026-11-26T06:50:54.933+00:00",
+  "elapsedSeconds": 3.799,
+  "exitCode": 0
+}

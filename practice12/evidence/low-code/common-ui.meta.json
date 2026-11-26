@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "practice12/tools/check-ui.mjs",
+    "appsmith",
+    "http://127.0.0.1:8186/app/smart-campus-availability-practice-12/page1-6b07d28aa4c312c7e2747ef5/edit",
+    "practice12/evidence/low-code/acceptance"
+  ],
+  "startedAt": "2026-11-26T06:50:51.134+00:00",
+  "endedAt": "2026-11-26T06:50:58.329+00:00",
+  "elapsedSeconds": 7.195,
+  "exitCode": 0
+}

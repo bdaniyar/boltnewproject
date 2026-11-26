@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm",
+    "run",
+    "test:legacy"
+  ],
+  "startedAt": "2026-11-26T06:27:52.804+00:00",
+  "endedAt": "2026-11-26T06:27:55.432+00:00",
+  "elapsedSeconds": 2.627,
+  "exitCode": 0
+}

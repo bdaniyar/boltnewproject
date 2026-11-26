@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "tests/browser.mjs",
+    "final"
+  ],
+  "startedAt": "2026-11-26T06:45:47.206+00:00",
+  "endedAt": "2026-11-26T06:45:48.888+00:00",
+  "elapsedSeconds": 1.682,
+  "exitCode": 0
+}

@@ -1,0 +1,15 @@
+{
+  "room": "A-102",
+  "clock": "09:00",
+  "bookings": [{ "id": "b3", "roomName": "A-102", "start": 600, "end": 660, "bookedBy": "Lab Team 3" }],
+  "tests": [
+    { "id": "T1", "start": "12:00", "duration": "60", "blocked": false, "available": true, "reason": "AVAILABLE" },
+    { "id": "T2", "start": "10:30", "duration": "60", "blocked": false, "available": false, "reason": "BOOKING_OVERLAP" },
+    { "id": "T3", "start": "12:00", "duration": "60", "blocked": true, "available": false, "reason": "ROOM_BLOCKED" },
+    { "id": "T4", "start": "12:00", "duration": "0", "blocked": false, "available": false, "reason": "INVALID_DURATION" },
+    { "id": "T5", "start": "12:00", "duration": "121", "blocked": false, "available": false, "reason": "INVALID_DURATION" },
+    { "id": "T6", "start": "08:30", "duration": "30", "blocked": false, "available": false, "reason": "START_NOT_FUTURE" },
+    { "id": "T7", "start": "11:00", "duration": "60", "blocked": false, "available": true, "reason": "AVAILABLE" },
+    { "id": "T8", "repeat": ["T1", "T2", "T3", "T4", "T5", "T6", "T7"], "reason": "BOOKINGS_UNCHANGED" }
+  ]
+}
